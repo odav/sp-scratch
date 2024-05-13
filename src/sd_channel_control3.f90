@@ -188,7 +188,7 @@
       !call Muskingum and variable storage coefficient flood routing method
       call ch_rtmusk
               
-      call sd_channel_sediment (time%step)
+      call sd_channel_sediment3
         
       !! set values for outflow hydrograph
       idb = ob(icmd)%props
