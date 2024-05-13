@@ -514,7 +514,7 @@
       type (hyd_header) :: hyd_hdr
       
        type hyd_stor_header        
-        character (len=17) :: flo_stor  =    "         flo_stor"      !! m^3/s        |water stored at the end of time period       
+        character (len=17) :: flo_stor  =    "         flo_stor"      !! m^3        |water stored at the end of time period       
         character (len=15) :: sed_stor  =    "       sed_stor"        !! metric tons  |sediment stored at the end of time period
         character (len=15) :: orgn_stor =    "      orgn_stor"        !! kg N         |organic N stored at the end of time period
         character (len=15) :: sedp_stor =    "      sedp_stor"        !! kg P         |organic P stored at the end of time period
@@ -536,7 +536,7 @@
       type (hyd_stor_header) :: hyd_stor_hdr
       
       type hyd_in_header        
-        character (len=15) :: flo_in  =    "         flo_in"        !! m^3/s        |water in          
+        character (len=15) :: flo_in  =    "         flo_in"        !! m^3        |water in          
         character (len=15) :: sed_in  =    "         sed_in"        !! metric tons  |sediment in
         character (len=15) :: orgn_in =    "        orgn_in"        !! kg N         |organic N in
         character (len=15) :: sedp_in =    "        sedp_in"        !! kg P         |organic P in
@@ -558,7 +558,7 @@
       type (hyd_in_header) :: hyd_in_hdr
       
     type hyd_out_header        
-        character (len=15) :: flo_out  =    "        flo_out"        !! m^3/s        |water out      
+        character (len=15) :: flo_out  =    "        flo_out"        !! m^3        |water out      
         character (len=15) :: sed_out  =    "        sed_out"        !! metric tons  |sediment out
         character (len=15) :: orgn_out =    "       orgn_out"        !! kg N         |organic N out
         character (len=15) :: sedp_out =    "       sedp_out"        !! kg P         |organic P out
@@ -580,8 +580,8 @@
       type (hyd_out_header) :: hyd_out_hdr
       
       type hyd_inout_header        
-        character (len=15) :: flo_in  =    "         flo_in"         !! m^3/s        |water in   
-        character (len=15) :: flo_out  =    "        flo_out"        !! m^3/s        |water out    
+        character (len=15) :: flo_in  =    "         flo_in"         !! m^3        |water in   
+        character (len=15) :: flo_out  =    "        flo_out"        !! m^3        |water out    
         character (len=15) :: sed_in  =    "         sed_in"         !! metric tons  |sediment in
         character (len=15) :: sed_out  =    "        sed_out"        !! metric tons  |sediment out
         character (len=15) :: orgn_in =    "        orgn_in"         !! kg N         |organic N in
@@ -611,8 +611,8 @@
       type (wtmp_out_header) :: wtmp_hdr
          
       type sed_hyd_header        
-        character (len=15) :: flo_in  =    "         flo_in"        !! m^3/s        |volume of water 
-        character (len=15) :: flo_out  =   "        flo_out"        !! m^3/s        |volume of water  
+        character (len=15) :: flo_in  =    "         flo_in"        !! m^3        |volume of water 
+        character (len=15) :: flo_out  =   "        flo_out"        !! m^3        |volume of water  
         character (len=15) :: sed_in  =    "         sed_in"        !! metric tons  |sediment
         character (len=15) :: sed_out  =   "        sed_out"        !! metric tons  |sediment      
         character (len=15) :: orgn_in =    "        orgn_in"        !! kg N         |organic N
@@ -638,8 +638,8 @@
       end type sed_hyd_header
       type (sed_hyd_header) :: sd_hyd_hdr
      type sd_hyd_header_units
-        character (len=15) :: flo_in    =  "          m^3/s"        !! avg daily m^3/s        |volume of water
-        character (len=15) :: flo_out   =  "          m^3/s"        !! avg daily m^3/s        |volume of water
+        character (len=15) :: flo_in    =  "          m^3"        !! avg daily m^3        |volume of water
+        character (len=15) :: flo_out   =  "          m^3"        !! avg daily m^3        |volume of water
         character (len=15) :: sed_in    =  "           tons"        !! metric tons  |sediment
         character (len=15) :: sed_out   =  "           tons"        !! metric tons  |sediment
         character (len=15) :: orgn_in   =  "            kgN"        !! kg N         |organic N
@@ -766,7 +766,7 @@
       type (ch_watbod_inoutheader_units) :: ch_wbod_inouthdr_units
         
       type hyd_header_units1
-        character (len=15) :: flo    =  "          m^3/s"        !! m^3/s        |volume of water
+        character (len=15) :: flo    =  "          m^3"        !! m^3        |volume of water
         character (len=15) :: sed    =  "           tons"        !! metric tons  |sediment
         character (len=15) :: orgn   =  "            kgN"        !! kg N         |organic N
         character (len=15) :: sedp   =  "            kgP"        !! kg P         |organic P
@@ -810,8 +810,8 @@
       type (hyd_header_units3) :: hyd_hdr_units3 
 
       type hydinout_header_units1
-        character (len=15) :: flo_in    =  " av daily m^3/s"        !! avg daily m^3/s        |volume of water
-        character (len=15) :: flo_out   =  " av daily m^3/s"        !! avg daily m^3/s        |volume of water
+        character (len=15) :: flo_in    =  " av daily m^3"        !! avg daily m^3        |volume of water
+        character (len=15) :: flo_out   =  " av daily m^3"        !! avg daily m^3        |volume of water
         character (len=15) :: sed_in    =  "           tons"        !! metric tons  |sediment
         character (len=15) :: sed_out   =  "           tons"        !! metric tons  |sediment
         character (len=15) :: orgn_in   =  "            kgN"        !! kg N         |organic N
@@ -847,7 +847,7 @@
         character (len=13) :: yrc    =  "            "
         character (len=12) :: name   =  "            "
         character (len=6) :: otype   =  "      "    
-        character (len=17) :: flo    =  "            m^3/s"      !! m^3/s        |volume of water
+        character (len=17) :: flo    =  "            m^3"      !! m^3        |volume of water
         character (len=15) :: sed    =  "           tons"        !! metric tons  |sediment
         character (len=15) :: orgn   =  "            kgN"        !! kg N         |organic N
         character (len=15) :: sedp   =  "            kgP"        !! kg P         |organic P
@@ -879,7 +879,7 @@
         character (len=9) :: iotypno =  "         "
         character (len=8) :: hydio   =  "        "
         character (len=8) :: objno   =  "        "
-        character (len=17) :: flo    =  "            m^3/s"      !! m^3/s          |volume of water
+        character (len=17) :: flo    =  "            m^3"      !! m^3          |volume of water
         character (len=15) :: sed    =  "           tons"        !! metric tons  |sediment
         character (len=15) :: orgn   =  "            kgN"        !! kg N         |organic N
         character (len=15) :: sedp   =  "            kgP"        !! kg P         |organic P

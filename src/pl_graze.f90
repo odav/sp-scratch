@@ -4,7 +4,7 @@
       use fertilizer_data_module
       use basin_module
       use organic_mineral_mass_module
-      use hru_module, only : ihru, grazn, grazp 
+      use hru_module, only : ihru, grazn, grazp, grazn_eat, grazp_eat 
       use soil_module
       use plant_module
       use carbon_module
@@ -59,6 +59,8 @@
         graz_seed = eat_seed * pl_mass(j)%seed(ipl)
         graz_leaf = eat_leaf * pl_mass(j)%leaf(ipl)
         graz_stem = eat_stem * pl_mass(j)%stem(ipl)
+        grazn_eat = graze%eat / pl_mass(j)%ab_gr_com%n
+        grazp_eat = graze%eat / pl_mass(j)%ab_gr_com%p
         
         !! remove biomass and organics from plant pools
         !! update remaining plant organic pools

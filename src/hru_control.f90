@@ -8,11 +8,12 @@
          tillage_days, ndeat, qdr, phubase, sedyld, surfq, grz_days,                              &
          yr_skip, latq, sepbtm, igrz, iseptic, i_sep, filterw, sed_con, soln_con, solp_con,       & 
          orgn_con, orgp_con, cnday, percn, tileno3, sedorgn, sedorgp, surqno3, latno3,            &
-         surqsolp, sedminpa, sedminps, fertn, fertp, fixn, grazn, grazp, ipl, qp_cms, qtile,      &
-         snofall, snomlt, usle, canev, ep_day, es_day, etday, inflpcp, isep, iwgen, ls_overq,     &
-         nd_30, pet_day, precip_eff, qday, latqrunon, gwsoilq, satexq, surf_bs, bss, bss_ex, brt, &
-         gwsoiln, gwsoilp, satexn, satexq_chan, surqsalt, latqsalt, tilesalt, percsalt, urbqsalt, & !rtb gwflow; rtb salt
-         wetqsalt, wtspsalt,gwupsalt,                                                             &
+         surqsolp, sedminpa, sedminps, fertn, fertp, fixn, grazn, grazp, manuren, manurep,        &
+         grazn_eat, grazp_eat, ipl, qp_cms, qtile, snofall, snomlt, usle, canev, ep_day, es_day,  & 
+         etday, inflpcp, isep, iwgen, nd_30, pet_day, precip_eff, qday, latqrunon, gwsoilq,       &
+         satexq, surf_bs, bss, bss_ex, brt, ls_overq, gwsoiln, gwsoilp, satexn, satexq_chan,      &
+         surqsalt, latqsalt, tilesalt, percsalt, & !rtb gwflow; rtb salt
+         urbqsalt, wetqsalt, wtspsalt,gwupsalt,                                                   &
          surqcs, latqcs, tilecs, perccs, gwupcs, sedmcs, urbqcs, wetqcs, wtspcs                         !rtb cs
                                                                                                                                         !HAK 7/27/22
       use soil_module 
@@ -722,6 +723,10 @@
         hnb_d(j)%grazp = grazp
         hnb_d(j)%fertn = fertn
         hnb_d(j)%fertp = fertp
+        hnb_d(j)%manuren = manuren
+        hnb_d(j)%manurep = manurep
+        hnb_d(j)%grazn_eat = grazn_eat
+        hnb_d(j)%grazp_eat = grazp_eat
         hnb_d(j)%fixn = fixn
         hnb_d(j)%gwsoiln = gwsoiln(j) !rtb gwflow
         hnb_d(j)%gwsoilp = gwsoilp(j) !rtb gwflow

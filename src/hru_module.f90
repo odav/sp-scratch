@@ -286,10 +286,10 @@
       real :: snomlt, snofall, fixn, qtile
       real :: latlyr                 !!mm            |lateral flow in soil layer for the day
       real :: inflpcp                !!mm            |amount of precipitation that infiltrates
-      real :: fertn, sepday, bioday
+      real :: fertn, sepday, bioday, manuren, grazn_eat
       real :: sepcrk, sepcrktot, fertno3, fertnh3, fertorgn, fertsolp
       real :: fertorgp
-      real :: fertp, grazn, grazp, sdti
+      real :: fertp, grazn, grazp, sdti, manurep, grazp_eat
       real :: voltot                 !!mm            |total volumne of cracks expressed as depth per area unit
       real :: volcrmin               !!mm            |minimum crack volume allowed in any soil layer
       real :: canev, usle, rcn
