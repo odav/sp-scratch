@@ -83,8 +83,8 @@
         real :: grazp = 0.              !kg P/ha        |total phophorous added to soil from grazing
         real :: lab_min_p = 0.          !kg P/ha        |phosphoros moving from the labile mineral pool to the active mineral pool
         real :: act_sta_p = 0.          !kg P/ha        |phosphorus moving from the active mineral pool to the stable mineral pool
-        real :: fertn = 0.              !kg N/ha        |total nitrogen applied to soil
-        real :: fertp = 0.              !kg P/ha        |total phosphorus applied to soil
+        real :: fertn = 0.              !kg N/ha        |commercial nitrogen applied to soil
+        real :: fertp = 0.              !kg P/ha        |commercial phosphorus applied to soil
         real :: fixn = 0.               !kg N/ha        |nitrogen added to plant biomass via fixation
         real :: denit = 0.              !kg N/ha        |nitrogen lost from nitrate pool by denitrification
         real :: act_nit_n = 0.          !kg N/ha        |nitrogen moving from active organic pool to nitrate pool
@@ -100,6 +100,10 @@
         real :: puptake = 0.            !kg N/ha        |plant phosphorus uptake
         real :: gwsoiln = 0.            !kg N/ha        |nitrate added to the soil from the aquifer (rtb gwflow)
         real :: gwsoilp = 0.            !kg P/ha        |Phos added to the soil from the aquifer (rtb gwflow)
+        real :: manuren = 0.            !kg N/ha        |amount of nitrogen applied to soil from manure
+        real :: manurep = 0.            !kg P/ha        |amount of phosphrus applied to soil from manure
+        real :: grazn_eat = 0.          !kg N/ha        |amount of nitrogen ate by animals in grazing
+        real :: grazp_eat = 0.          !kg P/ha        |amount of phosphrus ate by animals in grazing
       end type output_nutbal
 
       type (output_nutbal), dimension (:), allocatable :: hnb_d
@@ -413,12 +417,16 @@
          character(len=17) :: org_lab_p     =    "     org_lab_p   "
          character(len=17) :: rsd_nitorg_n  =    "     rsd_nitorg_n"      
          character(len=17) :: rsd_laborg_p  =    "     rsd_laborg_p"        
-         character(len=17) :: no3atmo =    "    no3atmo       " 
-         character(len=17) :: nh4atmo =    "    nh4atmo       "
-         character(len=17) :: nuptake =    "    nuptake       " 
-         character(len=17) :: puptake =    "    puptake       "		 
-         character(len=17) :: gwsoiln =    "    gwsoiln       "
-         character(len=17) :: gwsoilp =    "    gwsoilp       "
+         character(len=17) :: no3atmo       =    "    no3atmo       " 
+         character(len=17) :: nh4atmo       =    "    nh4atmo       "
+         character(len=17) :: nuptake       =    "    nuptake       " 
+         character(len=17) :: puptake       =    "    puptake       "		 
+         character(len=17) :: gwsoiln       =    "    gwsoiln       "
+         character(len=17) :: gwsoilp       =    "    gwsoilp       "
+         character (len=17)  :: manuren     =    "    manuren       "
+         character (len=17)  :: manurep     =    "    manurep       "
+         character (len=17)  :: grazn_eat   =    "    grazn_eat     "
+         character (len=17)  :: grazp_eat   =    "    grazp_eat     "
       end type output_nutbal_header         
       type (output_nutbal_header) :: nb_hdr
       
@@ -449,6 +457,10 @@
          character(len=17) :: puptake       =    "      kgha       "  
          character(len=17) :: gwsoiln       =    "      kgha       "
          character(len=17) :: gwsoilp       =    "      kgha       "
+         character (len=17)  :: manuren     =    "      kgha       "
+         character (len=17)  :: manurep     =    "      kgha       "
+         character (len=17)  :: grazn_eat   =    "      kgha       "
+         character (len=17)  :: grazp_eat   =    "      kgha       "        
       end type output_nutbal_header_units         
       type (output_nutbal_header_units) :: nb_hdr_units
       
@@ -1217,6 +1229,10 @@
         hru3%puptake = hru1%puptake + hru2%puptake
         hru3%gwsoiln = hru1%gwsoiln + hru2%gwsoiln
         hru3%gwsoilp = hru1%gwsoilp + hru2%gwsoilp
+        hru3%manuren = hru1%manuren + hru2%manuren
+        hru3%manurep = hru1%manurep + hru2%manurep
+        hru3%grazn_eat = hru1%grazn_eat + hru2%grazn_eat
+        hru3%grazp_eat = hru1%grazp_eat + hru2%grazp_eat
       end function hruout_nutbal_add
 
       function hruout_losses_add (hru1, hru2) result (hru3)
@@ -1570,6 +1586,10 @@
         hru2%puptake = hru1%puptake / const
         hru2%gwsoiln = hru1%gwsoiln / const
         hru2%gwsoilp = hru1%gwsoilp / const
+        hru2%manuren = hru1%manuren / const
+        hru2%manurep = hru1%manurep / const
+        hru2%grazn_eat = hru1%grazn_eat / const
+        hru2%grazp_eat = hru1%grazp_eat / const
       end function hruout_nutbal_div
             
       function hruout_nutbal_mult (hru1,const) result (hru2)
@@ -1595,6 +1615,10 @@
         hru2%puptake = hru1%puptake * const
         hru2%gwsoiln = hru1%gwsoiln * const
         hru2%gwsoilp = hru1%gwsoilp * const
+        hru2%manuren = hru1%manuren * const
+        hru2%manurep = hru1%manurep * const
+        hru2%grazn_eat = hru1%grazn_eat * const
+        hru2%grazp_eat = hru1%grazp_eat * const
       end function hruout_nutbal_mult
       
       function hruout_losses_div (hru1,const) result (hru2)
