@@ -1,5 +1,5 @@
 name: Build SWAT+
-on: [push, pull_request]
+on: [push.1, pull_request]
 jobs:
   build:
     name: Build
