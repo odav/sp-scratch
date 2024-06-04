@@ -17,12 +17,12 @@ jobs:
     - name: Install Intel Compiler
       if: ${{ matrix.FC == 'ifort' }}
       run: |
-        wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
-        sudo apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
-        rm GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
-        sudo echo "deb https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/sources.list.d/oneAPI.list
-        sudo apt-get update
-        sudo apt-get install -y intel-oneapi-compiler-fortran
+        #wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+        #sudo apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+        #rm GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+        #sudo echo "deb https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/#sources.list.d/oneAPI.list
+        #sudo apt-get update
+        #sudo apt-get install -y intel-oneapi-compiler-fortran
         git --version
         cmake -version
 
@@ -30,16 +30,18 @@ jobs:
     - name: Build SWAT+ with Intel
       if: ${{ matrix.FC == 'ifort' }}
       run: |
-        source /opt/intel/oneapi/setvars.sh
-        cmake -B build -D CMAKE_Fortran_COMPILER=ifx
+        #source /opt/intel/oneapi/setvars.sh
+        #cmake -B build -D CMAKE_Fortran_COMPILER=ifx
         git describe --tags > rel.txt
         cat rel.txt
         #cmake --build build
 
-    - uses: "marvinpinto/action-automatic-releases@latest"
-      with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        title: "Dev B"
-        files: |
-          rel.*
+    - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          name: "swattplus-?"
+          files: rel.*
+
+
+
