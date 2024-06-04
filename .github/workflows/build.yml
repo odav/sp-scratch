@@ -26,5 +26,8 @@ jobs:
       if: ${{ matrix.FC == 'ifort' }}
       run: |
         source /opt/intel/oneapi/setvars.sh
+        git describe --tags
+        ls -l
+        uname -a
         cmake -B build -D CMAKE_Fortran_COMPILER=ifort  
         #cmake --build build
