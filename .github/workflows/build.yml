@@ -37,11 +37,11 @@ jobs:
         #cmake --build build
 
     - name: Release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          name: "swattplus-?"
-          files: rel.*
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        name: "swattplus-?"
+        files: rel.*
 
 
 
