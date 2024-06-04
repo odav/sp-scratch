@@ -1,5 +1,6 @@
 name: Build SWAT+
-on: [push.1, pull_request]
+on: [push, pull_request]
+
 jobs:
   build:
     name: Build
@@ -25,9 +26,18 @@ jobs:
         git --version
         cmake -version
 
+
     - name: Build SWAT+ with Intel
       if: ${{ matrix.FC == 'ifort' }}
       run: |
         source /opt/intel/oneapi/setvars.sh
         cmake -B build -D CMAKE_Fortran_COMPILER=ifx
+        git describe --tags > rel.txt
         #cmake --build build
+
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with: repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      automatic_release_tag: "latest"
+      title: "Dev B"
+      files: |
+        rel.*
