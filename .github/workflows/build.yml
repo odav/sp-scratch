@@ -9,6 +9,9 @@ jobs:
         FC: ["ifort"]
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-tags: true
+        fetch-depth: 0
 
     - name: Install Intel Compiler
       if: ${{ matrix.FC == 'ifort' }}
@@ -28,8 +31,7 @@ jobs:
         #source /opt/intel/oneapi/setvars.sh
         ls -l
         uname -a
-        git fetch --tags
-        git describe --always
+        git describe --tags
         git rev-parse --short HEAD
         #cmake -B build -D CMAKE_Fortran_COMPILER=ifort
         #cmake --build build
