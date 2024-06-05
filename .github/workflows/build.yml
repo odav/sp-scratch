@@ -50,7 +50,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       #if: startsWith(github.ref, 'refs/tags/')
       with:
-        token: ${{ secrets.GH_OWNER_TOKEN }}
+        token: ${{ github.token }}
         tag_name: 70.1
         prerelease: false
         draft: false
