@@ -47,6 +47,13 @@ jobs:
         cat rel.txt
         #cmake --build build
 
+    - name: upload
+      uses: actions/upload-artifact@v2
+      with:
+        name: sp
+        path: rel.txt
+
+
   deploy:
     name: Release
     runs-on: ubuntu-latest
@@ -54,8 +61,13 @@ jobs:
       - build
 
     steps:
+    - name: download
+      uses: actions/download-artifact@v2
+      with:
+        name: sp
+
     - name: Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       #if: startsWith(github.ref, 'refs/tags/')
       with:
         token: ${{ github.token }}
