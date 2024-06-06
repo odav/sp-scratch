@@ -58,7 +58,8 @@ jobs:
           #"C:\Program Files (x86)\Intel\oneAPI\setvars.bat"
           #ifx
           #cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
-          cmake -B build -D CMAKE_GENERATOR_TOOLSET=fortran=ifx -DCMAKE_Fortran_COMPILER=ifx
+          where ifx
+          # cmake -B build -D CMAKE_GENERATOR_TOOLSET=fortran=ifx -DCMAKE_Fortran_COMPILER=ifx
 
 #   build:
 #     name: Build
