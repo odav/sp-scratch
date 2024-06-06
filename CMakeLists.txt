@@ -139,6 +139,8 @@ add_test(Ames_sub1   ${Python3_EXECUTABLE}  ${check_py} ${exe_path} ${ref_dir}/A
 #############################################################################
 # Summary
 message( "-- Verbose Makefile   ${CMAKE_VERBOSE_MAKEFILE}")
+message( "-- Generator          ${CMAKE_GENERATOR_TOOLSET}")
+message( "-- VS Platform        ${CMAKE_VS_PLATFORM_TOOLSET}")
 message( "-- Compiler           ${CMAKE_Fortran_COMPILER} (${CMAKE_Fortran_COMPILER_ID} ${CMAKE_Fortran_COMPILER_VERSION})")
 message( "-- FFLAGS            ${CMAKE_Fortran_FLAGS}")
 message( "--  RELEASE           ${CMAKE_Fortran_FLAGS_RELEASE}")
