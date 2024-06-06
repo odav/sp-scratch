@@ -14,23 +14,34 @@ include(CTest)
 
 find_package(Git REQUIRED)
 
-execute_process(
-  COMMAND ${GIT_EXECUTABLE} describe --tags
-  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-  OUTPUT_VARIABLE TAG
-  OUTPUT_STRIP_TRAILING_WHITESPACE
-)
-
 if(TAG STREQUAL "")
-  # message(FATAL_ERROR "No tag info found.")
-  # this happens when git it not installed or not in the path
-  set(TAG "unknown")
+    execute_process(
+      COMMAND ${GIT_EXECUTABLE} describe --tags
+      WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+      OUTPUT_VARIABLE TAG
+      OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+
+    if(TAG STREQUAL "")
+    # message(FATAL_ERROR "No tag info found.")
+    # this happens when git is not installed or not in the path
+      set(TAG "unknown")
+    endif()
 endif()
 
+if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    set(SWAT_OS "lin")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    set(SWAT_OS "win")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+    set(SWAT_OS "mac")
+else()
+    set(SWAT_OS "unknown")
+endif ()
 
 # SWAT Version number
-SET(SWAT_VERSION ${TAG})
-set(SWATPLUS_EXE "swatplus-${SWAT_VERSION}")
+set(SWAT_VERSION ${TAG})
+set(SWATPLUS_EXE "swatplus-${SWAT_OS}-${SWAT_VERSION}")
 
 # Enable this to 'TRUE' to see the fortran command on compile
 # set(CMAKE_VERBOSE_MAKEFILE FALSE)

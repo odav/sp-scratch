@@ -37,15 +37,22 @@ jobs:
         #     toolchain: {compiler: nvidia-hpc, version: '23.11'}
 
     steps:
-      - uses: fortran-lang/setup-fortran@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          fetch-depth: 0
+
+      - name: Install Compiler
+        uses: fortran-lang/setup-fortran@v1
         id: setup-fortran
         with:
           compiler: ${{ matrix.toolchain.compiler }}
           version: ${{ matrix.toolchain.version }}
 
-      - run: |
+      - name: Build
+        run: |
           echo ${{ env.FC }}
-          echo ${{ steps.setup-fortran.outputs.fc }}
           cmake --version
           cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
 
