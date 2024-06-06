@@ -1,3 +1,5 @@
+# SWAT+ CI for GH, O. David, 2024
+
 name: CI SWAT+
 
 on:
@@ -21,7 +23,7 @@ jobs:
         toolchain:
           # - {compiler: gcc, version: 13}
           - {compiler: intel, version: '2024.1'}
-          - {compiler: intel-classic, version: '2024.1'}
+          # - {compiler: intel-classic, version: '2024.1'}
           # - {compiler: nvidia-hpc, version: '23.11'}
         # include:
         #   - os: ubuntu-latest
@@ -45,7 +47,7 @@ jobs:
           echo ${{ env.FC }}
           echo ${{ steps.setup-fortran.outputs.fc }}
           cmake --version
-
+          cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
 
 #   build:
 #     name: Build
