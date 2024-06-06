@@ -19,23 +19,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        # os: [windows-latest]
+        # os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [macos-latest]
         toolchain:
-          # - {compiler: gcc, version: 13}
           - {compiler: intel, version: '2024.1'}
-          # - {compiler: intel-classic, version: '2024.1'}
-          # - {compiler: nvidia-hpc, version: '23.11'}
-        # include:
-        #   - os: ubuntu-latest
-        #     toolchain: {compiler: gcc, version: 12}
-        # exclude:
-        #   - os: macos-latest
-        #     toolchain: {compiler: intel, version: '2023.2'}
-        #   - os: macos-latest
-        #     toolchain: {compiler: nvidia-hpc, version: '23.11'}
-        #   - os: windows-latest
-        #     toolchain: {compiler: nvidia-hpc, version: '23.11'}
+          - {compiler: intel-classic, version: '2021.9'}
+        exclude:
+          - os: macos-latest
+            toolchain: {compiler: intel, version: '2024.1'}
+          # - os: windows-latest
+          #   toolchain: {compiler: intel-classic, version: '2021.9'}
+          # - os: ubuntu-latest
+          #   toolchain: {compiler: intel-classic, version: '2021.9'}
 
     steps:
       - name: Checkout
@@ -59,18 +54,13 @@ jobs:
             cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           elif [ "$RUNNER_OS" == "Windows" ]; then
             cmake -B build -G "MinGW Makefiles" -DCMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe"
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           else
             echo "$RUNNER_OS not supported"
             exit 1
           fi
         shell: bash
-
-      # - name: Build Ubuntu
-      #   if: "contains(${{ matrix.os }}, 'ubuntu')"
-      #   run: |
-      #     echo ${{ env.FC }}
-      #     cmake --version
-      #     cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
 
 #   build:
 #     name: Build
