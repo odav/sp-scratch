@@ -14,7 +14,7 @@ permissions:
 
 jobs:
 
-  test:
+  build:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -51,19 +51,25 @@ jobs:
           compiler: ${{ matrix.toolchain.compiler }}
           version: ${{ matrix.toolchain.version }}
 
-      - name: Build Windows
-        if: "contains(${{ matrix.os }}, 'windows')"
+      - name: Build
         run: |
           echo ${{ env.FC }}
           cmake --version
-          cmake -B build -G "MinGW Makefiles" -DCMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe"
+          if [ "$RUNNER_OS" == "Linux" ]; then
+            cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
+          elif [ "$RUNNER_OS" == "Windows" ]; then
+            cmake -B build -G "MinGW Makefiles" -DCMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe"
+          else
+              echo "$RUNNER_OS not supported"
+              exit 1
+          fi
 
-      - name: Build Ubuntu
-        if: "contains(${{ matrix.os }}, 'ubuntu')"
-        run: |
-          echo ${{ env.FC }}
-          cmake --version
-          cmake -B build -DCMAKE_Fortran_COMPILER=${{ env.FC }}
+      # - name: Build Ubuntu
+      #   if: "contains(${{ matrix.os }}, 'ubuntu')"
+      #   run: |
+      #     echo ${{ env.FC }}
+      #     cmake --version
+      #     cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
 
 #   build:
 #     name: Build
