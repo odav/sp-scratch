@@ -59,6 +59,9 @@ jobs:
           #ifx
           #cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           where ifx
+          dir
+          ifx
+          dir "C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin"
           # cmake -B build -D CMAKE_GENERATOR_TOOLSET=fortran=ifx -DCMAKE_Fortran_COMPILER=ifx
 
 #   build:
