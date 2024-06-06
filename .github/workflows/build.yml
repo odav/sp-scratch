@@ -63,6 +63,7 @@ jobs:
             echo "$RUNNER_OS not supported"
             exit 1
           fi
+        shell: bash
 
       # - name: Build Ubuntu
       #   if: "contains(${{ matrix.os }}, 'ubuntu')"
