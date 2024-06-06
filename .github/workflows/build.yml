@@ -56,8 +56,8 @@ jobs:
           echo ${{ env.FC }}
           cmake --version
           "C:\Program Files (x86)\Intel\oneAPI\setvars.bat"
-          ifx
-          #cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
+          #ifx
+          cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
 
 #   build:
 #     name: Build
