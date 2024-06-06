@@ -59,7 +59,7 @@ jobs:
           #ifx
           #cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           #dir "C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin"
-          cmake -B build -G "MinGW Makefiles" -DCMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe
+          cmake -B build -G "MinGW Makefiles" -DCMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe"
 
 #   build:
 #     name: Build
