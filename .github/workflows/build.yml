@@ -45,7 +45,7 @@ jobs:
           compiler: ${{ matrix.toolchain.compiler }}
           version: ${{ matrix.toolchain.version }}
 
-      - name: Build
+      - name: Build SWAT+
         run: |
           echo ${{ env.FC }}
           cmake --version
@@ -59,6 +59,8 @@ jobs:
             echo "$RUNNER_OS not supported"
             exit 1
           fi
+          cmake --build build
+          ls build/swatplus-*
         shell: bash
 
 #   build:
