@@ -125,7 +125,6 @@ jobs:
         run: |
           echo ${{ env.FC }}
           cmake --version
-          exe=`ls build/swatplus-*`
 
           RELEASE_VERSION=${GITHUB_REF#refs/*/}
           os="$RUNNER_OS"
@@ -133,15 +132,12 @@ jobs:
           if [ "$RUNNER_OS" == "Linux" ]; then
             cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }} -D TAG=$RELEASE_VERSION
             exe=`ls build/swatplus-*`
-
           elif [ "$RUNNER_OS" == "Windows" ]; then
             cmake -B build -G "MinGW Makefiles" -D CMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe" -D TAG=$RELEASE_VERSION
             exe=`ls build/swatplus-*.exe`
-
           elif [ "$RUNNER_OS" == "macOS" ]; then
             cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }} -D TAG=$RELEASE_VERSION
             exe=`ls build/swatplus-*`
-
           else
             echo "$RUNNER_OS not supported."
             exit 1
