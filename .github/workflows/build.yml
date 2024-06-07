@@ -78,7 +78,7 @@ jobs:
         prerelease: false
         draft: false
         name:  ${{ github.event.release.tag_name }}
-        files: build/swatplus-*
+        files: swatplus-*
         generate_release_notes: true
         body: |
             <details>
