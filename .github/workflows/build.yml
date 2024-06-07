@@ -77,7 +77,7 @@ jobs:
           echo "exe=$exe" >> $GITHUB_OUTPUT
           echo "os=$os" >> $GITHUB_OUTPUT
 
-          ls -hl build/swatplus-???-*
+          ls -hl build/swatplus-*
         shell: bash
 
       - name: upload
