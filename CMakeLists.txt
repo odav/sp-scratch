@@ -14,7 +14,7 @@ include(CTest)
 
 find_package(Git REQUIRED)
 
-if(TAG STREQUAL "")
+if(NOT TAG)
     execute_process(
       COMMAND ${GIT_EXECUTABLE} describe --tags
       WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}

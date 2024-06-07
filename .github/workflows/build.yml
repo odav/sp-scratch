@@ -52,15 +52,15 @@ jobs:
           if [ "$RUNNER_OS" == "Linux" ]; then
             cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           elif [ "$RUNNER_OS" == "Windows" ]; then
-            cmake -B build -G "MinGW Makefiles" -DCMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe"
+            cmake -B build -G "MinGW Makefiles" -D CMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\ifx.exe"
           elif [ "$RUNNER_OS" == "macOS" ]; then
             cmake -B build -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           else
-            echo "$RUNNER_OS not supported"
+            echo "$RUNNER_OS not supported."
             exit 1
           fi
           cmake --build build
-          ls build/swatplus-*
+          ls -hl build/swatplus-*
         shell: bash
 
 #   build:
