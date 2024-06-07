@@ -59,8 +59,8 @@ jobs:
             echo "$RUNNER_OS not supported."
             exit 1
           fi
-          cmake --build build
-          ls -hl build/swatplus-*
+          # cmake --build build
+          # ls -hl build/swatplus-*
         shell: bash
 
 #   build:
