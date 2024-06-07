@@ -73,7 +73,7 @@ jobs:
         prerelease: false
         draft: false
         name: "swattplus-v"
-        files: build/swatplus-*
+        files: swatplus-*
         generate_release_notes: true
         body: |
             <details>
