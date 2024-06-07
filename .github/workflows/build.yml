@@ -42,8 +42,10 @@ jobs:
           echo "abc" > swatplus-win-70.2-24-g586e97a.exe
           exe=`ls swatplus-???-*-g*.exe`
           ops="$RUNNER_OS"
+          echo $exe
+          echo $ops
 
-        shell: bash
+        # shell: bash
 
       - name: upload
         uses: actions/upload-artifact@v2
