@@ -38,8 +38,9 @@ jobs:
         id: build_exe
         run: |
           echo ${{ env.FC }}
-          echo "abc" > swatplus-win-70.2-24-g586e97a.exe
-          exe=`ls swatplus-???-*-g*.exe`
+          mkdir build
+          echo "abc" > build/swatplus-win-70.2-24-g586e97a.exe
+          exe=`ls build/swatplus-???-*-g*.exe`
           ops="$RUNNER_OS"
           echo "exe=$exe" >> $GITHUB_OUTPUT
           echo "ops=$ops" >> $GITHUB_OUTPUT
@@ -72,8 +73,8 @@ jobs:
         tag_name: 70.3
         prerelease: false
         draft: false
-        name: "swattplus-v"
-        files: swatplus-*
+        name: "swattplus-v1"
+        files: build/swatplus-*
         generate_release_notes: true
         body: |
             <details>
