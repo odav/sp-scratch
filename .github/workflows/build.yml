@@ -38,21 +38,19 @@ jobs:
         id: build_exe
         run: |
           echo ${{ env.FC }}
-
           echo "abc" > swatplus-win-70.2-24-g586e97a.exe
           exe=`ls swatplus-???-*-g*.exe`
           ops="$RUNNER_OS"
-          echo $exe
-          echo $ops
+          echo "exe=$exe" >> $GITHUB_OUTPUT
+          echo "ops=$ops" >> $GITHUB_OUTPUT
 
-        # shell: bash
+        shell: bash
 
       - name: upload
         uses: actions/upload-artifact@v2
         with:
           name: sp-${{ steps.build_exe.outputs.ops }}
           path: ${{ steps.build_exe.outputs.exe }}
-
 
 # Release
   release:
