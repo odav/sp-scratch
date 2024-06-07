@@ -12,9 +12,8 @@ project(swatplus VERSION 0.2 LANGUAGES Fortran)
 
 include(CTest)
 
-find_package(Git REQUIRED)
-
 if(NOT TAG)
+    find_package(Git REQUIRED)
     execute_process(
       COMMAND ${GIT_EXECUTABLE} describe --tags
       WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
@@ -30,18 +29,18 @@ if(NOT TAG)
 endif()
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    set(SWAT_OS "lin")
+    set(SWAT_OS "lin-${CMAKE_HOST_SYSTEM_PROCESSOR}")
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
-    set(SWAT_OS "win")
+    set(SWAT_OS "win-${CMAKE_HOST_SYSTEM_PROCESSOR}")
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
-    set(SWAT_OS "mac")
+    set(SWAT_OS "mac-${CMAKE_HOST_SYSTEM_PROCESSOR}")
 else()
     set(SWAT_OS "unknown")
 endif ()
 
 # SWAT Version number
 set(SWAT_VERSION ${TAG})
-set(SWATPLUS_EXE "swatplus-${SWAT_OS}-${SWAT_VERSION}")
+set(SWATPLUS_EXE "swatplus-${SWAT_VERSION}-${SWAT_OS}")
 
 # Enable this to 'TRUE' to see the fortran command on compile
 # set(CMAKE_VERBOSE_MAKEFILE FALSE)
