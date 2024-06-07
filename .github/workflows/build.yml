@@ -41,7 +41,7 @@ jobs:
 
           mkdir build
           touch build/swatplus-win-70.2-24-g586e97a.exe
-
+          echo "abc" > build/swatplus-win-70.2-24-g586e97a.exe
           exe=`ls build/swatplus-???-*-g*.exe`
           ops="$RUNNER_OS"
 
