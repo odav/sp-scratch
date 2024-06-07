@@ -39,8 +39,8 @@ jobs:
         run: |
           echo ${{ env.FC }}
           mkdir build
-          echo "abc" > build/swatplus-win-${{ github.ref_name }}.exe
-          exe=`ls build/swatplus-???-*-g*.exe`
+          echo "abc" > build/swatplus-win-${{ github.event.release.tag_name }}.exe
+          exe=`ls build/swatplus-*.exe`
           ops="$RUNNER_OS"
           echo "exe=$exe" >> $GITHUB_OUTPUT
           echo "ops=$ops" >> $GITHUB_OUTPUT
@@ -70,10 +70,10 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         token: ${{ github.token }}
-        tag_name:  ${{ github.ref_name }}
+        tag_name:  ${{ github.event.release.tag_name }}
         prerelease: false
         draft: false
-        name:  ${{ github.ref_name }}
+        name:  ${{ github.event.release.tag_name }}
         files: build/swatplus-*
         generate_release_notes: true
         body: |
