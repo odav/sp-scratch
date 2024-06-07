@@ -35,6 +35,7 @@ jobs:
           fetch-depth: 0
 
       - name: Build SWAT+
+        id: build_exe
         run: |
           echo ${{ env.FC }}
 
@@ -49,8 +50,8 @@ jobs:
       - name: upload
         uses: actions/upload-artifact@v2
         with:
-          name: sp-${{ ops }}
-          path: ${{ exe }}
+          name: sp-${{ steps.build_exe.outputs.ops }}
+          path: ${{ steps.build_exe.outputs.exe }}
 
 
 # Release
