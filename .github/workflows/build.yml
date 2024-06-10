@@ -16,21 +16,22 @@ jobs:
 
   build:
     runs-on: ${{ matrix.os }}
-    # if: github.ref == 'refs/heads/master'
+    if: endsWith(github.event.base_ref, 'main') == true
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        # os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [macos-latest]
         toolchain:
           - {compiler: intel, version: '2024.1'}
           - {compiler: intel-classic, version: '2021.9'}
         exclude:
           - os: macos-latest
             toolchain: {compiler: intel, version: '2024.1'}
-          - os: windows-latest
-            toolchain: {compiler: intel-classic, version: '2021.9'}
-          - os: ubuntu-latest
-            toolchain: {compiler: intel-classic, version: '2021.9'}
+          # - os: windows-latest
+          #   toolchain: {compiler: intel-classic, version: '2021.9'}
+          # - os: ubuntu-latest
+          #   toolchain: {compiler: intel-classic, version: '2021.9'}
 
     steps:
       - name: Checkout
@@ -63,13 +64,13 @@ jobs:
           elif [ "$RUNNER_OS" == "Windows" ]; then
             cmake -B build -G "MinGW Makefiles" \
               -D CMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\${{ env.FC }}.exe" \
-              -D TAG=$RELEASE_VERSION \
-              -D CMAKE_APPLE_SILICON_PROCESSOR="x86_64"
+              -D TAG=$RELEASE_VERSION
             e="build/swatplus-*.exe"
           elif [ "$RUNNER_OS" == "macOS" ]; then
             cmake -B build \
               -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
-              -D TAG=$RELEASE_VERSION
+              -D TAG=$RELEASE_VERSION \
+              -D CMAKE_APPLE_SILICON_PROCESSOR="x86_64"
             e="build/swatplus-*"
           else
             echo "$RUNNER_OS not supported."
@@ -123,7 +124,7 @@ jobs:
         token: ${{ github.token }}
         tag_name:  ${{ github.event.release.tag_name }}
         prerelease: false
-        draft: true
+        draft: false
         name:  ${{ github.event.release.tag_name }}
         files: swatplus-*
         generate_release_notes: true
