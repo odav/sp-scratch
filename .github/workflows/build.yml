@@ -6,6 +6,8 @@ on:
   push:
     tags:
       - '*'
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -16,7 +18,7 @@ jobs:
 
   build:
     runs-on: ${{ matrix.os }}
-    if: github.ref == 'refs/heads/master'
+    # if: github.ref == 'refs/heads/master'
     strategy:
       fail-fast: false
       matrix:
