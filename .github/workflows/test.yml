@@ -80,6 +80,11 @@ jobs:
         run: |
           cd build
           ctest
+        shell: bash
+
+      - name: Tests Results
+        if: always()
+        run: |
           echo "Test Log:"
           cat build/Testing/Temporary/LastTest.log
         shell: bash
