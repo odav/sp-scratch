@@ -13,7 +13,7 @@ jobs:
 
   build:
     runs-on: ${{ matrix.os }}
-    if: endsWith(github.event.base_ref, 'main') == true
+    if: endsWith(github.ref_name, 'main') == true
     strategy:
       fail-fast: false
       matrix:
