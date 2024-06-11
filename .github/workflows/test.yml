@@ -2,10 +2,7 @@
 
 name: Build/Test SWAT+
 
-on:
-  push:
-    tags:
-      - '*'
+on: [push, pull_request]
 
 permissions:
   contents: write
@@ -50,7 +47,7 @@ jobs:
           echo ${{ env.FC }}
           cmake --version
 
-          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          RELEASE_VERSION="latest"
           os="$RUNNER_OS"
 
           if [ "$RUNNER_OS" == "Linux" ]; then
@@ -79,7 +76,6 @@ jobs:
         shell: bash
 
       - name: Run Tests
-        id: test_exe
         run: |
           cd build
           ctest
