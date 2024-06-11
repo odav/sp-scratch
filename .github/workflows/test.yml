@@ -33,6 +33,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          fetch-depth: 0
 
       - name: Install Compiler
         uses: fortran-lang/setup-fortran@v1
@@ -52,16 +55,13 @@ jobs:
 
           if [ "$RUNNER_OS" == "Linux" ]; then
             cmake -B build \
-              -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
-              -D TAG=$RELEASE_VERSION
+              -D CMAKE_Fortran_COMPILER=${{ env.FC }}
           elif [ "$RUNNER_OS" == "Windows" ]; then
             cmake -B build -G "MinGW Makefiles" \
-              -D CMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\${{ env.FC }}.exe" \
-              -D TAG=$RELEASE_VERSION
+              -D CMAKE_Fortran_COMPILER="C:\Program Files (x86)\Intel\oneAPI\compiler\2024.1\bin\${{ env.FC }}.exe"
           elif [ "$RUNNER_OS" == "macOS" ]; then
             cmake -B build \
               -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
-              -D TAG=$RELEASE_VERSION \
               -D CMAKE_APPLE_SILICON_PROCESSOR="x86_64"
           else
             echo "$RUNNER_OS not supported."
@@ -71,6 +71,7 @@ jobs:
           # compile
           cmake --build build
 
+          # check
           ls -hl build/swatplus-*
           file build/swatplus-*
         shell: bash
@@ -79,5 +80,7 @@ jobs:
         run: |
           cd build
           ctest
+          echo "Test Log:"
+          cat build/Testing/Temporary/LastTest.log
         shell: bash
 
