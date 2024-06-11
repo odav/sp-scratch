@@ -1,6 +1,6 @@
 # SWAT+ CI for GH, O. David, 2024
 
-name: CI SWAT+
+name: Build/Release SWAT+
 
 on:
   push:
