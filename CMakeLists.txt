@@ -100,7 +100,8 @@ set(CMAKE_Fortran_FLAGS_RELEASE "${frelease}")
 
 if(EXISTS "${PROJECT_SOURCE_DIR}/src/main.f90.in")
     string(TIMESTAMP ISO   "%Y-%m-%d %H:%M:%S")
-    string(TIMESTAMP TODAY "%b %d %Y")  # e.g. produces Dec 7 2023
+    # string(TIMESTAMP TODAY "%b %d %Y")  # e.g. produces Dec 7 2023
+    string(TIMESTAMP TODAY "%Y-%m-%d")  # e.g. produces 2023-12-07
     string(TIMESTAMP YEAR  "%Y")
 
     configure_file(
@@ -108,6 +109,14 @@ if(EXISTS "${PROJECT_SOURCE_DIR}/src/main.f90.in")
         "${PROJECT_SOURCE_DIR}/src/main.f90"
     )
 endif()
+
+if(EXISTS "${PROJECT_SOURCE_DIR}/spdoc.md.in")
+    configure_file(
+        "${PROJECT_SOURCE_DIR}/spdoc.md.in"
+        "${PROJECT_SOURCE_DIR}/spdoc.md"
+    )   
+endif()
+
 
 file(GLOB sources src/*.f90)
 add_executable(${SWATPLUS_EXE} ${sources})

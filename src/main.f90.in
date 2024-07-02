@@ -10,7 +10,7 @@
       integer :: date_time(8)           !              |
       character*10 b(3)                 !              |
     
-      prog = " SWAT+ @TODAY@        MODULAR Rev @YEAR@.@SWAT_VERSION@"
+      prog = " SWAT+ MODULAR Rev @SWAT_VERSION@ (@TODAY@)"
 
       write (*,1000)
       open (9003,file='simulation.out')

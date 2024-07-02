@@ -1,0 +1,45 @@
+
+name: Build/Test SWAT+
+  
+on: [push, pull_request]
+   
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
+
+jobs:
+  documentation:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install Dependencies Ubuntu
+      run: |
+        sudo apt-get update
+        sudo apt install -y python3-dev graphviz
+        sudo pip install ford markdown==3.3.4
+
+    - name: Build SWAT+  Documentation
+      run: |
+        RELEASE_VERSION=${GITHUB_REF#refs/*/}
+
+        cmake -b build -D TAG=${RELEASE_VERSION}
+        ford spdoc.md
+
+    - name: Upload Documentation
+      uses: actions/upload-artifact@v2
+      with:
+        name: documentation
+        path: build/doc
+        if-no-files-found: error
+
+    - name: Deploy SWAT+ Documentation
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      if: ${{ github.ref == 'refs/heads/main' }}
+      with:
+        branch: gh-pages
+        folder: build/doc 
