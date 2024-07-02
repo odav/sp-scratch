@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>pl_leaf_drop.f90 &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>pl_leaf_drop.f90
+    <small>Source File</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.2% of total for source files.">104 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/pl_leaf_drop.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li class="active">pl_leaf_drop.f90</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-0" class="panel-collapse collapse">
+      <a class="list-group-item" href="../proc/pl_leaf_drop.html">pl_leaf_drop</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/pl_leaf_drop.f90.html#src">pl_leaf_drop.f90</a>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    <div class="col-md-9" id='text'>
+      
+      <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">This file depends on</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: sourcefile~~pl_leaf_drop.f90~~EfferentGraph Pages: 1 -->
+<svg id="sourcefilepl_leaf_dropf90EfferentGraph" width="483pt" height="358pt"
+ viewBox="0.00 0.00 483.00 358.03" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 354.03)">
+<title>sourcefile~~pl_leaf_drop.f90~~EfferentGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-354.03 479,-354.03 479,4 -4,4"/>
+<!-- sourcefile~pl_leaf_drop.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node1" class="node">
+<title>sourcefile~pl_leaf_drop.f90</title>
+<polygon fill="none" stroke="black" points="475,-191.09 378,-191.09 378,-167.09 475,-167.09 475,-191.09"/>
+<text text-anchor="middle" x="426.5" y="-176.69" font-family="Helvetica,sans-Serif" font-size="10.50">pl_leaf_drop.f90</text>
+</g>
+<!-- sourcefile~basin_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node2" class="node">
+<title>sourcefile~basin_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node2"><a xlink:href=".././sourcefile/basin_module.f90.html" xlink:title="basin_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="107,-316.09 0,-316.09 0,-292.09 107,-292.09 107,-316.09"/>
+<text text-anchor="middle" x="53.5" y="-301.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">basin_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~basin_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge1" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~basin_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M422.97,-191.1C416.05,-220.51 393.75,-295.97 342,-326.09 262.86,-372.15 150.03,-341.16 92.06,-319.71"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="93.16,-316.38 82.57,-316.1 90.67,-322.93 93.16,-316.38"/>
+</g>
+<!-- sourcefile~climate_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node3" class="node">
+<title>sourcefile~climate_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node3"><a xlink:href=".././sourcefile/climate_module.f90.html" xlink:title="climate_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="301.5,-317.09 183.5,-317.09 183.5,-293.09 301.5,-293.09 301.5,-317.09"/>
+<text text-anchor="middle" x="242.5" y="-302.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">climate_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~climate_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge2" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~climate_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M419.4,-191.43C407.69,-213.75 379.82,-260.67 342,-284.09 332.72,-289.84 322.12,-294.03 311.38,-297.08"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="310.35,-293.73 301.52,-299.58 312.07,-300.52 310.35,-293.73"/>
+</g>
+<!-- sourcefile~time_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node4" class="node">
+<title>sourcefile~time_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node4"><a xlink:href=".././sourcefile/time_module.f90.html" xlink:title="time_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="105,-170.09 2,-170.09 2,-146.09 105,-146.09 105,-170.09"/>
+<text text-anchor="middle" x="53.5" y="-155.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">time_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~time_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge5" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~time_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M422.97,-167.09C416.05,-137.68 393.75,-62.21 342,-32.09 265.56,12.4 221.48,8.69 143,-32.09 100.78,-54.04 74.48,-106.39 62.38,-136.25"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="59.03,-135.19 58.69,-145.78 65.56,-137.72 59.03,-135.19"/>
+</g>
+<!-- sourcefile~organic_mineral_mass_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node5" class="node">
+<title>sourcefile~organic_mineral_mass_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node5"><a xlink:href=".././sourcefile/organic_mineral_mass_module.f90.html" xlink:title="organic_mineral_mass_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="342,-233.09 143,-233.09 143,-209.09 342,-209.09 342,-233.09"/>
+<text text-anchor="middle" x="242.5" y="-218.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">organic_mineral_mass_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~organic_mineral_mass_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge4" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~organic_mineral_mass_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M378.76,-191.17C366.8,-194.17 353.94,-197.32 342,-200.09 332.23,-202.36 321.89,-204.67 311.73,-206.88"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="310.69,-203.53 301.65,-209.06 312.17,-210.37 310.69,-203.53"/>
+</g>
+<!-- sourcefile~plant_data_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node6" class="node">
+<title>sourcefile~plant_data_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node6"><a xlink:href=".././sourcefile/plant_data_module.f90.html" xlink:title="plant_data_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="310,-191.09 175,-191.09 175,-167.09 310,-167.09 310,-191.09"/>
+<text text-anchor="middle" x="242.5" y="-176.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">plant_data_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~plant_data_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge3" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~plant_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M377.68,-179.09C360.1,-179.09 339.73,-179.09 320.24,-179.09"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="320.16,-175.59 310.16,-179.09 320.16,-182.59 320.16,-175.59"/>
+</g>
+<!-- sourcefile~hru_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node7" class="node">
+<title>sourcefile~hru_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node7"><a xlink:href=".././sourcefile/hru_module.f90.html" xlink:title="hru_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="291,-149.09 194,-149.09 194,-125.09 291,-125.09 291,-149.09"/>
+<text text-anchor="middle" x="242.5" y="-134.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~hru_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge6" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~hru_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M378.76,-167.02C366.8,-164.02 353.94,-160.87 342,-158.09 328.84,-155.04 314.64,-151.91 301.24,-149.04"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="301.68,-145.55 291.17,-146.89 300.22,-152.4 301.68,-145.55"/>
+</g>
+<!-- sourcefile~plant_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node8" class="node">
+<title>sourcefile~plant_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node8"><a xlink:href=".././sourcefile/plant_module.f90.html" xlink:title="plant_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="295.5,-107.09 189.5,-107.09 189.5,-83.09 295.5,-83.09 295.5,-107.09"/>
+<text text-anchor="middle" x="242.5" y="-92.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">plant_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~plant_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge7" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~plant_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M413.07,-166.88C397.69,-152.49 370.08,-128.91 342,-116.09 330.64,-110.91 317.96,-106.98 305.57,-104.02"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="306.24,-100.58 295.72,-101.84 304.73,-107.42 306.24,-100.58"/>
+</g>
+<!-- sourcefile~soil_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node9" class="node">
+<title>sourcefile~soil_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node9"><a xlink:href=".././sourcefile/soil_module.f90.html" xlink:title="soil_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="291,-65.09 194,-65.09 194,-41.09 291,-41.09 291,-65.09"/>
+<text text-anchor="middle" x="242.5" y="-50.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">soil_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~soil_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge8" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~soil_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M419.4,-166.75C407.69,-144.44 379.82,-97.52 342,-74.09 329.8,-66.54 315.3,-61.67 301.22,-58.54"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="301.57,-55.04 291.09,-56.55 300.23,-61.91 301.57,-55.04"/>
+</g>
+<!-- sourcefile~hydrograph_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node10" class="node">
+<title>sourcefile~hydrograph_module.f90</title>
+<g id="a_sourcefile~~pl_leaf_drop.f90~~EfferentGraph_node10"><a xlink:href=".././sourcefile/hydrograph_module.f90.html" xlink:title="hydrograph_module.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="312.5,-275.09 172.5,-275.09 172.5,-251.09 312.5,-251.09 312.5,-275.09"/>
+<text text-anchor="middle" x="242.5" y="-260.69" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hydrograph_module.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~hydrograph_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge9" class="edge">
+<title>sourcefile~pl_leaf_drop.f90&#45;&gt;sourcefile~hydrograph_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M413.07,-191.31C397.69,-205.7 370.08,-229.27 342,-242.09 335.8,-244.92 329.21,-247.38 322.48,-249.51"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="321.19,-246.24 312.57,-252.4 323.15,-252.96 321.19,-246.24"/>
+</g>
+<!-- sourcefile~hydrograph_module.f90&#45;&gt;sourcefile~basin_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge11" class="edge">
+<title>sourcefile~hydrograph_module.f90&#45;&gt;sourcefile~basin_module.f90</title>
+<path fill="none" stroke="#ff00aa" stroke-dasharray="5,2" d="M184.44,-275.13C170.85,-278.04 156.41,-281.15 143,-284.09 134.71,-285.91 125.98,-287.86 117.37,-289.78"/>
+<polygon fill="#ff00aa" stroke="#ff00aa" points="116.35,-286.43 107.36,-292.04 117.88,-293.26 116.35,-286.43"/>
+</g>
+<!-- sourcefile~hydrograph_module.f90&#45;&gt;sourcefile~time_module.f90 -->
+<g id="sourcefile~~pl_leaf_drop.f90~~EfferentGraph_edge10" class="edge">
+<title>sourcefile~hydrograph_module.f90&#45;&gt;sourcefile~time_module.f90</title>
+<path fill="none" stroke="#ff00aa" stroke-dasharray="5,2" d="M172.24,-253.39C162.11,-250.54 152.05,-246.86 143,-242.09 113.12,-226.36 86.14,-197.65 70.03,-178.22"/>
+<polygon fill="#ff00aa" stroke="#ff00aa" points="72.62,-175.87 63.62,-170.28 67.18,-180.26 72.62,-175.87"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="202pt" height="32pt"
+ viewBox="0.00 0.00 201.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 197.5,-28 197.5,4 -4,4"/>
+<!-- Source File -->
+<g id="node1" class="node">
+<title>Source File</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Source File</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node2" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="193.5,-24 88.5,-24 88.5,0 193.5,0 193.5,-24"/>
+<text text-anchor="middle" x="141" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a file to a file which it depends on. A file
+    is dependent upon another if the latter must be compiled before the former
+    can be. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+<br>
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-1" class="panel-collapse collapse">
+      <a class="list-group-item" href="../proc/pl_leaf_drop.html">pl_leaf_drop</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/pl_leaf_drop.f90.html#src">pl_leaf_drop.f90</a>
+  </div>
+</div>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    <section>
+      <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="hl"><pre><span></span><a id="ln-1" name="ln-1" href="#ln-1"></a><span class="w">      </span><span class="k">subroutine </span><span class="n">pl_leaf_drop</span><span class="w"> </span><span class="p">(</span><span class="n">resnew</span><span class="p">,</span><span class="w"> </span><span class="n">resnew_n</span><span class="p">)</span><span class="w"></span>
+<a id="ln-2" name="ln-2" href="#ln-2"></a>
+<a id="ln-3" name="ln-3" href="#ln-3"></a><span class="c">!!    ~ ~ ~ PURPOSE ~ ~ ~</span>
+<a id="ln-4" name="ln-4" href="#ln-4"></a><span class="c">!!    this subroutine checks the dormant status of the different plant types</span>
+<a id="ln-5" name="ln-5" href="#ln-5"></a>
+<a id="ln-6" name="ln-6" href="#ln-6"></a><span class="c">!!    ~ ~ ~ INCOMING VARIABLES ~ ~ ~</span>
+<a id="ln-7" name="ln-7" href="#ln-7"></a><span class="c">!!    name           |units         |definition</span>
+<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="c">!!    ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~</span>
+<a id="ln-9" name="ln-9" href="#ln-9"></a><span class="c">!!    daylmn(:)      |hours         |shortest daylength occurring during the</span>
+<a id="ln-10" name="ln-10" href="#ln-10"></a><span class="c">!!                                  |year</span>
+<a id="ln-11" name="ln-11" href="#ln-11"></a><span class="c">!!    ihru           |none          |HRU number</span>
+<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="c">!!    ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~</span>
+<a id="ln-13" name="ln-13" href="#ln-13"></a><span class="c">!!    ~ ~ ~ SUBROUTINES/FUNCTIONS CALLED ~ ~ ~</span>
+<a id="ln-14" name="ln-14" href="#ln-14"></a><span class="c">!!    Intrinsic: Max</span>
+<a id="ln-15" name="ln-15" href="#ln-15"></a>
+<a id="ln-16" name="ln-16" href="#ln-16"></a><span class="c">!!    ~ ~ ~ ~ ~ ~ END SPECIFICATIONS ~ ~ ~ ~ ~ ~</span>
+<a id="ln-17" name="ln-17" href="#ln-17"></a>
+<a id="ln-18" name="ln-18" href="#ln-18"></a><span class="w">      </span><span class="k">use </span><span class="n">climate_module</span><span class="w"></span>
+<a id="ln-19" name="ln-19" href="#ln-19"></a><span class="w">      </span><span class="k">use </span><span class="n">basin_module</span><span class="w"></span>
+<a id="ln-20" name="ln-20" href="#ln-20"></a><span class="w">      </span><span class="k">use </span><span class="n">hydrograph_module</span><span class="w"></span>
+<a id="ln-21" name="ln-21" href="#ln-21"></a><span class="w">      </span><span class="k">use </span><span class="n">plant_data_module</span><span class="w"></span>
+<a id="ln-22" name="ln-22" href="#ln-22"></a><span class="w">      </span><span class="k">use </span><span class="n">organic_mineral_mass_module</span><span class="w"></span>
+<a id="ln-23" name="ln-23" href="#ln-23"></a><span class="w">      </span><span class="k">use </span><span class="n">hru_module</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">hru</span><span class="p">,</span><span class="w">  </span><span class="n">ipl</span><span class="p">,</span><span class="w"> </span><span class="n">ihru</span><span class="w"></span>
+<a id="ln-24" name="ln-24" href="#ln-24"></a><span class="w">      </span><span class="k">use </span><span class="n">soil_module</span><span class="w"></span>
+<a id="ln-25" name="ln-25" href="#ln-25"></a><span class="w">      </span><span class="k">use </span><span class="n">plant_module</span><span class="w"></span>
+<a id="ln-26" name="ln-26" href="#ln-26"></a><span class="w">      </span><span class="k">use </span><span class="n">carbon_module</span><span class="w"></span>
+<a id="ln-27" name="ln-27" href="#ln-27"></a><span class="w">      </span><span class="k">use </span><span class="n">time_module</span><span class="w"></span>
+<a id="ln-28" name="ln-28" href="#ln-28"></a><span class="w">      </span>
+<a id="ln-29" name="ln-29" href="#ln-29"></a><span class="w">      </span><span class="k">implicit none</span>
+<a id="ln-30" name="ln-30" href="#ln-30"></a>
+<a id="ln-31" name="ln-31" href="#ln-31"></a><span class="k">      </span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="w"> </span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">resnew</span><span class="w">       </span><span class="c">!              |</span>
+<a id="ln-32" name="ln-32" href="#ln-32"></a><span class="w">      </span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="w"> </span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">resnew_n</span><span class="w">     </span><span class="c">!              |</span>
+<a id="ln-33" name="ln-33" href="#ln-33"></a><span class="w">      </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">j</span><span class="w">                      </span><span class="c">!none          |HRU number</span>
+<a id="ln-34" name="ln-34" href="#ln-34"></a><span class="w">      </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">idp</span><span class="w">                    </span><span class="c">!              |</span>
+<a id="ln-35" name="ln-35" href="#ln-35"></a><span class="w">      </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">orgc_f</span><span class="w">                 </span><span class="c">!fraction      |fraction of organic carbon in fertilizer</span>
+<a id="ln-36" name="ln-36" href="#ln-36"></a><span class="w">      </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iob</span><span class="w">                    </span><span class="c">!              |</span>
+<a id="ln-37" name="ln-37" href="#ln-37"></a><span class="w">      </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iwgn</span><span class="w">                   </span><span class="c">!              |</span>
+<a id="ln-38" name="ln-38" href="#ln-38"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">xx</span><span class="w">                        </span><span class="c">!varies        |variable to hold calculation results </span>
+<a id="ln-39" name="ln-39" href="#ln-39"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">rln</span><span class="w">                       </span><span class="c">!              |  </span>
+<a id="ln-40" name="ln-40" href="#ln-40"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">rlr</span><span class="w">                       </span><span class="c">!fraction      |fraction of lignin in the added residue</span>
+<a id="ln-41" name="ln-41" href="#ln-41"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">BLG1</span><span class="w">                      </span><span class="c">!              |LIGNIN FRACTION IN PLANT AT .5 MATURITY</span>
+<a id="ln-42" name="ln-42" href="#ln-42"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">BLG2</span><span class="w">                      </span><span class="c">!              |LIGNIN FRACTION IN PLANT AT MATURITY </span>
+<a id="ln-43" name="ln-43" href="#ln-43"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">BLG3</span><span class="w">                      </span><span class="c">!              |             </span>
+<a id="ln-44" name="ln-44" href="#ln-44"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">CLG</span><span class="w">                       </span><span class="c">!              | </span>
+<a id="ln-45" name="ln-45" href="#ln-45"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">sf</span><span class="w">                        </span><span class="c">!fraction      |fraction of mineral n sorbed to litter: 0.05 for surface litter, 0.1 for belowground litter </span>
+<a id="ln-46" name="ln-46" href="#ln-46"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">sol_min_n</span><span class="w">                 </span><span class="c">!              |</span>
+<a id="ln-47" name="ln-47" href="#ln-47"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">resnew_ne</span><span class="w">                 </span><span class="c">!              |</span>
+<a id="ln-48" name="ln-48" href="#ln-48"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">LMF</span><span class="w">                       </span><span class="c">!frac          |fraction of the litter that is metabolic</span>
+<a id="ln-49" name="ln-49" href="#ln-49"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">LSF</span><span class="w">                       </span><span class="c">!frac          |fraction of the litter that is structural</span>
+<a id="ln-50" name="ln-50" href="#ln-50"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">LMNF</span><span class="w">                      </span><span class="c">!kg kg-1       |fraction of metabolic litter that is N</span>
+<a id="ln-51" name="ln-51" href="#ln-51"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">LSLF</span><span class="w">                      </span><span class="c">!kg kg-1       |fraction of structural litter that is lignin </span>
+<a id="ln-52" name="ln-52" href="#ln-52"></a><span class="w">      </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">LSNF</span><span class="w">                      </span><span class="c">!kg kg-1       |fraction of structural litter that is N	</span>
+<a id="ln-53" name="ln-53" href="#ln-53"></a><span class="w">      </span>
+<a id="ln-54" name="ln-54" href="#ln-54"></a><span class="w">      </span><span class="n">orgc_f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-55" name="ln-55" href="#ln-55"></a><span class="w">      </span><span class="n">BLG1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-56" name="ln-56" href="#ln-56"></a><span class="w">      </span><span class="n">BLG2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-57" name="ln-57" href="#ln-57"></a><span class="w">      </span><span class="n">BLG3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-58" name="ln-58" href="#ln-58"></a><span class="w">      </span><span class="n">CLG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-59" name="ln-59" href="#ln-59"></a><span class="w">      </span><span class="n">sf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-60" name="ln-60" href="#ln-60"></a><span class="w">      </span><span class="n">sol_min_n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-61" name="ln-61" href="#ln-61"></a><span class="w">      </span><span class="n">resnew_ne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-62" name="ln-62" href="#ln-62"></a><span class="w">      </span><span class="n">LMF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-63" name="ln-63" href="#ln-63"></a><span class="w">      </span><span class="n">LSF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-64" name="ln-64" href="#ln-64"></a><span class="w">      </span><span class="n">LSLF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-65" name="ln-65" href="#ln-65"></a><span class="w">      </span><span class="n">LSNF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-66" name="ln-66" href="#ln-66"></a><span class="w">      </span><span class="n">LMNF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w"></span>
+<a id="ln-67" name="ln-67" href="#ln-67"></a>
+<a id="ln-68" name="ln-68" href="#ln-68"></a><span class="w">      </span><span class="c">!!by zhang</span>
+<a id="ln-69" name="ln-69" href="#ln-69"></a><span class="w">      </span><span class="c">!!====================</span>
+<a id="ln-70" name="ln-70" href="#ln-70"></a>
+<a id="ln-71" name="ln-71" href="#ln-71"></a><span class="w">      </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ihru</span><span class="w"></span>
+<a id="ln-72" name="ln-72" href="#ln-72"></a><span class="w">      </span><span class="n">idp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plcur</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">idplt</span><span class="w"></span>
+<a id="ln-73" name="ln-73" href="#ln-73"></a><span class="w">      </span><span class="n">iob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hru</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">obj_no</span><span class="w"></span>
+<a id="ln-74" name="ln-74" href="#ln-74"></a><span class="w">      </span><span class="n">iwst</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ob</span><span class="p">(</span><span class="n">iob</span><span class="p">)%</span><span class="n">wst</span><span class="w"></span>
+<a id="ln-75" name="ln-75" href="#ln-75"></a><span class="w">      </span><span class="n">iwgn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wst</span><span class="p">(</span><span class="n">iwst</span><span class="p">)%</span><span class="n">wco</span><span class="p">%</span><span class="n">wgn</span><span class="w"></span>
+<a id="ln-76" name="ln-76" href="#ln-76"></a>
+<a id="ln-77" name="ln-77" href="#ln-77"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bsn_cc</span><span class="p">%</span><span class="n">cswat</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<a id="ln-78" name="ln-78" href="#ln-78"></a><span class="k">        </span><span class="n">hrc_d</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plant_c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hrc_d</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plant_c</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">ab_gr</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">c</span><span class="w"></span>
+<a id="ln-79" name="ln-79" href="#ln-79"></a><span class="w">        </span><span class="n">hpc_d</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">drop_c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hpc_d</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">drop_c</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">ab_gr</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">c</span><span class="w"></span>
+<a id="ln-80" name="ln-80" href="#ln-80"></a><span class="w">      </span><span class="k">end if</span>
+<a id="ln-81" name="ln-81" href="#ln-81"></a>
+<a id="ln-82" name="ln-82" href="#ln-82"></a><span class="k">        if</span><span class="w"> </span><span class="p">(</span><span class="n">bsn_cc</span><span class="p">%</span><span class="n">cswat</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<a id="ln-83" name="ln-83" href="#ln-83"></a><span class="k">          </span><span class="n">BLG1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.01</span><span class="o">/</span><span class="mf">0.10</span><span class="w"></span>
+<a id="ln-84" name="ln-84" href="#ln-84"></a><span class="w">          </span><span class="n">BLG2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.99</span><span class="w"></span>
+<a id="ln-85" name="ln-85" href="#ln-85"></a><span class="w">          </span><span class="n">BLG3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.10</span><span class="w"></span>
+<a id="ln-86" name="ln-86" href="#ln-86"></a><span class="w">          </span><span class="n">XX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">log</span><span class="p">(</span><span class="mf">0.5</span><span class="o">/</span><span class="n">BLG1</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="w"></span>
+<a id="ln-87" name="ln-87" href="#ln-87"></a><span class="w">          </span><span class="n">BLG2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">XX</span><span class="w"> </span><span class="o">-</span><span class="nb">log</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">BLG2</span><span class="o">-</span><span class="mf">1.</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mf">1.</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="w"></span>
+<a id="ln-88" name="ln-88" href="#ln-88"></a><span class="w">          </span><span class="n">BLG1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">XX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.5</span><span class="o">*</span><span class="n">BLG2</span><span class="w"></span>
+<a id="ln-89" name="ln-89" href="#ln-89"></a><span class="w">          </span><span class="n">CLG</span><span class="o">=</span><span class="n">BLG3</span><span class="o">*</span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plcur</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">phuacc</span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plcur</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">phuacc</span><span class="w"> </span><span class="o">+</span><span class="w">    </span><span class="p">&amp;</span><span class="w"></span>
+<a id="ln-90" name="ln-90" href="#ln-90"></a><span class="w">                </span><span class="nb">EXP</span><span class="p">(</span><span class="n">BLG1</span><span class="o">-</span><span class="n">BLG2</span><span class="o">*</span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plcur</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">phuacc</span><span class="p">))</span><span class="w"></span>
+<a id="ln-91" name="ln-91" href="#ln-91"></a>
+<a id="ln-92" name="ln-92" href="#ln-92"></a><span class="w">          </span><span class="n">sf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.05</span><span class="w">	</span>
+<a id="ln-93" name="ln-93" href="#ln-93"></a><span class="w">          </span><span class="n">sol_min_n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">soil1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">mn</span><span class="p">(</span><span class="mi">1</span><span class="p">)%</span><span class="n">no3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">soil1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">mn</span><span class="p">(</span><span class="mi">1</span><span class="p">)%</span><span class="n">nh4</span><span class="p">)</span><span class="w">  	    </span>
+<a id="ln-94" name="ln-94" href="#ln-94"></a><span class="w">          </span><span class="n">resnew_ne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resnew_n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sf</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sol_min_n</span><span class="w"></span>
+<a id="ln-95" name="ln-95" href="#ln-95"></a>
+<a id="ln-96" name="ln-96" href="#ln-96"></a><span class="w">          </span><span class="n">RLN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">resnew</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">CLG</span><span class="o">/</span><span class="p">(</span><span class="n">resnew_n</span><span class="o">+</span><span class="mf">1.E-5</span><span class="p">))</span><span class="w"></span>
+<a id="ln-97" name="ln-97" href="#ln-97"></a><span class="w">          </span><span class="n">RLR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">MIN</span><span class="p">(.</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">CLG</span><span class="o">/</span><span class="mi">1000</span><span class="o">/</span><span class="p">(</span><span class="n">resnew</span><span class="o">/</span><span class="mi">1000</span><span class="o">+</span><span class="mf">1.E-5</span><span class="p">))</span><span class="w"></span>
+<a id="ln-98" name="ln-98" href="#ln-98"></a><span class="w">        	    </span>
+<a id="ln-99" name="ln-99" href="#ln-99"></a><span class="w">          </span><span class="n">LMF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.85</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">0.018</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">RLN</span><span class="w"></span>
+<a id="ln-100" name="ln-100" href="#ln-100"></a><span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">LMF</span><span class="w"> </span><span class="o">&lt;</span><span class="mf">0.01</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<a id="ln-101" name="ln-101" href="#ln-101"></a><span class="k">            </span><span class="n">LMF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.01</span><span class="w"></span>
+<a id="ln-102" name="ln-102" href="#ln-102"></a><span class="w">          </span><span class="k">else</span>
+<a id="ln-103" name="ln-103" href="#ln-103"></a><span class="k">            if</span><span class="w"> </span><span class="p">(</span><span class="n">LMF</span><span class="w"> </span><span class="o">&gt;</span><span class="mf">0.7</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<a id="ln-104" name="ln-104" href="#ln-104"></a><span class="k">              </span><span class="n">LMF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.7</span><span class="w"></span>
+<a id="ln-105" name="ln-105" href="#ln-105"></a><span class="w">            </span><span class="k">end if</span>
+<a id="ln-106" name="ln-106" href="#ln-106"></a><span class="k">          end if      	  </span>
+<a id="ln-107" name="ln-107" href="#ln-107"></a>
+<a id="ln-108" name="ln-108" href="#ln-108"></a><span class="k">          </span><span class="n">LSF</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">LMF</span><span class="w">  </span>
+<a id="ln-109" name="ln-109" href="#ln-109"></a><span class="w">        	  </span>
+<a id="ln-110" name="ln-110" href="#ln-110"></a><span class="w">          </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">meta</span><span class="p">%</span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">meta</span><span class="p">%</span><span class="n">m</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">LMF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w"></span>
+<a id="ln-111" name="ln-111" href="#ln-111"></a><span class="w">          </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">str</span><span class="p">%</span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">str</span><span class="p">%</span><span class="n">m</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">LSF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w"></span>
+<a id="ln-112" name="ln-112" href="#ln-112"></a>
+<a id="ln-113" name="ln-113" href="#ln-113"></a><span class="w">          </span><span class="n">LSLF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CLG</span><span class="w">          </span>
+<a id="ln-114" name="ln-114" href="#ln-114"></a><span class="w">	          </span>
+<a id="ln-115" name="ln-115" href="#ln-115"></a><span class="w">          </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.42</span><span class="o">*</span><span class="n">LSF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w">  </span>
+<a id="ln-116" name="ln-116" href="#ln-116"></a><span class="w">	          </span>
+<a id="ln-117" name="ln-117" href="#ln-117"></a><span class="w">          </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_lignin</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_lignin</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">RLR</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.42</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">LSF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w"></span>
+<a id="ln-118" name="ln-118" href="#ln-118"></a><span class="w">          </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_lignin</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_lignin</span><span class="p">%</span><span class="n">c</span><span class="w"></span>
+<a id="ln-119" name="ln-119" href="#ln-119"></a>
+<a id="ln-120" name="ln-120" href="#ln-120"></a><span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">resnew_ne</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="p">(</span><span class="mf">0.42</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">LSF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">/</span><span class="mi">150</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<a id="ln-121" name="ln-121" href="#ln-121"></a><span class="k">            </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.42</span><span class="o">*</span><span class="n">LSF</span><span class="o">*</span><span class="n">resnew</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">150</span><span class="w"></span>
+<a id="ln-122" name="ln-122" href="#ln-122"></a><span class="w">            </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_meta</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_meta</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">resnew_ne</span><span class="w"> </span><span class="o">-</span><span class="w">         </span><span class="p">&amp;</span><span class="w"></span>
+<a id="ln-123" name="ln-123" href="#ln-123"></a><span class="w">                              </span><span class="p">(</span><span class="mf">0.42</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">LSF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">150</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.E-25</span><span class="w"></span>
+<a id="ln-124" name="ln-124" href="#ln-124"></a><span class="w">          </span><span class="k">else</span>
+<a id="ln-125" name="ln-125" href="#ln-125"></a><span class="k">            </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_str</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">resnew_ne</span><span class="w"></span>
+<a id="ln-126" name="ln-126" href="#ln-126"></a><span class="w">            </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_meta</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_meta</span><span class="p">%</span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.E-25</span><span class="w"></span>
+<a id="ln-127" name="ln-127" href="#ln-127"></a><span class="w">          </span><span class="k">end if	</span>
+<a id="ln-128" name="ln-128" href="#ln-128"></a>
+<a id="ln-129" name="ln-129" href="#ln-129"></a><span class="k">          </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_meta</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot_meta</span><span class="p">%</span><span class="n">c</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.42</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">LMF</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">resnew</span><span class="w"></span>
+<a id="ln-130" name="ln-130" href="#ln-130"></a>
+<a id="ln-131" name="ln-131" href="#ln-131"></a><span class="w">          </span><span class="c">!update no3 and nh3 in soil</span>
+<a id="ln-132" name="ln-132" href="#ln-132"></a><span class="w">          </span><span class="n">soil1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">mn</span><span class="p">(</span><span class="mi">1</span><span class="p">)%</span><span class="n">no3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">soil1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">mn</span><span class="p">(</span><span class="mi">1</span><span class="p">)%</span><span class="n">no3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">sf</span><span class="p">)</span><span class="w"></span>
+<a id="ln-133" name="ln-133" href="#ln-133"></a><span class="w">          </span><span class="n">soil1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">mn</span><span class="p">(</span><span class="mi">1</span><span class="p">)%</span><span class="n">nh4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">soil1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">mn</span><span class="p">(</span><span class="mi">1</span><span class="p">)%</span><span class="n">nh4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">sf</span><span class="p">)</span><span class="w"></span>
+<a id="ln-134" name="ln-134" href="#ln-134"></a><span class="w">        </span><span class="k">end if</span>
+<a id="ln-135" name="ln-135" href="#ln-135"></a>
+<a id="ln-136" name="ln-136" href="#ln-136"></a><span class="k">        </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">m</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">resnew</span><span class="w"></span>
+<a id="ln-137" name="ln-137" href="#ln-137"></a><span class="w">        </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Max</span><span class="p">(</span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">)</span><span class="w"></span>
+<a id="ln-138" name="ln-138" href="#ln-138"></a><span class="w">        </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plm</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">n_fr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">n</span><span class="w"></span>
+<a id="ln-139" name="ln-139" href="#ln-139"></a><span class="w">        </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plm</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">p_fr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">rsd1</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">p</span><span class="w"></span>
+<a id="ln-140" name="ln-140" href="#ln-140"></a><span class="w">        </span>
+<a id="ln-141" name="ln-141" href="#ln-141"></a><span class="w">        </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">m</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">resnew</span><span class="w"></span>
+<a id="ln-142" name="ln-142" href="#ln-142"></a><span class="w">        </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plm</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">n_fr</span><span class="w"></span>
+<a id="ln-143" name="ln-143" href="#ln-143"></a><span class="w">        </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pl_mass</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">tot</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">p</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">resnew</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">pcom</span><span class="p">(</span><span class="n">j</span><span class="p">)%</span><span class="n">plm</span><span class="p">(</span><span class="n">ipl</span><span class="p">)%</span><span class="n">p_fr</span><span class="w"></span>
+<a id="ln-144" name="ln-144" href="#ln-144"></a><span class="w">        </span>
+<a id="ln-145" name="ln-145" href="#ln-145"></a><span class="w">        </span><span class="c">!pcom(j)%plstr(ipl)%strsw = 1.</span>
+<a id="ln-146" name="ln-146" href="#ln-146"></a><span class="w">        </span><span class="c">!pcom(j)%plg(ipl)%lai = pldb(idp)%alai_min</span>
+<a id="ln-147" name="ln-147" href="#ln-147"></a><span class="w">        </span><span class="c">!pcom(j)%plcur(ipl)%phuacc = 0.</span>
+<a id="ln-148" name="ln-148" href="#ln-148"></a><span class="w">        </span><span class="c">!pcom(j)%plg(ipl)%laimxfr = 0.</span>
+<a id="ln-149" name="ln-149" href="#ln-149"></a>
+<a id="ln-150" name="ln-150" href="#ln-150"></a><span class="w">      </span><span class="k">return</span>
+<a id="ln-151" name="ln-151" href="#ln-151"></a><span class="k">      end subroutine </span><span class="n">pl_leaf_drop</span><span class="w"></span>
+</pre></div>
+
+    </section>
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

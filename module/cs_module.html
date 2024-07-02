@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>cs_module &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>cs_module 
+    <small>Module</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 1.9% of total for modules and submodules.">216 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/cs_module.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li><a href='../sourcefile/cs_module.f90.html'>cs_module.f90</a></li>
+     <li class="active">cs_module</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_d">hcsb_d</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_m">hcsb_m</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_y">hcsb_y</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_a">hcsb_a</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_d">ru_hru_csb_d</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_m">ru_hru_csb_m</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_y">ru_hru_csb_y</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_a">ru_hru_csb_a</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_basin_mo">cs_basin_mo</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_basin_yr">cs_basin_yr</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_basin_aa">cs_basin_aa</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-fert_cs">fert_cs</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-fert_cs_flag">fert_cs_flag</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_uptake_kg">cs_uptake_kg</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_uptake_on">cs_uptake_on</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_urban_conc">cs_urban_conc</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-csb_hdr">csb_hdr</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_hdr_hru">cs_hdr_hru</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
+  <div id="types-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/cs_module.html#type-cs_balance">cs_balance</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-object_cs_balance">object_cs_balance</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-fert_db_cs">fert_db_cs</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-output_csbal_header">output_csbal_header</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-output_cs_hdr_hru">output_cs_hdr_hru</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+<br>    
+        <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Used by</h3>
+      </div>
+      <ul class="list-group">
+  <li class="list-group-item">
+    <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~cs_module~~UsedByGraph Pages: 1 -->
+<svg id="modulecs_moduleUsedByGraph" width="209pt" height="914pt"
+ viewBox="0.00 0.00 209.00 914.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~cs_module~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 910)">
+<title>module~~cs_module~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-910 205,-910 205,4 -4,4"/>
+<!-- module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_node1" class="node">
+<title>module~cs_module</title>
+<polygon fill="none" stroke="black" points="70,-465 0,-465 0,-441 70,-441 70,-465"/>
+<text text-anchor="middle" x="35" y="-450.6" font-family="Helvetica,sans-Serif" font-size="10.50">cs_module</text>
+</g>
+<!-- proc~hru_output_allo -->
+<g id="module~~cs_module~~UsedByGraph_node2" class="node">
+<title>proc~hru_output_allo</title>
+<g id="a_module~~cs_module~~UsedByGraph_node2"><a xlink:href=".././proc/hru_output_allo.html" xlink:title="hru_output_allo">
+<polygon fill="#d9534f" stroke="#d9534f" points="201,-906 106,-906 106,-882 201,-882 201,-906"/>
+<text text-anchor="middle" x="153.5" y="-891.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_output_allo</text>
+</a>
+</g>
+</g>
+<!-- proc~hru_output_allo&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge1" class="edge">
+<title>proc~hru_output_allo&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M115.88,-881.91C112.12,-879.45 108.7,-876.51 106,-873 57.23,-809.62 40.9,-553.37 37.01,-475.53"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="40.5,-475.21 36.52,-465.39 33.5,-475.54 40.5,-475.21"/>
+</g>
+<!-- proc~cs_uptake_read -->
+<g id="module~~cs_module~~UsedByGraph_node3" class="node">
+<title>proc~cs_uptake_read</title>
+<g id="a_module~~cs_module~~UsedByGraph_node3"><a xlink:href=".././proc/cs_uptake_read.html" xlink:title="cs_uptake_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="201,-864 106,-864 106,-840 201,-840 201,-864"/>
+<text text-anchor="middle" x="153.5" y="-849.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_uptake_read</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_uptake_read&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge2" class="edge">
+<title>proc~cs_uptake_read&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M115.94,-839.86C112.17,-837.41 108.73,-834.49 106,-831 61.93,-774.79 42.62,-548.31 37.47,-475.6"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="40.94,-475.03 36.77,-465.3 33.96,-475.51 40.94,-475.03"/>
+</g>
+<!-- proc~cs_rctn_hru -->
+<g id="module~~cs_module~~UsedByGraph_node4" class="node">
+<title>proc~cs_rctn_hru</title>
+<g id="a_module~~cs_module~~UsedByGraph_node4"><a xlink:href=".././proc/cs_rctn_hru.html" xlink:title="cs_rctn_hru">
+<polygon fill="#d9534f" stroke="#d9534f" points="190,-822 117,-822 117,-798 190,-798 190,-822"/>
+<text text-anchor="middle" x="153.5" y="-807.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_rctn_hru</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_rctn_hru&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge3" class="edge">
+<title>proc~cs_rctn_hru&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M116.92,-798.38C112.79,-795.82 108.99,-792.73 106,-789 66.62,-739.9 44.56,-542.99 38.06,-475.68"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="41.51,-474.99 37.08,-465.36 34.54,-475.64 41.51,-474.99"/>
+</g>
+<!-- proc~ru_cs_output -->
+<g id="module~~cs_module~~UsedByGraph_node5" class="node">
+<title>proc~ru_cs_output</title>
+<g id="a_module~~cs_module~~UsedByGraph_node5"><a xlink:href=".././proc/ru_cs_output.html" xlink:title="ru_cs_output">
+<polygon fill="#d9534f" stroke="#d9534f" points="193.5,-780 113.5,-780 113.5,-756 193.5,-756 193.5,-780"/>
+<text text-anchor="middle" x="153.5" y="-765.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ru_cs_output</text>
+</a>
+</g>
+</g>
+<!-- proc~ru_cs_output&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge4" class="edge">
+<title>proc~ru_cs_output&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M116.11,-755.72C112.31,-753.3 108.82,-750.42 106,-747 71.17,-704.82 46.64,-536.29 38.74,-475.23"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="42.19,-474.62 37.46,-465.14 35.24,-475.5 42.19,-474.62"/>
+</g>
+<!-- proc~gwflow_ppag -->
+<g id="module~~cs_module~~UsedByGraph_node6" class="node">
+<title>proc~gwflow_ppag</title>
+<g id="a_module~~cs_module~~UsedByGraph_node6"><a xlink:href=".././proc/gwflow_ppag.html" xlink:title="gwflow_ppag">
+<polygon fill="#d9534f" stroke="#d9534f" points="194.5,-738 112.5,-738 112.5,-714 194.5,-714 194.5,-738"/>
+<text text-anchor="middle" x="153.5" y="-723.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">gwflow_ppag</text>
+</a>
+</g>
+</g>
+<!-- proc~gwflow_ppag&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge5" class="edge">
+<title>proc~gwflow_ppag&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M116.69,-713.91C112.7,-711.44 109,-708.5 106,-705 47.45,-636.71 37.6,-523.19 36.14,-475.35"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="39.63,-475.09 35.93,-465.17 32.63,-475.24 39.63,-475.09"/>
+</g>
+<!-- proc~cs_hru_init -->
+<g id="module~~cs_module~~UsedByGraph_node7" class="node">
+<title>proc~cs_hru_init</title>
+<g id="a_module~~cs_module~~UsedByGraph_node7"><a xlink:href=".././proc/cs_hru_init.html" xlink:title="cs_hru_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="188,-696 119,-696 119,-672 188,-672 188,-696"/>
+<text text-anchor="middle" x="153.5" y="-681.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_hru_init</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_hru_init&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge6" class="edge">
+<title>proc~cs_hru_init&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M118.73,-672.86C114.01,-670.2 109.56,-666.95 106,-663 56.47,-608.12 41.85,-517.14 37.64,-475.3"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="41.11,-474.75 36.73,-465.1 34.14,-475.37 41.11,-474.75"/>
+</g>
+<!-- proc~cs_uptake -->
+<g id="module~~cs_module~~UsedByGraph_node8" class="node">
+<title>proc~cs_uptake</title>
+<g id="a_module~~cs_module~~UsedByGraph_node8"><a xlink:href=".././proc/cs_uptake.html" xlink:title="cs_uptake">
+<polygon fill="#d9534f" stroke="#d9534f" points="186.5,-654 120.5,-654 120.5,-630 186.5,-630 186.5,-654"/>
+<text text-anchor="middle" x="153.5" y="-639.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_uptake</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_uptake&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge7" class="edge">
+<title>proc~cs_uptake&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M120.41,-631.4C115.14,-628.62 110.07,-625.19 106,-621 65.48,-579.27 47.04,-510.69 39.88,-475.45"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="43.24,-474.42 37.93,-465.25 36.37,-475.73 43.24,-474.42"/>
+</g>
+<!-- proc~cs_fert_wet -->
+<g id="module~~cs_module~~UsedByGraph_node9" class="node">
+<title>proc~cs_fert_wet</title>
+<g id="a_module~~cs_module~~UsedByGraph_node9"><a xlink:href=".././proc/cs_fert_wet.html" xlink:title="cs_fert_wet">
+<polygon fill="#d9534f" stroke="#d9534f" points="189.5,-612 117.5,-612 117.5,-588 189.5,-588 189.5,-612"/>
+<text text-anchor="middle" x="153.5" y="-597.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_fert_wet</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_fert_wet&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge8" class="edge">
+<title>proc~cs_fert_wet&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M118.86,-587.99C114.23,-585.46 109.78,-582.48 106,-579 74,-549.55 53.19,-502.01 43.12,-474.52"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="46.41,-473.32 39.79,-465.05 39.8,-475.64 46.41,-473.32"/>
+</g>
+<!-- proc~header_const -->
+<g id="module~~cs_module~~UsedByGraph_node10" class="node">
+<title>proc~header_const</title>
+<g id="a_module~~cs_module~~UsedByGraph_node10"><a xlink:href=".././proc/header_const.html" xlink:title="header_const">
+<polygon fill="#d9534f" stroke="#d9534f" points="196,-570 111,-570 111,-546 196,-546 196,-570"/>
+<text text-anchor="middle" x="153.5" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">header_const</text>
+</a>
+</g>
+</g>
+<!-- proc~header_const&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge9" class="edge">
+<title>proc~header_const&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M120.39,-545.83C115.35,-543.27 110.37,-540.32 106,-537 82.5,-519.13 61.71,-491.96 49.02,-473.4"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="51.92,-471.43 43.46,-465.05 46.09,-475.31 51.92,-471.43"/>
+</g>
+<!-- proc~cs_rain -->
+<g id="module~~cs_module~~UsedByGraph_node11" class="node">
+<title>proc~cs_rain</title>
+<g id="a_module~~cs_module~~UsedByGraph_node11"><a xlink:href=".././proc/cs_rain.html" xlink:title="cs_rain">
+<polygon fill="#d9534f" stroke="#d9534f" points="180.5,-528 126.5,-528 126.5,-504 180.5,-504 180.5,-528"/>
+<text text-anchor="middle" x="153.5" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_rain</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_rain&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge10" class="edge">
+<title>proc~cs_rain&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M126.17,-504.75C119.52,-501.73 112.43,-498.37 106,-495 91.65,-487.49 76.17,-478.32 63.42,-470.46"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="65.01,-467.33 54.67,-465.02 61.31,-473.27 65.01,-467.33"/>
+</g>
+<!-- proc~cs_urban_read -->
+<g id="module~~cs_module~~UsedByGraph_node12" class="node">
+<title>proc~cs_urban_read</title>
+<g id="a_module~~cs_module~~UsedByGraph_node12"><a xlink:href=".././proc/cs_urban_read.html" xlink:title="cs_urban_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="198.5,-486 108.5,-486 108.5,-462 198.5,-462 198.5,-486"/>
+<text text-anchor="middle" x="153.5" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_urban_read</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_urban_read&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge11" class="edge">
+<title>proc~cs_urban_read&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M108.46,-466.06C99.28,-464.41 89.6,-462.66 80.41,-461.01"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="80.76,-457.51 70.3,-459.18 79.52,-464.4 80.76,-457.51"/>
+</g>
+<!-- proc~cs_balance -->
+<g id="module~~cs_module~~UsedByGraph_node13" class="node">
+<title>proc~cs_balance</title>
+<g id="a_module~~cs_module~~UsedByGraph_node13"><a xlink:href=".././proc/cs_balance.html" xlink:title="cs_balance">
+<polygon fill="#d9534f" stroke="#d9534f" points="189.5,-444 117.5,-444 117.5,-420 189.5,-420 189.5,-444"/>
+<text text-anchor="middle" x="153.5" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_balance</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_balance&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge12" class="edge">
+<title>proc~cs_balance&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M117.23,-438.36C105.61,-440.45 92.55,-442.81 80.35,-445.01"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="79.57,-441.59 70.35,-446.81 80.81,-448.48 79.57,-441.59"/>
+</g>
+<!-- proc~aqu_initial -->
+<g id="module~~cs_module~~UsedByGraph_node14" class="node">
+<title>proc~aqu_initial</title>
+<g id="a_module~~cs_module~~UsedByGraph_node14"><a xlink:href=".././proc/aqu_initial.html" xlink:title="aqu_initial">
+<polygon fill="#d9534f" stroke="#d9534f" points="187,-402 120,-402 120,-378 187,-378 187,-402"/>
+<text text-anchor="middle" x="153.5" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">aqu_initial</text>
+</a>
+</g>
+</g>
+<!-- proc~aqu_initial&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge13" class="edge">
+<title>proc~aqu_initial&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M124.22,-402.14C118.14,-404.92 111.81,-407.96 106,-411 91.65,-418.51 76.17,-427.68 63.42,-435.54"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="61.31,-432.73 54.67,-440.98 65.01,-438.67 61.31,-432.73"/>
+</g>
+<!-- proc~ru_read -->
+<g id="module~~cs_module~~UsedByGraph_node15" class="node">
+<title>proc~ru_read</title>
+<g id="a_module~~cs_module~~UsedByGraph_node15"><a xlink:href=".././proc/ru_read.html" xlink:title="ru_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="180.5,-360 126.5,-360 126.5,-336 180.5,-336 180.5,-360"/>
+<text text-anchor="middle" x="153.5" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ru_read</text>
+</a>
+</g>
+</g>
+<!-- proc~ru_read&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge14" class="edge">
+<title>proc~ru_read&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M126.24,-357.38C119.3,-360.51 112.06,-364.39 106,-369 82.5,-386.87 61.71,-414.04 49.02,-432.6"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="46.09,-430.69 43.46,-440.95 51.92,-434.57 46.09,-430.69"/>
+</g>
+<!-- proc~cs_fert -->
+<g id="module~~cs_module~~UsedByGraph_node16" class="node">
+<title>proc~cs_fert</title>
+<g id="a_module~~cs_module~~UsedByGraph_node16"><a xlink:href=".././proc/cs_fert.html" xlink:title="cs_fert">
+<polygon fill="#d9534f" stroke="#d9534f" points="180.5,-318 126.5,-318 126.5,-294 180.5,-294 180.5,-318"/>
+<text text-anchor="middle" x="153.5" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_fert</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_fert&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge16" class="edge">
+<title>proc~cs_fert&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M126.12,-314.44C119.02,-317.59 111.74,-321.72 106,-327 74,-356.45 53.19,-403.99 43.12,-431.48"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="39.8,-430.36 39.79,-440.95 46.41,-432.68 39.8,-430.36"/>
+</g>
+<!-- proc~hru_cs_output -->
+<g id="module~~cs_module~~UsedByGraph_node17" class="node">
+<title>proc~hru_cs_output</title>
+<g id="a_module~~cs_module~~UsedByGraph_node17"><a xlink:href=".././proc/hru_cs_output.html" xlink:title="hru_cs_output">
+<polygon fill="#d9534f" stroke="#d9534f" points="197,-276 110,-276 110,-252 197,-252 197,-276"/>
+<text text-anchor="middle" x="153.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_cs_output</text>
+</a>
+</g>
+</g>
+<!-- proc~hru_cs_output&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge15" class="edge">
+<title>proc~hru_cs_output&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M117.56,-276.18C113.33,-278.65 109.33,-281.57 106,-285 65.48,-326.73 47.04,-395.31 39.88,-430.55"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="36.37,-430.27 37.93,-440.75 43.24,-431.58 36.37,-430.27"/>
+</g>
+<!-- proc~cs_rctn_aqu -->
+<g id="module~~cs_module~~UsedByGraph_node18" class="node">
+<title>proc~cs_rctn_aqu</title>
+<g id="a_module~~cs_module~~UsedByGraph_node18"><a xlink:href=".././proc/cs_rctn_aqu.html" xlink:title="cs_rctn_aqu">
+<polygon fill="#d9534f" stroke="#d9534f" points="191,-234 116,-234 116,-210 191,-210 191,-234"/>
+<text text-anchor="middle" x="153.5" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_rctn_aqu</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_rctn_aqu&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge18" class="edge">
+<title>proc~cs_rctn_aqu&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M116.86,-234.24C112.84,-236.68 109.09,-239.58 106,-243 56.47,-297.88 41.85,-388.86 37.64,-430.7"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="34.14,-430.63 36.73,-440.9 41.11,-431.25 34.14,-430.63"/>
+</g>
+<!-- proc~hru_control -->
+<g id="module~~cs_module~~UsedByGraph_node19" class="node">
+<title>proc~hru_control</title>
+<g id="a_module~~cs_module~~UsedByGraph_node19"><a xlink:href=".././proc/hru_control.html" xlink:title="hru_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="190,-192 117,-192 117,-168 190,-168 190,-192"/>
+<text text-anchor="middle" x="153.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_control</text>
+</a>
+</g>
+</g>
+<!-- proc~hru_control&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge17" class="edge">
+<title>proc~hru_control&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M116.69,-192.09C112.7,-194.56 109,-197.5 106,-201 47.45,-269.29 37.6,-382.81 36.14,-430.65"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="32.63,-430.76 35.93,-440.83 39.63,-430.91 32.63,-430.76"/>
+</g>
+<!-- proc~cs_divert -->
+<g id="module~~cs_module~~UsedByGraph_node20" class="node">
+<title>proc~cs_divert</title>
+<g id="a_module~~cs_module~~UsedByGraph_node20"><a xlink:href=".././proc/cs_divert.html" xlink:title="cs_divert">
+<polygon fill="#d9534f" stroke="#d9534f" points="183.5,-150 123.5,-150 123.5,-126 183.5,-126 183.5,-150"/>
+<text text-anchor="middle" x="153.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_divert</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_divert&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge19" class="edge">
+<title>proc~cs_divert&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M123.18,-146.38C116.74,-149.44 110.51,-153.54 106,-159 71.17,-201.18 46.64,-369.71 38.74,-430.77"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="35.24,-430.5 37.46,-440.86 42.19,-431.38 35.24,-430.5"/>
+</g>
+<!-- proc~cs_sorb_hru -->
+<g id="module~~cs_module~~UsedByGraph_node21" class="node">
+<title>proc~cs_sorb_hru</title>
+<g id="a_module~~cs_module~~UsedByGraph_node21"><a xlink:href=".././proc/cs_sorb_hru.html" xlink:title="cs_sorb_hru">
+<polygon fill="#d9534f" stroke="#d9534f" points="191.5,-108 115.5,-108 115.5,-84 191.5,-84 191.5,-108"/>
+<text text-anchor="middle" x="153.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_sorb_hru</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_sorb_hru&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge20" class="edge">
+<title>proc~cs_sorb_hru&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M116.01,-108.2C112.23,-110.64 108.77,-113.55 106,-117 66.62,-166.1 44.56,-363.01 38.06,-430.32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="34.54,-430.36 37.08,-440.64 41.51,-431.01 34.54,-430.36"/>
+</g>
+<!-- proc~cs_irrig -->
+<g id="module~~cs_module~~UsedByGraph_node22" class="node">
+<title>proc~cs_irrig</title>
+<g id="a_module~~cs_module~~UsedByGraph_node22"><a xlink:href=".././proc/cs_irrig.html" xlink:title="cs_irrig">
+<polygon fill="#d9534f" stroke="#d9534f" points="180.5,-66 126.5,-66 126.5,-42 180.5,-42 180.5,-66"/>
+<text text-anchor="middle" x="153.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_irrig</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_irrig&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge21" class="edge">
+<title>proc~cs_irrig&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M126.38,-60.71C118.77,-63.87 111.14,-68.45 106,-75 61.93,-131.21 42.62,-357.69 37.47,-430.4"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="33.96,-430.49 36.77,-440.7 40.94,-430.97 33.96,-430.49"/>
+</g>
+<!-- proc~cs_fert_read -->
+<g id="module~~cs_module~~UsedByGraph_node23" class="node">
+<title>proc~cs_fert_read</title>
+<g id="a_module~~cs_module~~UsedByGraph_node23"><a xlink:href=".././proc/cs_fert_read.html" xlink:title="cs_fert_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="192,-24 115,-24 115,0 192,0 192,-24"/>
+<text text-anchor="middle" x="153.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_fert_read</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_fert_read&#45;&gt;module~cs_module -->
+<g id="module~~cs_module~~UsedByGraph_edge22" class="edge">
+<title>proc~cs_fert_read&#45;&gt;module~cs_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M115.88,-24.09C112.12,-26.55 108.7,-29.49 106,-33 57.23,-96.38 40.9,-352.63 37.01,-430.47"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="33.5,-430.46 36.52,-440.61 40.5,-430.79 33.5,-430.46"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a submodule to the (sub)module which it is
+    descended from. Dashed arrows point from a module or program unit to 
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+  </li>
+      </ul>
+    </div>
+
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_d">hcsb_d</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_m">hcsb_m</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_y">hcsb_y</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-hcsb_a">hcsb_a</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_d">ru_hru_csb_d</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_m">ru_hru_csb_m</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_y">ru_hru_csb_y</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-ru_hru_csb_a">ru_hru_csb_a</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_basin_mo">cs_basin_mo</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_basin_yr">cs_basin_yr</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_basin_aa">cs_basin_aa</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-fert_cs">fert_cs</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-fert_cs_flag">fert_cs_flag</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_uptake_kg">cs_uptake_kg</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_uptake_on">cs_uptake_on</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_urban_conc">cs_urban_conc</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-csb_hdr">csb_hdr</a>
+      <a class="list-group-item" href="../module/cs_module.html#variable-cs_hdr_hru">cs_hdr_hru</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
+  <div id="types-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/cs_module.html#type-cs_balance">cs_balance</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-object_cs_balance">object_cs_balance</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-fert_db_cs">fert_db_cs</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-output_csbal_header">output_csbal_header</a>
+      <a class="list-group-item" href="../module/cs_module.html#type-output_cs_hdr_hru">output_cs_hdr_hru</a>
+    </div>
+  </div>
+</div>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    <section>
+    <h2>Variables</h2>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-hcsb_d"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hcsb_d</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hcsb_m"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hcsb_m</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hcsb_y"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hcsb_y</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hcsb_a"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hcsb_a</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ru_hru_csb_d"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>ru_hru_csb_d</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ru_hru_csb_m"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>ru_hru_csb_m</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ru_hru_csb_y"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>ru_hru_csb_y</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ru_hru_csb_a"></span>type(<a href='../type/object_cs_balance.html'>object_cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>ru_hru_csb_a</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_basin_mo"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cs_basin_mo</strong>(87)</td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_basin_yr"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cs_basin_yr</strong>(87)</td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_basin_aa"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cs_basin_aa</strong>(87)</td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fert_cs"></span>type(<a href='../type/fert_db_cs.html'>fert_db_cs</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable, save</td><td>::</td>
+  <td><strong>fert_cs</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fert_cs_flag"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fert_cs_flag</strong></td><td> =</td><td>0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_uptake_kg"></span>real,</td>
+<td>public,</td>  <td>dimension(:,:), allocatable</td><td>::</td>
+  <td><strong>cs_uptake_kg</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_uptake_on"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cs_uptake_on</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_urban_conc"></span>real,</td>
+<td>public,</td>  <td>dimension(:,:), allocatable</td><td>::</td>
+  <td><strong>cs_urban_conc</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-csb_hdr"></span>type(<a href='../type/output_csbal_header.html'>output_csbal_header</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>csb_hdr</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs_hdr_hru"></span>type(<a href='../type/output_cs_hdr_hru.html'>output_cs_hdr_hru</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cs_hdr_hru</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+
+    
+    <section>
+     <h2>Derived Types</h2>
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-cs_balance"></span><h3>type, public :: <a href='../type/cs_balance.html'>cs_balance</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-soil~7"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>soil</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |total mass in the soil profile</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-surq~5"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>surq</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass lost in surface runoff in HRU</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedm"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedm</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass lost in sediment runoff in HRU</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-latq~5"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>latq</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass in lateral flow in HRU</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-urbq~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>urbq</strong></td><td> =</td><td>0.</td><td><p>|kg/ha           |mass in urban runoff</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wetq~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wetq</strong></td><td> =</td><td>0.</td><td><p>|kg/ha           |mass in wetland outflow</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tile~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tile</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass in tile flow in HRU</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-perc~4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>perc</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass leached past bottom of soil</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwup~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwup</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass from groundwater (to soil profile)</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wtsp~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wtsp</strong></td><td> =</td><td>0.</td><td><p>|kg/ha           |mass in wetland seepage (to soil profile)</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irsw~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irsw</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass applied on soil via surface water irrigation</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irgw~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irgw</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass applied on soil via groundwater irrigation</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irwo~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irwo</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass applied on soil via irrigation from without (wo) the watershed</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rain~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rain</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass added to soil via rainfall</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dryd~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dryd</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass added to soil via dry atmospheric deposition  </p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fert~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fert</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass added to soil via fertilizer</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-uptk~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>uptk</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass taken up by crop roots</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctn~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctn</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass transferred by chemical reaction</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorb~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorb</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass transferred by sorption</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-conc~7"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>conc</strong></td><td> =</td><td>0.</td><td><p>|mg/L        |concentration in soil water (averaged over all soil layers)</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbd~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbd</strong></td><td> =</td><td>0.</td><td><p>|kg/ha       |mass sorbed to soil</p></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-object_cs_balance"></span><h3>type, public :: <a href='../type/object_cs_balance.html'>object_cs_balance</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-cs~12"></span>type(<a href='../type/cs_balance.html'>cs_balance</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>cs</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-fert_db_cs"></span><h3>type, public :: <a href='../type/fert_db_cs.html'>fert_db_cs</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-fertnm~3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fertnm</strong></td><td> =</td><td>" "</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4</strong></td><td> =</td><td>0.</td><td><p>kg seo4/ha      |fertilizer load of seo4 (kg/ha)</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3</strong></td><td> =</td><td>0.</td><td><p>kg seo3/ha      |fertilizer load of seo3 (kg/ha)</p></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-boron"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>boron</strong></td><td> =</td><td>0.</td><td><p>kg boron/ha     |fertilizer load of boron (kg/ha)</p></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-output_csbal_header"></span><h3>type, public :: <a href='../type/output_csbal_header.html'>output_csbal_header</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-yrc~76"></span>character(len=8),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>yrc</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yr"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-mon~4"></span>character(len=8),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>mon</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mo"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-day~75"></span>character(len=8),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;jday"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-latseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>latseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;latq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-surseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>surseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;surq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;sedm_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-urbseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>urbseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;urbq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wetseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wetseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;wetq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tileseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tileseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;tile_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-percseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>percseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;perc_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwupseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwupseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;gwup_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wtspseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wtspseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;wtsp_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irswseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irswseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irsw_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irgwseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irgwseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irgw_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irwoseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irwoseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irwo_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rainseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rainseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;rain_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-drydseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>drydseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;dryd_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fertseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fertseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;fert_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-uptkseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>uptkseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;uptk_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctnseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctnseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;rct_sl_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;srb_sl_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ptsoseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ptsoseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;ptso_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-poutseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>poutseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;ptout_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sldsseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sldsseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;dis_sl_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbdseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbdseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;sbd_sl_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gw_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rchgseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rchgseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;rchg_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seepseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seepseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;seep_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctaseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctaseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;rct_aq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbaseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbaseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;srb_aq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-aqdsseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>aqdsseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;dis_aq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srdaseo4"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srdaseo4</strong></td><td> =</td><td>"&nbsp;&nbsp;sbd_aq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-latseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>latseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;latq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-surseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>surseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;surq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;sedm_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-urbseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>urbseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;urbq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wetseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wetseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;wetq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tileseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tileseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;tile_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-percseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>percseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;perc_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwupseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwupseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;gwup_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wtspseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wtspseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;wtsp_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irswseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irswseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irsw_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irgwseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irgwseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irgw_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irwoseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irwoseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irwo_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rainseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rainseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;rain_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-drydseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>drydseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;dryd_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fertseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fertseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;fert_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-uptkseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>uptkseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;uptk_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctnseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctnseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;rct_sl_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;srb_sl_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ptsoseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ptsoseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;ptso_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-poutseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>poutseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;ptout_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sldsseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sldsseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;dis_sl_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbdseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbdseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;sbd_sl_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gw_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rchgseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rchgseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;rchg_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seepseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seepseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;seep_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctaseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctaseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;rct_aq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbaseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbaseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;srb_aq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-aqdsseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>aqdsseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;dis_aq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srdaseo3"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srdaseo3</strong></td><td> =</td><td>"&nbsp;&nbsp;sbd_aq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-latborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>latborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;latq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-surborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>surborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;surq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;sedm_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-urbborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>urbborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;urbq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wetborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wetborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;wetq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tileborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tileborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;tile_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-percborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>percborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;perc_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwupborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwupborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;gwup_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wtspborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wtspborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;wtsp_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irswborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irswborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irsw_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irgwborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irgwborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irgw_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-irwoborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>irwoborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;irwo_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rainborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rainborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;rain_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-drydborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>drydborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;dryd_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fertborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fertborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;fert_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-uptkborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>uptkborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;uptk_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctnborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctnborn</strong></td><td> =</td><td>"&nbsp;&nbsp;rct_sl_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbborn</strong></td><td> =</td><td>"&nbsp;&nbsp;srb_sl_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ptsoborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ptsoborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;ptso_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-poutborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>poutborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;ptout_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sldsborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sldsborn</strong></td><td> =</td><td>"&nbsp;&nbsp;dis_sl_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbdborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbdborn</strong></td><td> =</td><td>"&nbsp;&nbsp;sbd_sl_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gwborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gwborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gw_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rchgborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rchgborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;rchg_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seepborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seepborn</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;seep_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rctaborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rctaborn</strong></td><td> =</td><td>"&nbsp;&nbsp;rct_aq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srbaborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srbaborn</strong></td><td> =</td><td>"&nbsp;&nbsp;srb_aq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-aqdsborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>aqdsborn</strong></td><td> =</td><td>"&nbsp;&nbsp;dis_aq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srdaborn"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srdaborn</strong></td><td> =</td><td>"&nbsp;&nbsp;sbd_aq_born"</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-output_cs_hdr_hru"></span><h3>type, public :: <a href='../type/output_cs_hdr_hru.html'>output_cs_hdr_hru</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-day~76"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day</strong></td><td> =</td><td>"&nbsp;&nbsp;jday"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-mo~69"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>mo</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;mon"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-day_mo~70"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day_mo</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;day"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-yrc~77"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>yrc</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;yr"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-isd~57"></span>character(len=8),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>isd</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;unit "</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-id~58"></span>character(len=12),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>id</strong></td><td> =</td><td>" gis_id "</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4sl"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4sl</strong></td><td> =</td><td>"sl_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3sl"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3sl</strong></td><td> =</td><td>"sl_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornsl"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornsl</strong></td><td> =</td><td>"sl_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4sq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4sq</strong></td><td> =</td><td>"surq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3sq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3sq</strong></td><td> =</td><td>"surq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornsq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornsq</strong></td><td> =</td><td>"surq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4sd~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4sd</strong></td><td> =</td><td>"sedm_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3sd~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3sd</strong></td><td> =</td><td>"sedm_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornsd~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornsd</strong></td><td> =</td><td>"sedm_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4lq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4lq</strong></td><td> =</td><td>"latq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3lq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3lq</strong></td><td> =</td><td>"latq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornlq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornlq</strong></td><td> =</td><td>"latq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4ub"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4ub</strong></td><td> =</td><td>"urbq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3ub"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3ub</strong></td><td> =</td><td>"urbq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornub"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornub</strong></td><td> =</td><td>"urbq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4wt"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4wt</strong></td><td> =</td><td>"wetq_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3wt"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3wt</strong></td><td> =</td><td>"wetq_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornwt"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornwt</strong></td><td> =</td><td>"wetq_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4tq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4tq</strong></td><td> =</td><td>"tile_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3tq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3tq</strong></td><td> =</td><td>"tile_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-borntq~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>borntq</strong></td><td> =</td><td>"tile_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4pc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4pc</strong></td><td> =</td><td>"perc_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3pc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3pc</strong></td><td> =</td><td>"perc_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornpc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornpc</strong></td><td> =</td><td>"perc_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4gt"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4gt</strong></td><td> =</td><td>"gwup_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3gt"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3gt</strong></td><td> =</td><td>"gwup_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-borngt"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>borngt</strong></td><td> =</td><td>"gwup_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4ws~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4ws</strong></td><td> =</td><td>"wtsp_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3ws~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3ws</strong></td><td> =</td><td>"wtsp_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornws~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornws</strong></td><td> =</td><td>"wtsp_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4is~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4is</strong></td><td> =</td><td>"irsw_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3is~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3is</strong></td><td> =</td><td>"irsw_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornis~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornis</strong></td><td> =</td><td>"irsw_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4ig~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4ig</strong></td><td> =</td><td>"irgw_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3ig~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3ig</strong></td><td> =</td><td>"irgw_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornig~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornig</strong></td><td> =</td><td>"irgw_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4io~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4io</strong></td><td> =</td><td>"irwo_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3io~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3io</strong></td><td> =</td><td>"irwo_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornio~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornio</strong></td><td> =</td><td>"irwo_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4rn~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4rn</strong></td><td> =</td><td>"rain_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3rn~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3rn</strong></td><td> =</td><td>"rain_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornrn~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornrn</strong></td><td> =</td><td>"rain_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4dd~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4dd</strong></td><td> =</td><td>"dryd_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3dd~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3dd</strong></td><td> =</td><td>"dryd_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-borndd~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>borndd</strong></td><td> =</td><td>"dryd_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4fz~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4fz</strong></td><td> =</td><td>"fert_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3fz~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3fz</strong></td><td> =</td><td>"fert_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornfz~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornfz</strong></td><td> =</td><td>"fert_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4up~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4up</strong></td><td> =</td><td>"uptk_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3up~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3up</strong></td><td> =</td><td>"uptk_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornup~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornup</strong></td><td> =</td><td>"uptk_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4rc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4rc</strong></td><td> =</td><td>"rctn_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3rc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3rc</strong></td><td> =</td><td>"rctn_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornrc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornrc</strong></td><td> =</td><td>"rctn_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4sp"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4sp</strong></td><td> =</td><td>"sorb_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3sp"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3sp</strong></td><td> =</td><td>"sorb_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornsp"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornsp</strong></td><td> =</td><td>"sorb_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4c~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4c</strong></td><td> =</td><td>"conc_seo4"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3c~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3c</strong></td><td> =</td><td>"conc_seo3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornc~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornc</strong></td><td> =</td><td>"conc_born"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo4srbd"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo4srbd</strong></td><td> =</td><td>"seo4_srbd"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-seo3srbd"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>seo3srbd</strong></td><td> =</td><td>"seo3_srbd"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bornsrbd"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bornsrbd</strong></td><td> =</td><td>"born_srbd"</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+    </section>
+  <br>
+    
+
+    
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

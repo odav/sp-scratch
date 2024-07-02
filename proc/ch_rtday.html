@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>ch_rtday &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>ch_rtday
+      <small>Subroutine</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.3% of total for procedures.">185 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/ch_rtday.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li><a href='../sourcefile/ch_rtday.f90.html'>ch_rtday.f90</a></li>
+     <li class="active">ch_rtday</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<em>None</em>
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>subroutine ch_rtday()</h2>
+        <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      <li class="list-group-item">
+  <ul class="list-inline">
+    <li><a href='../module/channel_module.html'>channel_module</a></li>
+    <li><a href='../module/basin_module.html'>basin_module</a></li>
+    <li><a href='../module/maximum_data_module.html'>maximum_data_module</a></li>
+    <li><a href='../module/channel_data_module.html'>channel_data_module</a></li>
+    <li><a href='../module/channel_velocity_module.html'>channel_velocity_module</a></li>
+    <li><a href='../module/hydrograph_module.html'>hydrograph_module</a></li>
+    <li><a href='../module/hru_module.html'>hru_module</a></li>
+    <li><a href='../module/reservoir_module.html'>reservoir_module</a></li>
+    <li><a href='../module/reservoir_data_module.html'>reservoir_data_module</a></li>
+  </ul>
+      </li>
+      <li class="list-group-item">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~ch_rtday~~UsesGraph Pages: 1 -->
+<svg id="procch_rtdayUsesGraph" width="373pt" height="364pt"
+ viewBox="0.00 0.00 373.00 364.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~ch_rtday~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 360)">
+<title>proc~~ch_rtday~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-360 369,-360 369,4 -4,4"/>
+<!-- proc~ch_rtday -->
+<g id="proc~~ch_rtday~~UsesGraph_node1" class="node">
+<title>proc~ch_rtday</title>
+<polygon fill="none" stroke="black" points="365,-188 307,-188 307,-164 365,-164 365,-188"/>
+<text text-anchor="middle" x="336" y="-173.6" font-family="Helvetica,sans-Serif" font-size="10.50">ch_rtday</text>
+</g>
+<!-- module~channel_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node2" class="node">
+<title>module~channel_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node2"><a xlink:href=".././module/channel_module.html" xlink:title="channel_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="247.5,-356 146.5,-356 146.5,-332 247.5,-332 247.5,-356"/>
+<text text-anchor="middle" x="197" y="-341.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~channel_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge1" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M333.23,-188.33C328.53,-216.52 313.06,-286.1 271,-323 266.85,-326.64 262.1,-329.65 257.07,-332.15"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="255.6,-328.97 247.76,-336.09 258.33,-335.41 255.6,-328.97"/>
+</g>
+<!-- module~reservoir_data_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node3" class="node">
+<title>module~reservoir_data_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node3"><a xlink:href=".././module/reservoir_data_module.html" xlink:title="reservoir_data_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="264.5,-314 129.5,-314 129.5,-290 264.5,-290 264.5,-314"/>
+<text text-anchor="middle" x="197" y="-299.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">reservoir_data_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~reservoir_data_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge5" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~reservoir_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M330.99,-188.09C323.09,-209.99 303.42,-256.27 271,-281 269.13,-282.43 267.16,-283.76 265.12,-285"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="263.02,-282.15 255.78,-289.89 266.26,-288.35 263.02,-282.15"/>
+</g>
+<!-- module~channel_velocity_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node4" class="node">
+<title>module~channel_velocity_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node4"><a xlink:href=".././module/channel_velocity_module.html" xlink:title="channel_velocity_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="271,-272 123,-272 123,-248 271,-248 271,-272"/>
+<text text-anchor="middle" x="197" y="-257.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_velocity_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~channel_velocity_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge2" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~channel_velocity_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M325.93,-188.03C314.6,-202.23 293.88,-225.63 271,-239 267.79,-240.87 264.41,-242.59 260.93,-244.16"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="259.47,-240.97 251.52,-247.98 262.11,-247.46 259.47,-240.97"/>
+</g>
+<!-- module~hru_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node5" class="node">
+<title>module~hru_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node5"><a xlink:href=".././module/hru_module.html" xlink:title="hru_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="235,-230 159,-230 159,-206 235,-206 235,-230"/>
+<text text-anchor="middle" x="197" y="-215.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~hru_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge4" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~hru_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M306.72,-185.53C295.61,-189.21 282.74,-193.39 271,-197 262.57,-199.59 253.57,-202.26 244.87,-204.79"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="243.85,-201.45 235.22,-207.58 245.79,-208.17 243.85,-201.45"/>
+</g>
+<!-- module~hydrograph_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node6" class="node">
+<title>module~hydrograph_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node6"><a xlink:href=".././module/hydrograph_module.html" xlink:title="hydrograph_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="257,-188 137,-188 137,-164 257,-164 257,-188"/>
+<text text-anchor="middle" x="197" y="-173.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hydrograph_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~hydrograph_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge3" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~hydrograph_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M306.95,-176C295.35,-176 281.36,-176 267.31,-176"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="267.11,-172.5 257.11,-176 267.11,-179.5 267.11,-172.5"/>
+</g>
+<!-- module~channel_data_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node7" class="node">
+<title>module~channel_data_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node7"><a xlink:href=".././module/channel_data_module.html" xlink:title="channel_data_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="262,-146 132,-146 132,-122 262,-122 262,-146"/>
+<text text-anchor="middle" x="197" y="-131.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_data_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~channel_data_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge6" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M306.72,-166.47C295.61,-162.79 282.74,-158.61 271,-155 264.48,-152.99 257.61,-150.94 250.81,-148.94"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="251.51,-145.5 240.93,-146.06 249.55,-152.22 251.51,-145.5"/>
+</g>
+<!-- module~maximum_data_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node8" class="node">
+<title>module~maximum_data_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node8"><a xlink:href=".././module/maximum_data_module.html" xlink:title="maximum_data_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="268,-104 126,-104 126,-80 268,-80 268,-104"/>
+<text text-anchor="middle" x="197" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">maximum_data_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~maximum_data_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge7" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~maximum_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M325.93,-163.97C314.6,-149.77 293.88,-126.37 271,-113 267.79,-111.13 264.41,-109.41 260.93,-107.84"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="262.11,-104.54 251.52,-104.02 259.47,-111.03 262.11,-104.54"/>
+</g>
+<!-- module~basin_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node9" class="node">
+<title>module~basin_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node9"><a xlink:href=".././module/basin_module.html" xlink:title="basin_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="87,-105 0,-105 0,-81 87,-81 87,-105"/>
+<text text-anchor="middle" x="43.5" y="-90.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">basin_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~basin_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge8" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~basin_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M331.81,-163.72C325.06,-140.61 306.93,-91.18 271,-71 211.18,-37.41 128.3,-59.51 81.17,-77.21"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="79.73,-74.01 71.67,-80.89 82.26,-80.54 79.73,-74.01"/>
+</g>
+<!-- module~reservoir_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node10" class="node">
+<title>module~reservoir_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node10"><a xlink:href=".././module/reservoir_module.html" xlink:title="reservoir_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="250,-24 144,-24 144,0 250,0 250,-24"/>
+<text text-anchor="middle" x="197" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">reservoir_module</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~reservoir_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge9" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~reservoir_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M332.67,-163.79C326.97,-137.16 309.83,-73.41 271,-38 267.12,-34.46 262.73,-31.4 258.08,-28.75"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="259.37,-25.49 248.86,-24.15 256.24,-31.75 259.37,-25.49"/>
+</g>
+<!-- module~hydrograph_module&#45;&gt;module~basin_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge10" class="edge">
+<title>module~hydrograph_module&#45;&gt;module~basin_module</title>
+<path fill="none" stroke="#00ffa9" stroke-dasharray="5,2" d="M144.37,-163.88C137.02,-161.38 129.69,-158.43 123,-155 101.1,-143.76 79.39,-125.96 64.36,-112.31"/>
+<polygon fill="#00ffa9" stroke="#00ffa9" points="66.45,-109.47 56.75,-105.22 61.68,-114.59 66.45,-109.47"/>
+</g>
+<!-- module~time_module -->
+<g id="proc~~ch_rtday~~UsesGraph_node11" class="node">
+<title>module~time_module</title>
+<g id="a_proc~~ch_rtday~~UsesGraph_node11"><a xlink:href=".././module/time_module.html" xlink:title="time_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="84.5,-188 2.5,-188 2.5,-164 84.5,-164 84.5,-188"/>
+<text text-anchor="middle" x="43.5" y="-173.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">time_module</text>
+</a>
+</g>
+</g>
+<!-- module~hydrograph_module&#45;&gt;module~time_module -->
+<g id="proc~~ch_rtday~~UsesGraph_edge11" class="edge">
+<title>module~hydrograph_module&#45;&gt;module~time_module</title>
+<path fill="none" stroke="#00ffa9" stroke-dasharray="5,2" d="M136.99,-176C123.09,-176 108.39,-176 94.91,-176"/>
+<polygon fill="#00ffa9" stroke="#00ffa9" points="94.87,-172.5 84.87,-176 94.87,-179.5 94.87,-172.5"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a submodule to the (sub)module which it is
+    descended from. Dashed arrows point from a module or program unit to 
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </li>
+      </ul>
+    </div>
+
+
+    <p>~ ~ ~ PURPOSE ~ ~ ~
+   this subroutine routes the daily flow through the reach using a 
+   variable storage coefficient</p>
+<p>~ ~ ~ INCOMING VARIABLES ~ ~ ~
+   name        |units         |definition
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   ch_d(:)     |m             |average depth of main channel
+   ch_n(2,:)   |none          |Manning"s "n" value for the main channel
+   ch_s(2,:)   |m/m           |average slope of main channel
+   chside(:)   |none          |change in horizontal distance per unit
+                              |change in vertical distance on channel side
+                              |slopes; always set to 2 (slope=1/2)
+   pet_ch       |mm H2O        |potential evapotranspiration
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   ~ ~ ~ OUTGOING VARIABLES ~ ~ ~
+   name        |units         |definition
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   rcharea     |m^2           |cross-sectional area of flow
+   rchdep      |m             |depth of flow on day
+   rtevp       |m^3 H2O       |evaporation from reach on day
+   rttime      |hr            |reach travel time
+   rttlc       |m^3 H2O       |transmission losses from reach on day
+   rtwtr       |m^3 H2O       |water leaving reach on day
+   sdti        |m^3/s         |average flow on day in reach
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~</p>
+<p>~ ~ ~ LOCAL DEFINITIONS ~ ~ ~
+   name        |units         |definition
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+   det         |hr            |time step (24 hours)
+   c           |none          |inverse of channel side slope
+   jrch        |none          |reach number
+   p           |m             |wetted perimeter
+   rh          |m             |hydraulic radius
+   scoef       |none          |Storage coefficient (fraction of water in 
+                              |reach flowing out on day)
+   topw        |m             |top width of main channel
+   vol         |m^3 H2O       |volume of water in reach at beginning of
+                              |day
+   wtrin       |m^3 H2O       |amount of water flowing into reach on day
+   ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~</p>
+<p>~ ~ ~ SUBROUTINES/FUNCTIONS CALLED ~ ~ ~
+   Intrinsic: Sqrt, Min
+   SWAT: Qman</p>
+<p>~ ~ ~ ~ ~ ~ END SPECIFICATIONS ~ ~ ~ ~ ~ ~
+   Modified by Balaji Narasimhan
+   Spatial Sciences Laboratory, Texas A&amp;M University</p>
+<p>Find average flowrate in a day
+Find maximum flow capacity of the channel at bank full
+If average flowrate is greater than than the channel capacity at bank full
+then simulate flood plain flow else simulate the regular channel flow
+taking floodwater to wetlands  <br>
+find the crossectional area and depth for volrt
+by iteration method at 1cm interval depth
+find the depth until the discharge rate is equal to volrt
+find the crossectional area and depth for volrt
+by iteration method at 1cm interval depth
+find the depth until the discharge rate is equal to volrt
+calculate top width of channel at water level
+Time step of simulation (in hour)
+adjusted by Ann van Griensven Feb 2018 / losses are independent of residence time.</p>
+<p>calculate velocity and travel time
+calculate volume of water leaving reach on day
+calculate amount of water in channel at end of day</p>
+<p>Add if statement to keep rchstor from becoming negative
+transmission and evaporation losses are proportionally taken from the 
+channel storage and from volume flowing out</p>
+<p>calculate transmission losses
+ Total time in hours to clear the water
+calculate evaporation</p>
+
+    <h3>Arguments</h3>
+    <em>None</em>
+    <br>
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Called by</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~ch_rtday~~CalledByGraph Pages: 1 -->
+<svg id="procch_rtdayCalledByGraph" width="199pt" height="32pt"
+ viewBox="0.00 0.00 199.00 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~ch_rtday~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>proc~~ch_rtday~~CalledByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 195,-28 195,4 -4,4"/>
+<!-- proc~ch_rtday -->
+<g id="proc~~ch_rtday~~CalledByGraph_node1" class="node">
+<title>proc~ch_rtday</title>
+<polygon fill="none" stroke="black" points="191,-24 133,-24 133,0 191,0 191,-24"/>
+<text text-anchor="middle" x="162" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">ch_rtday</text>
+</g>
+<!-- proc~channel_control -->
+<g id="proc~~ch_rtday~~CalledByGraph_node2" class="node">
+<title>proc~channel_control</title>
+<g id="a_proc~~ch_rtday~~CalledByGraph_node2"><a xlink:href=".././proc/channel_control.html" xlink:title="channel_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="97,-24 0,-24 0,0 97,0 97,-24"/>
+<text text-anchor="middle" x="48.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_control</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_control&#45;&gt;proc~ch_rtday -->
+<g id="proc~~ch_rtday~~CalledByGraph_edge1" class="edge">
+<title>proc~channel_control&#45;&gt;proc~ch_rtday</title>
+<path fill="none" stroke="#ff0000" d="M97.11,-12C105.68,-12 114.52,-12 122.78,-12"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="122.88,-15.5 132.88,-12 122.88,-8.5 122.88,-15.5"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="597pt" height="32pt"
+ viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
+<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
+<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
+<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<em>None</em>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    
+    
+
+    
+    
+
+
+    
+    
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

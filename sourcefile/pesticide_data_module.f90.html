@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>pesticide_data_module.f90 &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>pesticide_data_module.f90
+    <small>Source File</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.1% of total for source files.">39 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/pesticide_data_module.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li class="active">pesticide_data_module.f90</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#mods-0">Modules</a></h3></div>
+  <div id="mods-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/pesticide_data_module.html">pesticide_data_module</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/pesticide_data_module.f90.html#src">pesticide_data_module.f90</a>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    <div class="col-md-9" id='text'>
+      
+      <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Files dependent on this one</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: sourcefile~~pesticide_data_module.f90~~AfferentGraph Pages: 1 -->
+<svg id="sourcefilepesticide_data_modulef90AfferentGraph" width="348pt" height="1040pt"
+ viewBox="0.00 0.00 348.00 1040.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 1036)">
+<title>sourcefile~~pesticide_data_module.f90~~AfferentGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1036 344,-1036 344,4 -4,4"/>
+<!-- sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node1" class="node">
+<title>sourcefile~pesticide_data_module.f90</title>
+<polygon fill="none" stroke="black" points="156,-528 0,-528 0,-504 156,-504 156,-528"/>
+<text text-anchor="middle" x="78" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50">pesticide_data_module.f90</text>
+</g>
+<!-- sourcefile~swr_substor.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node2" class="node">
+<title>sourcefile~swr_substor.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node2"><a xlink:href=".././sourcefile/swr_substor.f90.html" xlink:title="swr_substor.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="313,-1032 219,-1032 219,-1008 313,-1008 313,-1032"/>
+<text text-anchor="middle" x="266" y="-1017.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">swr_substor.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~swr_substor.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge1" class="edge">
+<title>sourcefile~swr_substor.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M218.86,-1014.59C208.88,-1011.44 199.18,-1006.55 192,-999 126.83,-930.47 90.31,-623.99 81.25,-538.32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="84.71,-537.74 80.19,-528.15 77.74,-538.46 84.71,-537.74"/>
+</g>
+<!-- sourcefile~pest_decay.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node3" class="node">
+<title>sourcefile~pest_decay.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node3"><a xlink:href=".././sourcefile/pest_decay.f90.html" xlink:title="pest_decay.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="311.5,-990 220.5,-990 220.5,-966 311.5,-966 311.5,-990"/>
+<text text-anchor="middle" x="266" y="-975.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_decay.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_decay.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge2" class="edge">
+<title>sourcefile~pest_decay.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M220.49,-972.95C209.98,-969.82 199.63,-964.85 192,-957 132.05,-895.27 92.33,-619.47 81.8,-538.45"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="85.25,-537.83 80.51,-528.35 78.3,-538.72 85.25,-537.83"/>
+</g>
+<!-- sourcefile~res_pest.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node4" class="node">
+<title>sourcefile~res_pest.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node4"><a xlink:href=".././sourcefile/res_pest.f90.html" xlink:title="res_pest.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="304,-948 228,-948 228,-924 304,-924 304,-948"/>
+<text text-anchor="middle" x="266" y="-933.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">res_pest.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~res_pest.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge3" class="edge">
+<title>sourcefile~res_pest.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M227.84,-932.69C215.01,-929.8 201.49,-924.53 192,-915 84.66,-807.22 77.53,-605.57 78.31,-538.41"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="81.82,-538.21 78.51,-528.15 74.82,-538.08 81.82,-538.21"/>
+</g>
+<!-- sourcefile~res_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node5" class="node">
+<title>sourcefile~res_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node5"><a xlink:href=".././sourcefile/res_read.f90.html" xlink:title="res_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="305,-906 227,-906 227,-882 305,-882 305,-906"/>
+<text text-anchor="middle" x="266" y="-891.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">res_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~res_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge4" class="edge">
+<title>sourcefile~res_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M226.86,-890.27C214.39,-887.31 201.35,-882.11 192,-873 94.89,-778.42 81.01,-601.06 79.2,-538.52"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="82.69,-538.15 78.98,-528.23 75.69,-538.3 82.69,-538.15"/>
+</g>
+<!-- sourcefile~wet_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node6" class="node">
+<title>sourcefile~wet_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node6"><a xlink:href=".././sourcefile/wet_read.f90.html" xlink:title="wet_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="306.5,-864 225.5,-864 225.5,-840 306.5,-840 306.5,-864"/>
+<text text-anchor="middle" x="266" y="-849.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">wet_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~wet_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge5" class="edge">
+<title>sourcefile~wet_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M225.16,-847.6C213.29,-844.56 201.04,-839.48 192,-831 104.78,-749.22 84.77,-595.38 80.27,-538.17"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="83.75,-537.8 79.56,-528.06 76.77,-538.28 83.75,-537.8"/>
+</g>
+<!-- sourcefile~pest_washp.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node7" class="node">
+<title>sourcefile~pest_washp.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node7"><a xlink:href=".././sourcefile/pest_washp.f90.html" xlink:title="pest_washp.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="313,-822 219,-822 219,-798 313,-798 313,-822"/>
+<text text-anchor="middle" x="266" y="-807.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_washp.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_washp.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge6" class="edge">
+<title>sourcefile~pest_washp.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M218.95,-803.48C209.19,-800.36 199.57,-795.77 192,-789 114.85,-720.06 89.12,-590.28 81.68,-538.33"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="85.12,-537.65 80.33,-528.21 78.18,-538.58 85.12,-537.65"/>
+</g>
+<!-- sourcefile~hydro_init.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node8" class="node">
+<title>sourcefile~hydro_init.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node8"><a xlink:href=".././sourcefile/hydro_init.f90.html" xlink:title="hydro_init.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="308.5,-780 223.5,-780 223.5,-756 308.5,-756 308.5,-780"/>
+<text text-anchor="middle" x="266" y="-765.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hydro_init.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~hydro_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge7" class="edge">
+<title>sourcefile~hydro_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M223.43,-762.37C212.3,-759.27 200.89,-754.46 192,-747 124.55,-690.42 93.96,-583.95 83.47,-538.01"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="86.88,-537.21 81.33,-528.19 80.04,-538.71 86.88,-537.21"/>
+</g>
+<!-- sourcefile~pesticide_init.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node9" class="node">
+<title>sourcefile~pesticide_init.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node9"><a xlink:href=".././sourcefile/pesticide_init.f90.html" xlink:title="pesticide_init.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="317.5,-738 214.5,-738 214.5,-714 317.5,-714 317.5,-738"/>
+<text text-anchor="middle" x="266" y="-723.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pesticide_init.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pesticide_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge8" class="edge">
+<title>sourcefile~pesticide_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M214.31,-716.83C206.35,-713.91 198.58,-710.07 192,-705 134.28,-660.57 99.88,-577.58 86.07,-538.04"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="89.3,-536.68 82.78,-528.33 82.67,-538.92 89.3,-536.68"/>
+</g>
+<!-- sourcefile~cal_parm_select.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node10" class="node">
+<title>sourcefile~cal_parm_select.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node10"><a xlink:href=".././sourcefile/cal_parm_select.f90.html" xlink:title="cal_parm_select.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="325.5,-696 206.5,-696 206.5,-672 325.5,-672 325.5,-696"/>
+<text text-anchor="middle" x="266" y="-681.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cal_parm_select.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~cal_parm_select.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge9" class="edge">
+<title>sourcefile~cal_parm_select.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M209.1,-671.99C203.07,-669.53 197.23,-666.56 192,-663 143.53,-630 106.83,-569.54 89.68,-537.4"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="92.72,-535.65 85,-528.4 86.51,-538.88 92.72,-535.65"/>
+</g>
+<!-- sourcefile~dtbl_lum_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node11" class="node">
+<title>sourcefile~dtbl_lum_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node11"><a xlink:href=".././sourcefile/dtbl_lum_read.f90.html" xlink:title="dtbl_lum_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="320,-654 212,-654 212,-630 320,-630 320,-654"/>
+<text text-anchor="middle" x="266" y="-639.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dtbl_lum_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~dtbl_lum_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge10" class="edge">
+<title>sourcefile~dtbl_lum_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M211.95,-629.95C205.03,-627.46 198.2,-624.5 192,-621 152.34,-598.59 115.49,-559.6 95.23,-535.96"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="97.66,-533.4 88.54,-528 92.3,-537.91 97.66,-533.4"/>
+</g>
+<!-- sourcefile~sd_channel_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node12" class="node">
+<title>sourcefile~sd_channel_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node12"><a xlink:href=".././sourcefile/sd_channel_read.f90.html" xlink:title="sd_channel_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="327,-612 205,-612 205,-588 327,-588 327,-612"/>
+<text text-anchor="middle" x="266" y="-597.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~sd_channel_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge11" class="edge">
+<title>sourcefile~sd_channel_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M217.33,-587.99C208.78,-585.36 200.04,-582.34 192,-579 161.38,-566.26 128.49,-547.26 106.13,-533.45"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="107.86,-530.41 97.53,-528.08 104.15,-536.34 107.86,-530.41"/>
+</g>
+<!-- sourcefile~ch_rtpest.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node13" class="node">
+<title>sourcefile~ch_rtpest.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node13"><a xlink:href=".././sourcefile/ch_rtpest.f90.html" xlink:title="ch_rtpest.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="307,-570 225,-570 225,-546 307,-546 307,-570"/>
+<text text-anchor="middle" x="266" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtpest.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~ch_rtpest.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge12" class="edge">
+<title>sourcefile~ch_rtpest.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M224.64,-548.89C200.57,-543.45 169.47,-536.43 142.2,-530.27"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="142.87,-526.84 132.35,-528.05 141.33,-533.66 142.87,-526.84"/>
+</g>
+<!-- sourcefile~pest_pl_up.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node14" class="node">
+<title>sourcefile~pest_pl_up.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node14"><a xlink:href=".././sourcefile/pest_pl_up.f90.html" xlink:title="pest_pl_up.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="310.5,-528 221.5,-528 221.5,-504 310.5,-504 310.5,-528"/>
+<text text-anchor="middle" x="266" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_pl_up.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_pl_up.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge13" class="edge">
+<title>sourcefile~pest_pl_up.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M221.39,-516C204.92,-516 185.53,-516 166.46,-516"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="166.22,-512.5 156.22,-516 166.22,-519.5 166.22,-512.5"/>
+</g>
+<!-- sourcefile~constit_db_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node15" class="node">
+<title>sourcefile~constit_db_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node15"><a xlink:href=".././sourcefile/constit_db_read.f90.html" xlink:title="constit_db_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="324,-486 208,-486 208,-462 324,-462 324,-486"/>
+<text text-anchor="middle" x="266" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">constit_db_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~constit_db_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge14" class="edge">
+<title>sourcefile~constit_db_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M211.7,-486.04C190.01,-490.93 164.76,-496.63 142.15,-501.74"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="141.29,-498.35 132.31,-503.96 142.83,-505.17 141.29,-498.35"/>
+</g>
+<!-- sourcefile~read_mgtops.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node16" class="node">
+<title>sourcefile~read_mgtops.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node16"><a xlink:href=".././sourcefile/read_mgtops.f90.html" xlink:title="read_mgtops.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="317,-444 215,-444 215,-420 317,-420 317,-444"/>
+<text text-anchor="middle" x="266" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">read_mgtops.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~read_mgtops.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge15" class="edge">
+<title>sourcefile~read_mgtops.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M217.33,-444.01C208.78,-446.64 200.04,-449.66 192,-453 161.38,-465.74 128.49,-484.74 106.13,-498.55"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="104.15,-495.66 97.53,-503.92 107.86,-501.59 104.15,-495.66"/>
+</g>
+<!-- sourcefile~cs_hru_init.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node17" class="node">
+<title>sourcefile~cs_hru_init.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node17"><a xlink:href=".././sourcefile/cs_hru_init.f90.html" xlink:title="cs_hru_init.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="310.5,-402 221.5,-402 221.5,-378 310.5,-378 310.5,-402"/>
+<text text-anchor="middle" x="266" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_hru_init.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~cs_hru_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge16" class="edge">
+<title>sourcefile~cs_hru_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M221.19,-399C211.23,-402.01 200.96,-405.94 192,-411 152.34,-433.41 115.49,-472.4 95.23,-496.04"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="92.3,-494.09 88.54,-504 97.66,-498.6 92.3,-494.09"/>
+</g>
+<!-- sourcefile~salt_hru_init.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node18" class="node">
+<title>sourcefile~salt_hru_init.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node18"><a xlink:href=".././sourcefile/salt_hru_init.f90.html" xlink:title="salt_hru_init.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="314.5,-360 217.5,-360 217.5,-336 314.5,-336 314.5,-360"/>
+<text text-anchor="middle" x="266" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">salt_hru_init.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~salt_hru_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge17" class="edge">
+<title>sourcefile~salt_hru_init.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M217.47,-356.92C208.55,-359.88 199.63,-363.8 192,-369 143.53,-402 106.83,-462.46 89.68,-494.6"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="86.51,-493.12 85,-503.6 92.72,-496.35 86.51,-493.12"/>
+</g>
+<!-- sourcefile~aqu_1d_control.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node19" class="node">
+<title>sourcefile~aqu_1d_control.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node19"><a xlink:href=".././sourcefile/aqu_1d_control.f90.html" xlink:title="aqu_1d_control.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="323,-318 209,-318 209,-294 323,-294 323,-318"/>
+<text text-anchor="middle" x="266" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">aqu_1d_control.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~aqu_1d_control.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge18" class="edge">
+<title>sourcefile~aqu_1d_control.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M208.67,-317.42C202.72,-319.99 197.02,-323.14 192,-327 134.28,-371.43 99.88,-454.42 86.07,-493.96"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="82.67,-493.08 82.78,-503.67 89.3,-495.32 82.67,-493.08"/>
+</g>
+<!-- sourcefile~pest_lch.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node20" class="node">
+<title>sourcefile~pest_lch.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node20"><a xlink:href=".././sourcefile/pest_lch.f90.html" xlink:title="pest_lch.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="304,-276 228,-276 228,-252 304,-252 304,-276"/>
+<text text-anchor="middle" x="266" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_lch.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_lch.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge19" class="edge">
+<title>sourcefile~pest_lch.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M227.97,-268.45C215.45,-271.47 202.1,-276.52 192,-285 124.55,-341.58 93.96,-448.05 83.47,-493.99"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="80.04,-493.29 81.33,-503.81 86.88,-494.79 80.04,-493.29"/>
+</g>
+<!-- sourcefile~pest_soil_tot.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node21" class="node">
+<title>sourcefile~pest_soil_tot.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node21"><a xlink:href=".././sourcefile/pest_soil_tot.f90.html" xlink:title="pest_soil_tot.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="315,-234 217,-234 217,-210 315,-210 315,-234"/>
+<text text-anchor="middle" x="266" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_soil_tot.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_soil_tot.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge20" class="edge">
+<title>sourcefile~pest_soil_tot.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M216.67,-229.28C207.71,-232.37 198.98,-236.76 192,-243 114.85,-311.94 89.12,-441.72 81.68,-493.67"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="78.18,-493.42 80.33,-503.79 85.12,-494.35 78.18,-493.42"/>
+</g>
+<!-- sourcefile~pest_parm_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node22" class="node">
+<title>sourcefile~pest_parm_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node22"><a xlink:href=".././sourcefile/pest_parm_read.f90.html" xlink:title="pest_parm_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="325,-192 207,-192 207,-168 325,-168 325,-192"/>
+<text text-anchor="middle" x="266" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_parm_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_parm_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge21" class="edge">
+<title>sourcefile~pest_parm_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M206.8,-191.01C201.39,-193.66 196.33,-196.94 192,-201 104.78,-282.78 84.77,-436.62 80.27,-493.83"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="76.77,-493.72 79.56,-503.94 83.75,-494.2 76.77,-493.72"/>
+</g>
+<!-- sourcefile~res_initial.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node23" class="node">
+<title>sourcefile~res_initial.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node23"><a xlink:href=".././sourcefile/res_initial.f90.html" xlink:title="res_initial.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="307.5,-150 224.5,-150 224.5,-126 307.5,-126 307.5,-150"/>
+<text text-anchor="middle" x="266" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">res_initial.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~res_initial.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge22" class="edge">
+<title>sourcefile~res_initial.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M224.21,-142.39C212.56,-145.44 200.69,-150.54 192,-159 94.89,-253.58 81.01,-430.94 79.2,-493.48"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="75.69,-493.7 78.98,-503.77 82.69,-493.85 75.69,-493.7"/>
+</g>
+<!-- sourcefile~pest_metabolite_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node24" class="node">
+<title>sourcefile~pest_metabolite_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node24"><a xlink:href=".././sourcefile/pest_metabolite_read.f90.html" xlink:title="pest_metabolite_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="340,-108 192,-108 192,-84 340,-84 340,-108"/>
+<text text-anchor="middle" x="266" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_metabolite_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_metabolite_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge23" class="edge">
+<title>sourcefile~pest_metabolite_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M204.04,-108.02C199.63,-110.49 195.54,-113.45 192,-117 84.66,-224.78 77.53,-426.43 78.31,-493.59"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="74.82,-493.92 78.51,-503.85 81.82,-493.79 74.82,-493.92"/>
+</g>
+<!-- sourcefile~ch_read.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node25" class="node">
+<title>sourcefile~ch_read.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node25"><a xlink:href=".././sourcefile/ch_read.f90.html" xlink:title="ch_read.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="303.5,-66 228.5,-66 228.5,-42 303.5,-42 303.5,-66"/>
+<text text-anchor="middle" x="266" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~ch_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge24" class="edge">
+<title>sourcefile~ch_read.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M228.46,-57.01C215.39,-59.85 201.56,-65.16 192,-75 132.05,-136.73 92.33,-412.53 81.8,-493.55"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="78.3,-493.28 80.51,-503.65 85.25,-494.17 78.3,-493.28"/>
+</g>
+<!-- sourcefile~pest_pesty.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_node26" class="node">
+<title>sourcefile~pest_pesty.f90</title>
+<g id="a_sourcefile~~pesticide_data_module.f90~~AfferentGraph_node26"><a xlink:href=".././sourcefile/pest_pesty.f90.html" xlink:title="pest_pesty.f90">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="310,-24 222,-24 222,0 310,0 310,-24"/>
+<text text-anchor="middle" x="266" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_pesty.f90</text>
+</a>
+</g>
+</g>
+<!-- sourcefile~pest_pesty.f90&#45;&gt;sourcefile~pesticide_data_module.f90 -->
+<g id="sourcefile~~pesticide_data_module.f90~~AfferentGraph_edge25" class="edge">
+<title>sourcefile~pest_pesty.f90&#45;&gt;sourcefile~pesticide_data_module.f90</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M221.9,-16.5C210.87,-19.6 199.91,-24.69 192,-33 126.83,-101.53 90.31,-408.01 81.25,-493.68"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="77.74,-493.54 80.19,-503.85 84.71,-494.26 77.74,-493.54"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="202pt" height="32pt"
+ viewBox="0.00 0.00 201.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 197.5,-28 197.5,4 -4,4"/>
+<!-- Source File -->
+<g id="node1" class="node">
+<title>Source File</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Source File</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node2" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="193.5,-24 88.5,-24 88.5,0 193.5,0 193.5,-24"/>
+<text text-anchor="middle" x="141" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a file to a file which it depends on. A file
+    is dependent upon another if the latter must be compiled before the former
+    can be. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+<br>
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#mods-1">Modules</a></h3></div>
+  <div id="mods-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/pesticide_data_module.html">pesticide_data_module</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../sourcefile/pesticide_data_module.f90.html#src">pesticide_data_module.f90</a>
+  </div>
+</div>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    <section>
+      <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="hl"><pre><span></span><a id="ln-1" name="ln-1" href="#ln-1"></a><span class="w">      </span><span class="k">module </span><span class="n">pesticide_data_module</span><span class="w"></span>
+<a id="ln-2" name="ln-2" href="#ln-2"></a><span class="w">    </span>
+<a id="ln-3" name="ln-3" href="#ln-3"></a><span class="w">      </span><span class="k">implicit none    </span>
+<a id="ln-4" name="ln-4" href="#ln-4"></a><span class="k">          </span>
+<a id="ln-5" name="ln-5" href="#ln-5"></a><span class="k">      type </span><span class="n">pesticide_db</span><span class="w"></span>
+<a id="ln-6" name="ln-6" href="#ln-6"></a><span class="w">        </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">   </span><span class="c">!!                      |pesticide name</span>
+<a id="ln-7" name="ln-7" href="#ln-7"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">koc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">            </span><span class="c">!! (mL/g)               |soil adsorption coeff normalized for soil org carbon content</span>
+<a id="ln-8" name="ln-8" href="#ln-8"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">washoff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">        </span><span class="c">!! none                 |frac of pesticide on foliage which is washed off by rainfall event </span>
+<a id="ln-9" name="ln-9" href="#ln-9"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">foliar_hlife</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">   </span><span class="c">!! days                 |half-life of pest on foliage</span>
+<a id="ln-10" name="ln-10" href="#ln-10"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">soil_hlife</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">     </span><span class="c">!! days                 |half-life of pest in soil</span>
+<a id="ln-11" name="ln-11" href="#ln-11"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">solub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">          </span><span class="c">!! mg/L (ppm)           |solubility of chemical in water</span>
+<a id="ln-12" name="ln-12" href="#ln-12"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">aq_hlife</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">       </span><span class="c">!! days                 |aquatic half-life</span>
+<a id="ln-13" name="ln-13" href="#ln-13"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">aq_volat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">       </span><span class="c">!! m/day                |aquatic volatilization coeff</span>
+<a id="ln-14" name="ln-14" href="#ln-14"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">mol_wt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">         </span><span class="c">!! g/mol                |molecular weight - to calulate mixing velocity</span>
+<a id="ln-15" name="ln-15" href="#ln-15"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">aq_resus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">       </span><span class="c">!! m/day                |aquatic resuspension velocity for pesticide sorbed to sediment</span>
+<a id="ln-16" name="ln-16" href="#ln-16"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">aq_settle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">      </span><span class="c">!! m/day                |aquatic settling velocity for pesticide sorbed to sediment</span>
+<a id="ln-17" name="ln-17" href="#ln-17"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">ben_act_dep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">    </span><span class="c">!! m                    |depth of active benthic layer</span>
+<a id="ln-18" name="ln-18" href="#ln-18"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">ben_bury</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">       </span><span class="c">!! m/day                |burial velocity in benthic sediment</span>
+<a id="ln-19" name="ln-19" href="#ln-19"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">ben_hlife</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">      </span><span class="c">!! days                 |half-life of pest in benthic sediment</span>
+<a id="ln-20" name="ln-20" href="#ln-20"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pl_uptake</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">      </span><span class="c">!! none                 |fraction taken up by plant </span>
+<a id="ln-21" name="ln-21" href="#ln-21"></a><span class="w">        </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">descrip</span><span class="w">                        </span><span class="c">!pesticide description</span>
+<a id="ln-22" name="ln-22" href="#ln-22"></a><span class="w">      </span><span class="k">end type </span><span class="n">pesticide_db</span><span class="w"></span>
+<a id="ln-23" name="ln-23" href="#ln-23"></a><span class="w">      </span><span class="k">type</span><span class="w"> </span><span class="p">(</span><span class="n">pesticide_db</span><span class="p">),</span><span class="w"> </span><span class="k">dimension</span><span class="p">(:),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">save</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pestdb</span><span class="w"></span>
+<a id="ln-24" name="ln-24" href="#ln-24"></a><span class="w">      </span>
+<a id="ln-25" name="ln-25" href="#ln-25"></a><span class="w">      </span><span class="k">type </span><span class="n">daughter_decay_fractions</span><span class="w"></span>
+<a id="ln-26" name="ln-26" href="#ln-26"></a><span class="w">        </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">   </span><span class="c">!! daughter pesticide name</span>
+<a id="ln-27" name="ln-27" href="#ln-27"></a><span class="w">        </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">num</span><span class="w">              </span><span class="c">!! sequential pesticide number in simulation</span>
+<a id="ln-28" name="ln-28" href="#ln-28"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">foliar_fr</span><span class="w">           </span><span class="c">!! 0-1                  |fraction of parent foilar degrading to daughter</span>
+<a id="ln-29" name="ln-29" href="#ln-29"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">soil_fr</span><span class="w">             </span><span class="c">!! 0-1                  |fraction of parent soil degrading to daughter</span>
+<a id="ln-30" name="ln-30" href="#ln-30"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">aq_fr</span><span class="w">               </span><span class="c">!! 0-1                  |fraction of parent aquatic degrading to daughter</span>
+<a id="ln-31" name="ln-31" href="#ln-31"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">ben_fr</span><span class="w">              </span><span class="c">!! 0-1                  |fraction of parent benthic degrading to daughter</span>
+<a id="ln-32" name="ln-32" href="#ln-32"></a><span class="w">      </span><span class="k">end type </span><span class="n">daughter_decay_fractions</span><span class="w"></span>
+<a id="ln-33" name="ln-33" href="#ln-33"></a><span class="w">      </span>
+<a id="ln-34" name="ln-34" href="#ln-34"></a><span class="w">      </span><span class="k">type </span><span class="n">pesticide_cp</span><span class="w">         </span><span class="c">!! calculated parameters from input parms</span>
+<a id="ln-35" name="ln-35" href="#ln-35"></a><span class="w">        </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">num_metab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w">          </span><span class="c">!! number of metabolites</span>
+<a id="ln-36" name="ln-36" href="#ln-36"></a><span class="w">        </span><span class="k">type</span><span class="w"> </span><span class="p">(</span><span class="n">daughter_decay_fractions</span><span class="p">),</span><span class="w"> </span><span class="k">dimension</span><span class="p">(:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">daughter</span><span class="w"></span>
+<a id="ln-37" name="ln-37" href="#ln-37"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">decay_f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">        </span><span class="c">!! none                 |exp of the rate const for degradation of the pest on foliage</span>
+<a id="ln-38" name="ln-38" href="#ln-38"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">decay_s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">        </span><span class="c">!! none                 |exp of the rate const for degradation of the pest in soil</span>
+<a id="ln-39" name="ln-39" href="#ln-39"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">decay_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">        </span><span class="c">!! none                 |exp of the rate const for degradation of the pest in aquatic</span>
+<a id="ln-40" name="ln-40" href="#ln-40"></a><span class="w">        </span><span class="kt">real</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">decay_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="w">        </span><span class="c">!! none                 |exp of the rate const for degradation of the pest in benthic layer</span>
+<a id="ln-41" name="ln-41" href="#ln-41"></a><span class="w">      </span><span class="k">end type </span><span class="n">pesticide_cp</span><span class="w"></span>
+<a id="ln-42" name="ln-42" href="#ln-42"></a><span class="w">      </span><span class="k">type</span><span class="w"> </span><span class="p">(</span><span class="n">pesticide_cp</span><span class="p">),</span><span class="w"> </span><span class="k">dimension</span><span class="p">(:),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">save</span><span class="kd">::</span><span class="w"> </span><span class="n">pestcp</span><span class="w"></span>
+<a id="ln-43" name="ln-43" href="#ln-43"></a><span class="w">      </span>
+<a id="ln-44" name="ln-44" href="#ln-44"></a><span class="w">      </span><span class="k">end module </span><span class="n">pesticide_data_module</span><span class="w"> </span>
+</pre></div>
+
+    </section>
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

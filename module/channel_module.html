@@ -1,0 +1,2883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>channel_module &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>channel_module 
+    <small>Module</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 4.7% of total for modules and submodules.">523 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/channel_module.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li><a href='../sourcefile/channel_module.f90.html'>channel_module.f90</a></li>
+     <li class="active">channel_module</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#variable-jhyd">jhyd</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-jsed">jsed</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-jnut">jnut</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rttime">rttime</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ben_area">ben_area</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rchdep">rchdep</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rtevp">rtevp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rttlc">rttlc</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-pet_ch">pet_ch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrtwtr">hrtwtr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hharea">hharea</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hdepth">hdepth</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rhy">rhy</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsdti">hsdti</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hhtime">hhtime</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrttlc">hrttlc</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrtevp">hrtevp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hhstor">hhstor</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrchwtr">hrchwtr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-halgae">halgae</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hbactlp">hbactlp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hbactp">hbactp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hbod">hbod</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hchla">hchla</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hdisox">hdisox</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hnh4">hnh4</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hno2">hno2</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hno3">hno3</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-horgn">horgn</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-horgp">horgp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsedst">hsedst</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsedyld">hsedyld</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsolp">hsolp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsolpst">hsolpst</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsorpst">hsorpst</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rchsep">rchsep</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-peakr~4">peakr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rcharea">rcharea</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-sdti">sdti</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bnkrte">bnkrte</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-degrte">degrte</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-sedrch">sedrch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_san">rch_san</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_sil">rch_sil</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_cla">rch_cla</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_sag">rch_sag</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rtwtr_d">rtwtr_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rt_delt">rt_delt</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_lag">rch_lag</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_gra">rch_gra</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rtwtr">rtwtr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-wtrin">wtrin</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-sed_ch~2">sed_ch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch~2">ch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_d">rch_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_m">rch_m</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_y">rch_y</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_a">rch_a</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_d">ch_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_m">ch_m</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_y">ch_y</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_a">ch_a</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_d">bch_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_m">bch_m</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_y">bch_y</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_a">bch_a</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-chz">chz</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_hdr">ch_hdr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_hdr_units">ch_hdr_units</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#inters-0">Interfaces</a></h3></div>
+  <div id="inters-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#interface-operator%20%28%2B%29~3">operator (+)</a>
+      <a class="list-group-item" href="../module/channel_module.html#interface-operator%20%28SLASH%29~3">operator (/)</a>
+      <a class="list-group-item" href="../module/channel_module.html#interface-operator%20%28ASTERISK%29">operator (*)</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
+  <div id="types-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#type-channel">channel</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-ch_output">ch_output</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-regional_output_channel">regional_output_channel</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-ch_header">ch_header</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-ch_header_units">ch_header_units</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-0">Functions</a></h3></div>
+  <div id="funcs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#proc-ch_add">ch_add</a>
+      <a class="list-group-item" href="../module/channel_module.html#proc-ch_div">ch_div</a>
+      <a class="list-group-item" href="../module/channel_module.html#proc-ch_mult">ch_mult</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+<br>    
+        <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Used by</h3>
+      </div>
+      <ul class="list-group">
+  <li class="list-group-item">
+    <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~channel_module~~UsedByGraph Pages: 1 -->
+<svg id="modulechannel_moduleUsedByGraph" width="286pt" height="1502pt"
+ viewBox="0.00 0.00 286.00 1502.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~channel_module~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 1498)">
+<title>module~~channel_module~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1498 282,-1498 282,4 -4,4"/>
+<!-- module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_node1" class="node">
+<title>module~channel_module</title>
+<polygon fill="none" stroke="black" points="101,-759 0,-759 0,-735 101,-735 101,-759"/>
+<text text-anchor="middle" x="50.5" y="-744.6" font-family="Helvetica,sans-Serif" font-size="10.50">channel_module</text>
+</g>
+<!-- proc~hydro_init -->
+<g id="module~~channel_module~~UsedByGraph_node2" class="node">
+<title>proc~hydro_init</title>
+<g id="a_module~~channel_module~~UsedByGraph_node2"><a xlink:href=".././proc/hydro_init.html" xlink:title="hydro_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="239.5,-1494 175.5,-1494 175.5,-1470 239.5,-1470 239.5,-1494"/>
+<text text-anchor="middle" x="207.5" y="-1479.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hydro_init</text>
+</a>
+</g>
+</g>
+<!-- proc~hydro_init&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge1" class="edge">
+<title>proc~hydro_init&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M175.31,-1480.08C161.55,-1477.56 146.4,-1472.2 137,-1461 91.32,-1406.57 59.27,-884.24 52.73,-769.3"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="56.22,-768.99 52.16,-759.2 49.23,-769.38 56.22,-768.99"/>
+</g>
+<!-- proc~basin_sdchannel_output -->
+<g id="module~~channel_module~~UsedByGraph_node3" class="node">
+<title>proc~basin_sdchannel_output</title>
+<g id="a_module~~channel_module~~UsedByGraph_node3"><a xlink:href=".././proc/basin_sdchannel_output.html" xlink:title="basin_sdchannel_output">
+<polygon fill="#d9534f" stroke="#d9534f" points="278,-1452 137,-1452 137,-1428 278,-1428 278,-1452"/>
+<text text-anchor="middle" x="207.5" y="-1437.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">basin_sdchannel_output</text>
+</a>
+</g>
+</g>
+<!-- proc~basin_sdchannel_output&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge3" class="edge">
+<title>proc~basin_sdchannel_output&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M147.23,-1427.81C143.41,-1425.37 139.93,-1422.46 137,-1419 51.46,-1317.84 50.26,-874.28 51.2,-769.32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="54.7,-769.27 51.31,-759.23 47.7,-769.19 54.7,-769.27"/>
+</g>
+<!-- proc~calsoft_hyd -->
+<g id="module~~channel_module~~UsedByGraph_node4" class="node">
+<title>proc~calsoft_hyd</title>
+<g id="a_module~~channel_module~~UsedByGraph_node4"><a xlink:href=".././proc/calsoft_hyd.html" xlink:title="calsoft_hyd">
+<polygon fill="#d9534f" stroke="#d9534f" points="244,-1410 171,-1410 171,-1386 244,-1386 244,-1410"/>
+<text text-anchor="middle" x="207.5" y="-1395.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge4" class="edge">
+<title>proc~calsoft_hyd&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M170.73,-1395.05C158.32,-1392.21 145.42,-1386.88 137,-1377 56.74,-1282.89 51.48,-870.73 51.41,-769.51"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="54.91,-769.23 51.43,-759.23 47.91,-769.22 54.91,-769.23"/>
+</g>
+<!-- proc~ch_rtday -->
+<g id="module~~channel_module~~UsedByGraph_node5" class="node">
+<title>proc~ch_rtday</title>
+<g id="a_module~~channel_module~~UsedByGraph_node5"><a xlink:href=".././proc/ch_rtday.html" xlink:title="ch_rtday">
+<polygon fill="#d9534f" stroke="#d9534f" points="236.5,-1368 178.5,-1368 178.5,-1344 236.5,-1344 236.5,-1368"/>
+<text text-anchor="middle" x="207.5" y="-1353.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtday</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge2" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M178.26,-1354.45C163.82,-1352.14 147.2,-1346.84 137,-1335 61.89,-1247.78 52.76,-865.79 51.65,-769.23"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="55.15,-769.11 51.55,-759.14 48.15,-769.18 55.15,-769.11"/>
+</g>
+<!-- proc~sd_channel_control3 -->
+<g id="module~~channel_module~~UsedByGraph_node6" class="node">
+<title>proc~sd_channel_control3</title>
+<g id="a_module~~channel_module~~UsedByGraph_node6"><a xlink:href=".././proc/sd_channel_control3.html" xlink:title="sd_channel_control3">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-1326 147,-1326 147,-1302 268,-1302 268,-1326"/>
+<text text-anchor="middle" x="207.5" y="-1311.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_control3</text>
+</a>
+</g>
+</g>
+<!-- proc~sd_channel_control3&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge5" class="edge">
+<title>proc~sd_channel_control3&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M147.66,-1301.91C143.69,-1299.46 140.06,-1296.52 137,-1293 67.15,-1212.77 54.16,-861.85 51.93,-769.39"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="55.43,-769.13 51.71,-759.21 48.43,-769.29 55.43,-769.13"/>
+</g>
+<!-- proc~ch_rchinit -->
+<g id="module~~channel_module~~UsedByGraph_node7" class="node">
+<title>proc~ch_rchinit</title>
+<g id="a_module~~channel_module~~UsedByGraph_node7"><a xlink:href=".././proc/ch_rchinit.html" xlink:title="ch_rchinit">
+<polygon fill="#d9534f" stroke="#d9534f" points="239.5,-1284 175.5,-1284 175.5,-1260 239.5,-1260 239.5,-1284"/>
+<text text-anchor="middle" x="207.5" y="-1269.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rchinit</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rchinit&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge6" class="edge">
+<title>proc~ch_rchinit&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M175.2,-1269.8C161.59,-1267.21 146.59,-1261.87 137,-1251 72.33,-1177.67 55.64,-857.2 52.25,-769.34"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="55.74,-769.04 51.88,-759.17 48.75,-769.29 55.74,-769.04"/>
+</g>
+<!-- proc~calsoft_chsed -->
+<g id="module~~channel_module~~UsedByGraph_node8" class="node">
+<title>proc~calsoft_chsed</title>
+<g id="a_module~~channel_module~~UsedByGraph_node8"><a xlink:href=".././proc/calsoft_chsed.html" xlink:title="calsoft_chsed">
+<polygon fill="#d9534f" stroke="#d9534f" points="250,-1242 165,-1242 165,-1218 250,-1218 250,-1242"/>
+<text text-anchor="middle" x="207.5" y="-1227.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_chsed</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_chsed&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge7" class="edge">
+<title>proc~calsoft_chsed&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M164.83,-1225.2C154.45,-1222.1 144.23,-1217.08 137,-1209 77.44,-1142.47 57.22,-851.83 52.61,-769.06"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="56.1,-768.81 52.07,-759.01 49.11,-769.18 56.1,-768.81"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_latq -->
+<g id="module~~channel_module~~UsedByGraph_node9" class="node">
+<title>proc~calsoft_hyd_bfr_latq</title>
+<g id="a_module~~channel_module~~UsedByGraph_node9"><a xlink:href=".././proc/calsoft_hyd_bfr_latq.html" xlink:title="calsoft_hyd_bfr_latq">
+<polygon fill="#d9534f" stroke="#d9534f" points="266.5,-1200 148.5,-1200 148.5,-1176 266.5,-1176 266.5,-1200"/>
+<text text-anchor="middle" x="207.5" y="-1185.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_latq</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_latq&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge8" class="edge">
+<title>proc~calsoft_hyd_bfr_latq&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M148.49,-1176.15C144.23,-1173.65 140.31,-1170.63 137,-1167 82.66,-1107.37 59.03,-847.43 53.08,-769.3"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="56.55,-768.85 52.32,-759.13 49.57,-769.36 56.55,-768.85"/>
+</g>
+<!-- proc~ch_rtmusk -->
+<g id="module~~channel_module~~UsedByGraph_node10" class="node">
+<title>proc~ch_rtmusk</title>
+<g id="a_module~~channel_module~~UsedByGraph_node10"><a xlink:href=".././proc/ch_rtmusk.html" xlink:title="ch_rtmusk">
+<polygon fill="#d9534f" stroke="#d9534f" points="241,-1158 174,-1158 174,-1134 241,-1134 241,-1158"/>
+<text text-anchor="middle" x="207.5" y="-1143.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtmusk</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtmusk&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge9" class="edge">
+<title>proc~ch_rtmusk&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M173.69,-1143.2C160.61,-1140.45 146.45,-1135.15 137,-1125 87.81,-1072.19 61.02,-842.45 53.63,-769.39"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="57.08,-768.67 52.61,-759.06 50.11,-769.36 57.08,-768.67"/>
+</g>
+<!-- proc~ch_initial -->
+<g id="module~~channel_module~~UsedByGraph_node11" class="node">
+<title>proc~ch_initial</title>
+<g id="a_module~~channel_module~~UsedByGraph_node11"><a xlink:href=".././proc/ch_initial.html" xlink:title="ch_initial">
+<polygon fill="#d9534f" stroke="#d9534f" points="237.5,-1116 177.5,-1116 177.5,-1092 237.5,-1092 237.5,-1116"/>
+<text text-anchor="middle" x="207.5" y="-1101.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_initial</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_initial&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge10" class="edge">
+<title>proc~ch_initial&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M177.35,-1101.77C163.38,-1099.23 147.46,-1093.93 137,-1083 92.85,-1036.86 63.15,-836.37 54.28,-769.1"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="57.74,-768.62 52.99,-759.15 50.8,-769.52 57.74,-768.62"/>
+</g>
+<!-- proc~ch_rtpest -->
+<g id="module~~channel_module~~UsedByGraph_node12" class="node">
+<title>proc~ch_rtpest</title>
+<g id="a_module~~channel_module~~UsedByGraph_node12"><a xlink:href=".././proc/ch_rtpest.html" xlink:title="ch_rtpest">
+<polygon fill="#d9534f" stroke="#d9534f" points="238,-1074 177,-1074 177,-1050 238,-1050 238,-1074"/>
+<text text-anchor="middle" x="207.5" y="-1059.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtpest</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtpest&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge11" class="edge">
+<title>proc~ch_rtpest&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M176.81,-1059.49C163.05,-1056.86 147.46,-1051.57 137,-1041 60.9,-964.1 51.76,-823.65 51.21,-769.3"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="54.71,-769.06 51.2,-759.07 47.71,-769.07 54.71,-769.06"/>
+</g>
+<!-- proc~pathogen_init -->
+<g id="module~~channel_module~~UsedByGraph_node13" class="node">
+<title>proc~pathogen_init</title>
+<g id="a_module~~channel_module~~UsedByGraph_node13"><a xlink:href=".././proc/pathogen_init.html" xlink:title="pathogen_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="250,-1032 165,-1032 165,-1008 250,-1008 250,-1032"/>
+<text text-anchor="middle" x="207.5" y="-1017.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pathogen_init</text>
+</a>
+</g>
+</g>
+<!-- proc~pathogen_init&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge12" class="edge">
+<title>proc~pathogen_init&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M164.85,-1014.27C154.71,-1011.15 144.61,-1006.36 137,-999 70.75,-934.95 55.83,-817.72 52.48,-769.07"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="55.96,-768.78 51.88,-759.01 48.98,-769.2 55.96,-768.78"/>
+</g>
+<!-- proc~channel_om_output -->
+<g id="module~~channel_module~~UsedByGraph_node14" class="node">
+<title>proc~channel_om_output</title>
+<g id="a_module~~channel_module~~UsedByGraph_node14"><a xlink:href=".././proc/channel_om_output.html" xlink:title="channel_om_output">
+<polygon fill="#d9534f" stroke="#d9534f" points="266.5,-990 148.5,-990 148.5,-966 266.5,-966 266.5,-990"/>
+<text text-anchor="middle" x="207.5" y="-975.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_om_output</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_om_output&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge13" class="edge">
+<title>proc~channel_om_output&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M150.2,-965.98C145.41,-963.53 140.91,-960.56 137,-957 80.63,-905.66 60.62,-811.79 54.21,-769.14"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="57.65,-768.42 52.8,-759 50.71,-769.39 57.65,-768.42"/>
+</g>
+<!-- proc~channel_control -->
+<g id="module~~channel_module~~UsedByGraph_node15" class="node">
+<title>proc~channel_control</title>
+<g id="a_module~~channel_module~~UsedByGraph_node15"><a xlink:href=".././proc/channel_control.html" xlink:title="channel_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="256,-948 159,-948 159,-924 256,-924 256,-948"/>
+<text text-anchor="middle" x="207.5" y="-933.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_control</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_control&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge14" class="edge">
+<title>proc~channel_control&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M158.66,-927.15C150.86,-924.2 143.28,-920.26 137,-915 90.37,-875.98 66.39,-805.12 56.74,-769.18"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="60.07,-768.04 54.2,-759.22 53.28,-769.78 60.07,-768.04"/>
+</g>
+<!-- proc~calsoft_hyd_bfr -->
+<g id="module~~channel_module~~UsedByGraph_node16" class="node">
+<title>proc~calsoft_hyd_bfr</title>
+<g id="a_module~~channel_module~~UsedByGraph_node16"><a xlink:href=".././proc/calsoft_hyd_bfr.html" xlink:title="calsoft_hyd_bfr">
+<polygon fill="#d9534f" stroke="#d9534f" points="254,-906 161,-906 161,-882 254,-882 254,-906"/>
+<text text-anchor="middle" x="207.5" y="-891.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge15" class="edge">
+<title>proc~calsoft_hyd_bfr&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M160.64,-885C152.29,-882.05 144.01,-878.15 137,-873 99.63,-845.52 73.32,-796.52 60.47,-768.41"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="63.59,-766.81 56.35,-759.08 57.18,-769.64 63.59,-766.81"/>
+</g>
+<!-- proc~channel_allo -->
+<g id="module~~channel_module~~UsedByGraph_node17" class="node">
+<title>proc~channel_allo</title>
+<g id="a_module~~channel_module~~UsedByGraph_node17"><a xlink:href=".././proc/channel_allo.html" xlink:title="channel_allo">
+<polygon fill="#d9534f" stroke="#d9534f" points="247.5,-864 167.5,-864 167.5,-840 247.5,-840 247.5,-864"/>
+<text text-anchor="middle" x="207.5" y="-849.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_allo</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_allo&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge16" class="edge">
+<title>proc~channel_allo&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M167.24,-843.72C156.98,-840.61 146.22,-836.46 137,-831 108.75,-814.26 82.83,-786.23 67.11,-767.2"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="69.63,-764.75 60.64,-759.16 64.18,-769.14 69.63,-764.75"/>
+</g>
+<!-- proc~ch_rtpath -->
+<g id="module~~channel_module~~UsedByGraph_node18" class="node">
+<title>proc~ch_rtpath</title>
+<g id="a_module~~channel_module~~UsedByGraph_node18"><a xlink:href=".././proc/ch_rtpath.html" xlink:title="ch_rtpath">
+<polygon fill="#d9534f" stroke="#d9534f" points="239,-822 176,-822 176,-798 239,-798 239,-822"/>
+<text text-anchor="middle" x="207.5" y="-807.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtpath</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtpath&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge17" class="edge">
+<title>proc~ch_rtpath&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M175.68,-801.86C163.48,-798.34 149.43,-793.89 137,-789 118.48,-781.71 98.47,-771.99 82.47,-763.73"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="84.04,-760.6 73.55,-759.07 80.79,-766.81 84.04,-760.6"/>
+</g>
+<!-- proc~channel_surf_link -->
+<g id="module~~channel_module~~UsedByGraph_node19" class="node">
+<title>proc~channel_surf_link</title>
+<g id="a_module~~channel_module~~UsedByGraph_node19"><a xlink:href=".././proc/channel_surf_link.html" xlink:title="channel_surf_link">
+<polygon fill="#d9534f" stroke="#d9534f" points="260,-780 155,-780 155,-756 260,-756 260,-780"/>
+<text text-anchor="middle" x="207.5" y="-765.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_surf_link</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_surf_link&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge18" class="edge">
+<title>proc~channel_surf_link&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M154.89,-761.01C140.93,-759.12 125.7,-757.05 111.33,-755.11"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="111.43,-751.59 101.05,-753.71 110.49,-758.52 111.43,-751.59"/>
+</g>
+<!-- proc~sd_channel_control2 -->
+<g id="module~~channel_module~~UsedByGraph_node20" class="node">
+<title>proc~sd_channel_control2</title>
+<g id="a_module~~channel_module~~UsedByGraph_node20"><a xlink:href=".././proc/sd_channel_control2.html" xlink:title="sd_channel_control2">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-738 147,-738 147,-714 268,-714 268,-738"/>
+<text text-anchor="middle" x="207.5" y="-723.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_control2</text>
+</a>
+</g>
+</g>
+<!-- proc~sd_channel_control2&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge19" class="edge">
+<title>proc~sd_channel_control2&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M146.57,-734.12C134.98,-735.69 122.83,-737.34 111.24,-738.91"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="110.66,-735.45 101.22,-740.26 111.6,-742.39 110.66,-735.45"/>
+</g>
+<!-- proc~basin_channel_output -->
+<g id="module~~channel_module~~UsedByGraph_node21" class="node">
+<title>proc~basin_channel_output</title>
+<g id="a_module~~channel_module~~UsedByGraph_node21"><a xlink:href=".././proc/basin_channel_output.html" xlink:title="basin_channel_output">
+<polygon fill="#d9534f" stroke="#d9534f" points="272,-696 143,-696 143,-672 272,-672 272,-696"/>
+<text text-anchor="middle" x="207.5" y="-681.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">basin_channel_output</text>
+</a>
+</g>
+</g>
+<!-- proc~basin_channel_output&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge20" class="edge">
+<title>proc~basin_channel_output&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M162.75,-696.03C154.13,-698.73 145.21,-701.77 137,-705 118.48,-712.29 98.47,-722.01 82.47,-730.27"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="80.79,-727.19 73.55,-734.93 84.04,-733.4 80.79,-727.19"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_perc -->
+<g id="module~~channel_module~~UsedByGraph_node22" class="node">
+<title>proc~calsoft_hyd_bfr_perc</title>
+<g id="a_module~~channel_module~~UsedByGraph_node22"><a xlink:href=".././proc/calsoft_hyd_bfr_perc.html" xlink:title="calsoft_hyd_bfr_perc">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-654 147,-654 147,-630 268,-630 268,-654"/>
+<text text-anchor="middle" x="207.5" y="-639.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_perc</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_perc&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge21" class="edge">
+<title>proc~calsoft_hyd_bfr_perc&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M155.91,-654.11C149.33,-656.59 142.86,-659.53 137,-663 108.75,-679.74 82.83,-707.77 67.11,-726.8"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="64.18,-724.86 60.64,-734.84 69.63,-729.25 64.18,-724.86"/>
+</g>
+<!-- proc~ch_rthr -->
+<g id="module~~channel_module~~UsedByGraph_node23" class="node">
+<title>proc~ch_rthr</title>
+<g id="a_module~~channel_module~~UsedByGraph_node23"><a xlink:href=".././proc/ch_rthr.html" xlink:title="ch_rthr">
+<polygon fill="#d9534f" stroke="#d9534f" points="234.5,-612 180.5,-612 180.5,-588 234.5,-588 234.5,-612"/>
+<text text-anchor="middle" x="207.5" y="-597.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rthr</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rthr&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge22" class="edge">
+<title>proc~ch_rthr&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M180.17,-603.61C166.29,-606.52 149.59,-611.74 137,-621 99.63,-648.48 73.32,-697.48 60.47,-725.59"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="57.18,-724.36 56.35,-734.92 63.59,-727.19 57.18,-724.36"/>
+</g>
+<!-- proc~output_landscape_init -->
+<g id="module~~channel_module~~UsedByGraph_node24" class="node">
+<title>proc~output_landscape_init</title>
+<g id="a_module~~channel_module~~UsedByGraph_node24"><a xlink:href=".././proc/output_landscape_init.html" xlink:title="output_landscape_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="272,-570 143,-570 143,-546 272,-546 272,-570"/>
+<text text-anchor="middle" x="207.5" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">output_landscape_init</text>
+</a>
+</g>
+</g>
+<!-- proc~output_landscape_init&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge23" class="edge">
+<title>proc~output_landscape_init&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M151.2,-570.03C146.1,-572.49 141.25,-575.44 137,-579 90.37,-618.02 66.39,-688.88 56.74,-724.82"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="53.28,-724.22 54.2,-734.78 60.07,-725.96 53.28,-724.22"/>
+</g>
+<!-- proc~header_write -->
+<g id="module~~channel_module~~UsedByGraph_node25" class="node">
+<title>proc~header_write</title>
+<g id="a_module~~channel_module~~UsedByGraph_node25"><a xlink:href=".././proc/header_write.html" xlink:title="header_write">
+<polygon fill="#d9534f" stroke="#d9534f" points="248.5,-528 166.5,-528 166.5,-504 248.5,-504 248.5,-528"/>
+<text text-anchor="middle" x="207.5" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">header_write</text>
+</a>
+</g>
+</g>
+<!-- proc~header_write&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge24" class="edge">
+<title>proc~header_write&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M166.22,-521.72C155.73,-524.82 145.11,-529.62 137,-537 80.63,-588.34 60.62,-682.21 54.21,-724.86"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="50.71,-724.61 52.8,-735 57.65,-725.58 50.71,-724.61"/>
+</g>
+<!-- proc~cal_parm_select -->
+<g id="module~~channel_module~~UsedByGraph_node26" class="node">
+<title>proc~cal_parm_select</title>
+<g id="a_module~~channel_module~~UsedByGraph_node26"><a xlink:href=".././proc/cal_parm_select.html" xlink:title="cal_parm_select">
+<polygon fill="#d9534f" stroke="#d9534f" points="257,-486 158,-486 158,-462 257,-462 257,-486"/>
+<text text-anchor="middle" x="207.5" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cal_parm_select</text>
+</a>
+</g>
+</g>
+<!-- proc~cal_parm_select&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge25" class="edge">
+<title>proc~cal_parm_select&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M157.65,-482.26C150.04,-485.28 142.8,-489.39 137,-495 70.75,-559.05 55.83,-676.28 52.48,-724.93"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="48.98,-724.8 51.88,-734.99 55.96,-725.22 48.98,-724.8"/>
+</g>
+<!-- proc~wetland_control -->
+<g id="module~~channel_module~~UsedByGraph_node27" class="node">
+<title>proc~wetland_control</title>
+<g id="a_module~~channel_module~~UsedByGraph_node27"><a xlink:href=".././proc/wetland_control.html" xlink:title="wetland_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="256,-444 159,-444 159,-420 256,-420 256,-444"/>
+<text text-anchor="middle" x="207.5" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">wetland_control</text>
+</a>
+</g>
+</g>
+<!-- proc~wetland_control&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge26" class="edge">
+<title>proc~wetland_control&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M158.86,-439.49C150.76,-442.57 143.03,-446.91 137,-453 60.9,-529.9 51.76,-670.35 51.21,-724.7"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="47.71,-724.93 51.2,-734.93 54.71,-724.94 47.71,-724.93"/>
+</g>
+<!-- proc~ch_ttcoef -->
+<g id="module~~channel_module~~UsedByGraph_node28" class="node">
+<title>proc~ch_ttcoef</title>
+<g id="a_module~~channel_module~~UsedByGraph_node28"><a xlink:href=".././proc/ch_ttcoef.html" xlink:title="ch_ttcoef">
+<polygon fill="#d9534f" stroke="#d9534f" points="238,-402 177,-402 177,-378 238,-378 238,-402"/>
+<text text-anchor="middle" x="207.5" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_ttcoef</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_ttcoef&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge27" class="edge">
+<title>proc~ch_ttcoef&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M177,-392.29C163.12,-394.86 147.37,-400.16 137,-411 92.85,-457.14 63.15,-657.63 54.28,-724.9"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="50.8,-724.48 52.99,-734.85 57.74,-725.38 50.8,-724.48"/>
+</g>
+<!-- proc~channel_output -->
+<g id="module~~channel_module~~UsedByGraph_node29" class="node">
+<title>proc~channel_output</title>
+<g id="a_module~~channel_module~~UsedByGraph_node29"><a xlink:href=".././proc/channel_output.html" xlink:title="channel_output">
+<polygon fill="#d9534f" stroke="#d9534f" points="255,-360 160,-360 160,-336 255,-336 255,-360"/>
+<text text-anchor="middle" x="207.5" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_output</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_output&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge28" class="edge">
+<title>proc~channel_output&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M159.99,-354.66C151.39,-357.79 143.19,-362.36 137,-369 87.81,-421.81 61.02,-651.55 53.63,-724.61"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="50.11,-724.64 52.61,-734.94 57.08,-725.33 50.11,-724.64"/>
+</g>
+<!-- proc~caltsoft_hyd -->
+<g id="module~~channel_module~~UsedByGraph_node30" class="node">
+<title>proc~caltsoft_hyd</title>
+<g id="a_module~~channel_module~~UsedByGraph_node30"><a xlink:href=".././proc/caltsoft_hyd.html" xlink:title="caltsoft_hyd">
+<polygon fill="#d9534f" stroke="#d9534f" points="245.5,-318 169.5,-318 169.5,-294 245.5,-294 245.5,-318"/>
+<text text-anchor="middle" x="207.5" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caltsoft_hyd</text>
+</a>
+</g>
+</g>
+<!-- proc~caltsoft_hyd&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge29" class="edge">
+<title>proc~caltsoft_hyd&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M169.27,-309.69C157.46,-312.65 145.32,-317.87 137,-327 82.66,-386.63 59.03,-646.57 53.08,-724.7"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="49.57,-724.64 52.32,-734.87 56.55,-725.15 49.57,-724.64"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_et -->
+<g id="module~~channel_module~~UsedByGraph_node31" class="node">
+<title>proc~calsoft_hyd_bfr_et</title>
+<g id="a_module~~channel_module~~UsedByGraph_node31"><a xlink:href=".././proc/calsoft_hyd_bfr_et.html" xlink:title="calsoft_hyd_bfr_et">
+<polygon fill="#d9534f" stroke="#d9534f" points="262,-276 153,-276 153,-252 262,-252 262,-276"/>
+<text text-anchor="middle" x="207.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_et</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_et&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge30" class="edge">
+<title>proc~calsoft_hyd_bfr_et&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M152.77,-273.45C146.84,-276.35 141.37,-280.12 137,-285 77.44,-351.53 57.22,-642.17 52.61,-724.94"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="49.11,-724.82 52.07,-734.99 56.1,-725.19 49.11,-724.82"/>
+</g>
+<!-- proc~calsoft_plant -->
+<g id="module~~channel_module~~UsedByGraph_node32" class="node">
+<title>proc~calsoft_plant</title>
+<g id="a_module~~channel_module~~UsedByGraph_node32"><a xlink:href=".././proc/calsoft_plant.html" xlink:title="calsoft_plant">
+<polygon fill="#d9534f" stroke="#d9534f" points="247.5,-234 167.5,-234 167.5,-210 247.5,-210 247.5,-234"/>
+<text text-anchor="middle" x="207.5" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_plant</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_plant&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge31" class="edge">
+<title>proc~calsoft_plant&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M167.28,-226.01C156.05,-229.03 144.75,-234.21 137,-243 72.33,-316.33 55.64,-636.8 52.25,-724.66"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="48.75,-724.71 51.88,-734.83 55.74,-724.96 48.75,-724.71"/>
+</g>
+<!-- proc~header_channel -->
+<g id="module~~channel_module~~UsedByGraph_node33" class="node">
+<title>proc~header_channel</title>
+<g id="a_module~~channel_module~~UsedByGraph_node33"><a xlink:href=".././proc/header_channel.html" xlink:title="header_channel">
+<polygon fill="#d9534f" stroke="#d9534f" points="257,-192 158,-192 158,-168 257,-168 257,-192"/>
+<text text-anchor="middle" x="207.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">header_channel</text>
+</a>
+</g>
+</g>
+<!-- proc~header_channel&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge32" class="edge">
+<title>proc~header_channel&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M157.86,-187.02C149.95,-190.16 142.55,-194.63 137,-201 67.15,-281.23 54.16,-632.15 51.93,-724.61"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="48.43,-724.71 51.71,-734.79 55.43,-724.87 48.43,-724.71"/>
+</g>
+<!-- proc~ch_watqual4 -->
+<g id="module~~channel_module~~UsedByGraph_node34" class="node">
+<title>proc~ch_watqual4</title>
+<g id="a_module~~channel_module~~UsedByGraph_node34"><a xlink:href=".././proc/ch_watqual4.html" xlink:title="ch_watqual4">
+<polygon fill="#d9534f" stroke="#d9534f" points="247,-150 168,-150 168,-126 247,-126 247,-150"/>
+<text text-anchor="middle" x="207.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_watqual4</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_watqual4&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge33" class="edge">
+<title>proc~ch_watqual4&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M167.88,-141.7C156.4,-144.69 144.81,-149.93 137,-159 61.89,-246.22 52.76,-628.21 51.65,-724.77"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="48.15,-724.82 51.55,-734.86 55.15,-724.89 48.15,-724.82"/>
+</g>
+<!-- proc~command -->
+<g id="module~~channel_module~~UsedByGraph_node35" class="node">
+<title>proc~command</title>
+<g id="a_module~~channel_module~~UsedByGraph_node35"><a xlink:href=".././proc/command.html" xlink:title="command">
+<polygon fill="#d9534f" stroke="#d9534f" points="241,-108 174,-108 174,-84 241,-84 241,-108"/>
+<text text-anchor="middle" x="207.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">command</text>
+</a>
+</g>
+</g>
+<!-- proc~command&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge34" class="edge">
+<title>proc~command&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M173.96,-98.26C160.61,-100.9 146.16,-106.26 137,-117 56.74,-211.11 51.48,-623.27 51.41,-724.49"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="47.91,-724.78 51.43,-734.77 54.91,-724.77 47.91,-724.78"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_surq -->
+<g id="module~~channel_module~~UsedByGraph_node36" class="node">
+<title>proc~calsoft_hyd_bfr_surq</title>
+<g id="a_module~~channel_module~~UsedByGraph_node36"><a xlink:href=".././proc/calsoft_hyd_bfr_surq.html" xlink:title="calsoft_hyd_bfr_surq">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-66 147,-66 147,-42 268,-42 268,-66"/>
+<text text-anchor="middle" x="207.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_surq</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_surq&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge35" class="edge">
+<title>proc~calsoft_hyd_bfr_surq&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M147.23,-66.19C143.41,-68.63 139.93,-71.54 137,-75 51.46,-176.16 50.26,-619.72 51.2,-724.68"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="47.7,-724.81 51.31,-734.77 54.7,-724.73 47.7,-724.81"/>
+</g>
+<!-- proc~calsoft_sed -->
+<g id="module~~channel_module~~UsedByGraph_node37" class="node">
+<title>proc~calsoft_sed</title>
+<g id="a_module~~channel_module~~UsedByGraph_node37"><a xlink:href=".././proc/calsoft_sed.html" xlink:title="calsoft_sed">
+<polygon fill="#d9534f" stroke="#d9534f" points="243.5,-24 171.5,-24 171.5,0 243.5,0 243.5,-24"/>
+<text text-anchor="middle" x="207.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_sed</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_sed&#45;&gt;module~channel_module -->
+<g id="module~~channel_module~~UsedByGraph_edge36" class="edge">
+<title>proc~calsoft_sed&#45;&gt;module~channel_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M171.37,-14.72C158.73,-17.51 145.51,-22.86 137,-33 91.32,-87.43 59.27,-609.76 52.73,-724.7"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="49.23,-724.62 52.16,-734.8 56.22,-725.01 49.23,-724.62"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a submodule to the (sub)module which it is
+    descended from. Dashed arrows point from a module or program unit to 
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+  </li>
+      </ul>
+    </div>
+
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#variable-jhyd">jhyd</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-jsed">jsed</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-jnut">jnut</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rttime">rttime</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ben_area">ben_area</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rchdep">rchdep</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rtevp">rtevp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rttlc">rttlc</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-pet_ch">pet_ch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrtwtr">hrtwtr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hharea">hharea</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hdepth">hdepth</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rhy">rhy</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsdti">hsdti</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hhtime">hhtime</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrttlc">hrttlc</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrtevp">hrtevp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hhstor">hhstor</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hrchwtr">hrchwtr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-halgae">halgae</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hbactlp">hbactlp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hbactp">hbactp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hbod">hbod</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hchla">hchla</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hdisox">hdisox</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hnh4">hnh4</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hno2">hno2</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hno3">hno3</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-horgn">horgn</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-horgp">horgp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsedst">hsedst</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsedyld">hsedyld</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsolp">hsolp</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsolpst">hsolpst</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-hsorpst">hsorpst</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rchsep">rchsep</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-peakr~4">peakr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rcharea">rcharea</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-sdti">sdti</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bnkrte">bnkrte</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-degrte">degrte</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-sedrch">sedrch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_san">rch_san</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_sil">rch_sil</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_cla">rch_cla</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_sag">rch_sag</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rtwtr_d">rtwtr_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rt_delt">rt_delt</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_lag">rch_lag</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_gra">rch_gra</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rtwtr">rtwtr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-wtrin">wtrin</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-sed_ch~2">sed_ch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch~2">ch</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_d">rch_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_m">rch_m</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_y">rch_y</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-rch_a">rch_a</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_d">ch_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_m">ch_m</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_y">ch_y</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_a">ch_a</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_d">bch_d</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_m">bch_m</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_y">bch_y</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-bch_a">bch_a</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-chz">chz</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_hdr">ch_hdr</a>
+      <a class="list-group-item" href="../module/channel_module.html#variable-ch_hdr_units">ch_hdr_units</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#inters-1">Interfaces</a></h3></div>
+  <div id="inters-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#interface-operator%20%28%2B%29~3">operator (+)</a>
+      <a class="list-group-item" href="../module/channel_module.html#interface-operator%20%28SLASH%29~3">operator (/)</a>
+      <a class="list-group-item" href="../module/channel_module.html#interface-operator%20%28ASTERISK%29">operator (*)</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
+  <div id="types-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#type-channel">channel</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-ch_output">ch_output</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-regional_output_channel">regional_output_channel</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-ch_header">ch_header</a>
+      <a class="list-group-item" href="../module/channel_module.html#type-ch_header_units">ch_header_units</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-1">Functions</a></h3></div>
+  <div id="funcs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_module.html#proc-ch_add">ch_add</a>
+      <a class="list-group-item" href="../module/channel_module.html#proc-ch_div">ch_div</a>
+      <a class="list-group-item" href="../module/channel_module.html#proc-ch_mult">ch_mult</a>
+    </div>
+  </div>
+</div>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    <section>
+    <h2>Variables</h2>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-jhyd"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>jhyd</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-jsed"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>jsed</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-jnut"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>jnut</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rttime"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rttime</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ben_area"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ben_area</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rchdep"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rchdep</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rtevp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rtevp</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rttlc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rttlc</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-pet_ch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>pet_ch</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hrtwtr"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hrtwtr</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hharea"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hharea</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hdepth"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hdepth</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rhy"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>rhy</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hsdti"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hsdti</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hhtime"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hhtime</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hrttlc"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hrttlc</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hrtevp"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hrtevp</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hhstor"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hhstor</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hrchwtr"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hrchwtr</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-halgae"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>halgae</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hbactlp"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hbactlp</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hbactp"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hbactp</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hbod"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hbod</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hchla"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hchla</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hdisox"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hdisox</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hnh4"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hnh4</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hno2"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hno2</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hno3"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hno3</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-horgn"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>horgn</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-horgp"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>horgp</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hsedst"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hsedst</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hsedyld"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hsedyld</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hsolp"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hsolp</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hsolpst"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hsolpst</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hsorpst"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>hsorpst</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rchsep"></span>real,</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>rchsep</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-peakr~4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>peakr</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rcharea"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rcharea</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sdti"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sdti</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnkrte"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnkrte</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-degrte"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>degrte</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedrch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedrch</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_san"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_san</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_sil"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_sil</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_cla"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_cla</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_sag"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_sag</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rtwtr_d"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rtwtr_d</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rt_delt"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rt_delt</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_lag"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_lag</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_gra"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_gra</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rtwtr"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rtwtr</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wtrin"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wtrin</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_ch~2"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_ch</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch~2"></span>type(<a href='../type/channel.html'>channel</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_d"></span>type(<a href='../type/regional_output_channel.html'>regional_output_channel</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>rch_d</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_m"></span>type(<a href='../type/regional_output_channel.html'>regional_output_channel</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>rch_m</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_y"></span>type(<a href='../type/regional_output_channel.html'>regional_output_channel</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>rch_y</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_a"></span>type(<a href='../type/regional_output_channel.html'>regional_output_channel</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>rch_a</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_d"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable, save</td><td>::</td>
+  <td><strong>ch_d</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_m"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable, save</td><td>::</td>
+  <td><strong>ch_m</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_y"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable, save</td><td>::</td>
+  <td><strong>ch_y</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_a"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable, save</td><td>::</td>
+  <td><strong>ch_a</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bch_d"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bch_d</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bch_m"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bch_m</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bch_y"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bch_y</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bch_a"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bch_a</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chz"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chz</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_hdr"></span>type(<a href='../type/ch_header.html'>ch_header</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_hdr</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_hdr_units"></span>type(<a href='../type/ch_header_units.html'>ch_header_units</a>),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_hdr_units</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    <section>
+   <h2>Interfaces</h2>
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-operator%20%28%2B%29~3"></span><h3>public interface <a href='../interface/operator%20%28%2B%29~3.html'>operator (+)</a>  </h3></div>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <h3>public function <a href='../proc/ch_add.html'>ch_add</a>(cho1, cho2) result(cho3)</h3>    
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>cho1</strong></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>cho2</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Return Value <small>type(<a href='../type/ch_output.html'>ch_output</a>)</small></h4>  
+
+    </li>
+  </ul>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-operator%20%28SLASH%29~3"></span><h3>public interface <a href='../interface/operator%20%28SLASH%29~3.html'>operator (/)</a>  </h3></div>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <h3>public function <a href='../proc/ch_div.html'>ch_div</a>(ch1, const) result(ch2)</h3>    
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>ch1</strong></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" ></span>real,</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>const</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Return Value <small>type(<a href='../type/ch_output.html'>ch_output</a>)</small></h4>  
+
+    </li>
+  </ul>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-operator%20%28ASTERISK%29"></span><h3>public interface <a href='../interface/operator%20%28ASTERISK%29.html'>operator (*)</a>  </h3></div>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <h3>public function <a href='../proc/ch_mult.html'>ch_mult</a>(const, chn1) result(chn2)</h3>    
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>real,</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>const</strong></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>chn1</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Return Value <small>type(<a href='../type/ch_output.html'>ch_output</a>)</small></h4>  
+
+    </li>
+  </ul>
+</div>
+
+    </section>
+  <br>
+
+    
+    <section>
+     <h2>Derived Types</h2>
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel"></span><h3>type, public :: <a href='../type/channel.html'>channel</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-algae"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>algae</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ammonian"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ammonian</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bankst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bankst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-li"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>li</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn~14"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-si"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>si</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wi"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wi</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-di"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>di</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chlora"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chlora</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-pst_conc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>pst_conc</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dep_chan"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dep_chan</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-disolvp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>disolvp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-drift"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>drift</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flwin"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flwin</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flwout"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flwout</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nitraten"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nitraten</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nitriten"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nitriten</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-organicn"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>organicn</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-organicp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>organicp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_bactlp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_bactlp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_bactp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_bactp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_cbod"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_cbod</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rch_dox"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rch_dox</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rchstor"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rchstor</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-vel_chan"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>vel_chan</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_san"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_san</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_sil"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_sil</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_cla"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_cla</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_gra"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_gra</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_san"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_san</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_sil"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_sil</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_cla"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_cla</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_gra"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_gra</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depfp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depfp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depprfp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depprfp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depsilfp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depsilfp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depclafp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depclafp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depch</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depprch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depprch</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depsanch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depsanch</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depsilch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depsilch</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depclach"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depclach</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depsagch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depsagch</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-deplagch"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>deplagch</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-depgrach"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>depgrach</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sanst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sanst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clast"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clast</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sagst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sagst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lagst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lagst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grast"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grast</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wattemp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wattemp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bactp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bactp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chfloodvol"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chfloodvol</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bactlp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bactlp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-ch_output"></span><h3>type, public :: <a href='../type/ch_output.html'>ch_output</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-flo_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flo_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flo_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flo_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-evap~3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>evap</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tloss"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tloss</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_conc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_conc</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nh4_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nh4_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nh4_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nh4_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no2_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no2_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no2_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no2_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solp_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solp_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solp_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solp_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chla_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chla_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chla_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chla_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cbod_in~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cbod_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cbod_out~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cbod_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dis_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dis_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dis_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dis_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solpst_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solpst_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solpst_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solpst_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbpst_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbpst_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbpst_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbpst_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-react~4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>react</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-volat~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>volat</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-setlpst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>setlpst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-resuspst"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>resuspst</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-difus~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>difus</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-reactb"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>reactb</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bury~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bury</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedpest"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedpest</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bacp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bacp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-baclp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>baclp</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met1</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met2</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met3</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sand_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sand_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sand_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sand_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silt_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silt_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silt_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silt_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clay_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clay_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clay_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clay_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-smag_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>smag_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-smag_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>smag_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lag_in~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lag_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lag_out~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lag_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grvl_in"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grvl_in</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grvl_out"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grvl_out</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_ero"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_ero</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_deg"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_deg</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_dep"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_dep</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fp_dep"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fp_dep</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tot_ssed"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tot_ssed</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-regional_output_channel"></span><h3>type, public :: <a href='../type/regional_output_channel.html'>regional_output_channel</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-ord"></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>public,</td>  <td>dimension (:), allocatable</td><td>::</td>
+  <td><strong>ord</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-ch_header"></span><h3>type, public :: <a href='../type/ch_header.html'>ch_header</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-day~8"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day</strong></td><td> =</td><td>" jday"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-mo~8"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>mo</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;mon"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-day_mo~8"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day_mo</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;day"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-yrc~8"></span>character(len=5),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>yrc</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;yr"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-isd~5"></span>character(len=9),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>isd</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;unit "</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-id~7"></span>character(len=8),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>id</strong></td><td> =</td><td>" gis_id "</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-name~25"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>" name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flo_in~7"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flo_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flo_in&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flo_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flo_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;flo_out&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-evap~4"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>evap</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evap&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tloss~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tloss</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tloss&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sed_in&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sed_out&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_conc~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_conc</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;sed_conc&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;orgn_in&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;orgn_out&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orgp_in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orgp_out&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no3_in&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no3_out&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nh4_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nh4_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nh4_in&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nh4_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nh4_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nh4_out&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no2_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no2_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no2_in&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no2_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no2_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no2_out&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solp_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solp_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;solp_in&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solp_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solp_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;solp_out&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chla_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chla_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chla_in&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chla_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chla_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chla_out&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cbod_in~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cbod_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbod_in&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cbod_out~7"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cbod_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cbod_out&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dis_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dis_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dis_in&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dis_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dis_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dis_out&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solpst_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solpst_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;solpst_in&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solpst_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solpst_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;solpst_out&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbpst_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbpst_in</strong></td><td> =</td><td>"&nbsp;&nbsp;sorbpst_in&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbpst_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbpst_out</strong></td><td> =</td><td>"&nbsp;&nbsp;sorbpst_out&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-react~5"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>react</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;react&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-volat~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>volat</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volat&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-setlpst~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>setlpst</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;setlpst&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-resuspst~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>resuspst</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resuspst&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-difus~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>difus</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;difus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-reactb~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>reactb</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;reactb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bury~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bury</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bury&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedpest~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedpest</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sedpest&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bacp~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bacp</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bacp"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-baclp~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>baclp</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baclp"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met1~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met1</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;met1"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met2~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met2</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;met2"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met3~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;met3"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sand_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sand_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sand_in"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sand_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sand_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sand_out"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silt_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silt_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;silt_in"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silt_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silt_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;silt_out"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clay_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clay_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clay_in"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clay_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clay_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clay_out"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-smag_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>smag_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;smag_in"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-smag_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>smag_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;smag_out"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lag_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lag_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_in"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lag_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lag_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lag_out"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grvl_in~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grvl_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grvl_in"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grvl_out~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grvl_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grvl_out"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_ero~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_ero</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bnk_ero"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_deg~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_deg</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch_deg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_dep~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_dep</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch_dep"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fp_dep~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fp_dep</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fp_dep"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tot_ssed~2"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tot_ssed</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tot_ssed"</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-ch_header_units"></span><h3>type, public :: <a href='../type/ch_header_units.html'>ch_header_units</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-day~9"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-mo~9"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>mo</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-day_mo~9"></span>character(len=6),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>day_mo</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-yrc~9"></span>character(len=5),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>yrc</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-isd~6"></span>character(len=9),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>isd</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-id~8"></span>character(len=8),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>id</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-name~26"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flo_in~8"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flo_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ha-m"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-flo_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>flo_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ha-m"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-evap~5"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>evap</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ha-m"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tloss~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tloss</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ha-m"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tons"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tons"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed_conc~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed_conc</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg/L"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgN"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgn_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgn_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgN"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgP"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-orgp_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>orgp_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgP"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgN"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgN"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nh4_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nh4_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nh4_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nh4_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no2_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no2_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no2_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no2_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solp_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solp_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgP"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solp_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solp_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kgP"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chla_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chla_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-chla_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>chla_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cbod_in~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cbod_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cbod_out~8"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cbod_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dis_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dis_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-dis_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>dis_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solpst_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solpst_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-solpst_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>solpst_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbpst_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbpst_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sorbpst_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sorbpst_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-react~6"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>react</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-volat~4"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>volat</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-setlpst~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>setlpst</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-resuspst~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>resuspst</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-difus~4"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>difus</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;mg_pst"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-reactb~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>reactb</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bury~4"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bury</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sedpest~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sedpest</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mg"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bacp~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bacp</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-baclp~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>baclp</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met1~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met1</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met2~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met2</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-met3~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>met3</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sand_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sand_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sand_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sand_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silt_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silt_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-silt_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>silt_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clay_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clay_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-clay_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>clay_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-smag_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>smag_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-smag_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>smag_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lag_in~4"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lag_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lag_out~4"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lag_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grvl_in~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grvl_in</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-grvl_out~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>grvl_out</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_ero~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_ero</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_deg~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_deg</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_dep~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ch_dep</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-fp_dep~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>fp_dep</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tot_ssed~3"></span>character(len=15),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tot_ssed</strong></td><td> =</td><td>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----"</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+    </section>
+  <br>
+    
+ 
+    <section>
+    <h2>Functions</h2>
+      <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-ch_add"></span><h3>public function <a href='../proc/ch_add.html'>ch_add</a>(cho1, cho2) result(cho3)</h3></div>
+  <div class="panel-body">
+           
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>cho1</strong></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>cho2</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Return Value <small>type(<a href='../type/ch_output.html'>ch_output</a>)</small></h4>  
+
+  </div>
+  </div>
+
+      <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-ch_div"></span><h3>public function <a href='../proc/ch_div.html'>ch_div</a>(ch1, const) result(ch2)</h3></div>
+  <div class="panel-body">
+           
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>ch1</strong></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" ></span>real,</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>const</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Return Value <small>type(<a href='../type/ch_output.html'>ch_output</a>)</small></h4>  
+
+  </div>
+  </div>
+
+      <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-ch_mult"></span><h3>public function <a href='../proc/ch_mult.html'>ch_mult</a>(const, chn1) result(chn2)</h3></div>
+  <div class="panel-body">
+           
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>real,</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>const</strong></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" ></span>type(<a href='../type/ch_output.html'>ch_output</a>),</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>chn1</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Return Value <small>type(<a href='../type/ch_output.html'>ch_output</a>)</small></h4>  
+
+  </div>
+  </div>
+
+    </section>
+    <br>
+
+    
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

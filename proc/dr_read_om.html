@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>dr_read_om &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>dr_read_om
+      <small>Subroutine</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.1% of total for procedures.">65 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/dr_read_om.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li><a href='../sourcefile/dr_read_om.f90.html'>dr_read_om.f90</a></li>
+     <li class="active">dr_read_om</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<em>None</em>
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>subroutine dr_read_om()</h2>
+        <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      <li class="list-group-item">
+  <ul class="list-inline">
+    <li><a href='../module/dr_module.html'>dr_module</a></li>
+    <li><a href='../module/maximum_data_module.html'>maximum_data_module</a></li>
+    <li><a href='../module/constituent_mass_module.html'>constituent_mass_module</a></li>
+    <li><a href='../module/hydrograph_module.html'>hydrograph_module</a></li>
+    <li><a href='../module/input_file_module.html'>input_file_module</a></li>
+    <li><a href='../module/organic_mineral_mass_module.html'>organic_mineral_mass_module</a></li>
+  </ul>
+      </li>
+      <li class="list-group-item">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~dr_read_om~~UsesGraph Pages: 1 -->
+<svg id="procdr_read_omUsesGraph" width="421pt" height="242pt"
+ viewBox="0.00 0.00 421.00 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~dr_read_om~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
+<title>proc~~dr_read_om~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-238 417,-238 417,4 -4,4"/>
+<!-- proc~dr_read_om -->
+<g id="proc~~dr_read_om~~UsesGraph_node1" class="node">
+<title>proc~dr_read_om</title>
+<polygon fill="none" stroke="black" points="413,-129 337,-129 337,-105 413,-105 413,-129"/>
+<text text-anchor="middle" x="375" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50">dr_read_om</text>
+</g>
+<!-- module~dr_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node2" class="node">
+<title>module~dr_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node2"><a xlink:href=".././module/dr_module.html" xlink:title="dr_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="247,-234 177,-234 177,-210 247,-210 247,-234"/>
+<text text-anchor="middle" x="212" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dr_module</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_read_om&#45;&gt;module~dr_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge1" class="edge">
+<title>proc~dr_read_om&#45;&gt;module~dr_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M366.95,-129.13C355.55,-147.63 331.24,-182.68 301,-201 287.79,-209 271.75,-213.96 257,-217.02"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="256.25,-213.6 247.05,-218.86 257.51,-220.49 256.25,-213.6"/>
+</g>
+<!-- module~organic_mineral_mass_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node3" class="node">
+<title>module~organic_mineral_mass_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node3"><a xlink:href=".././module/organic_mineral_mass_module.html" xlink:title="organic_mineral_mass_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="301,-192 123,-192 123,-168 301,-168 301,-192"/>
+<text text-anchor="middle" x="212" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">organic_mineral_mass_module</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_read_om&#45;&gt;module~organic_mineral_mass_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge4" class="edge">
+<title>proc~dr_read_om&#45;&gt;module~organic_mineral_mass_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M356.43,-129.04C342.08,-138.39 320.97,-151.06 301,-159 295.48,-161.19 289.68,-163.19 283.79,-165.02"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="282.46,-161.76 273.83,-167.91 284.41,-168.48 282.46,-161.76"/>
+</g>
+<!-- module~input_file_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node4" class="node">
+<title>module~input_file_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node4"><a xlink:href=".././module/input_file_module.html" xlink:title="input_file_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="265.5,-150 158.5,-150 158.5,-126 265.5,-126 265.5,-150"/>
+<text text-anchor="middle" x="212" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">input_file_module</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_read_om&#45;&gt;module~input_file_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge2" class="edge">
+<title>proc~dr_read_om&#45;&gt;module~input_file_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M336.66,-121.87C318.54,-124.23 296.27,-127.14 275.65,-129.83"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="275.15,-126.36 265.69,-131.13 276.06,-133.3 275.15,-126.36"/>
+</g>
+<!-- module~hydrograph_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node5" class="node">
+<title>module~hydrograph_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node5"><a xlink:href=".././module/hydrograph_module.html" xlink:title="hydrograph_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="272,-108 152,-108 152,-84 272,-84 272,-108"/>
+<text text-anchor="middle" x="212" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hydrograph_module</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_read_om&#45;&gt;module~hydrograph_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge3" class="edge">
+<title>proc~dr_read_om&#45;&gt;module~hydrograph_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M336.66,-112.13C320.44,-110.01 300.9,-107.46 282.19,-105.02"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="282.58,-101.55 272.21,-103.72 281.67,-108.49 282.58,-101.55"/>
+</g>
+<!-- module~maximum_data_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node6" class="node">
+<title>module~maximum_data_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node6"><a xlink:href=".././module/maximum_data_module.html" xlink:title="maximum_data_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="283,-66 141,-66 141,-42 283,-42 283,-66"/>
+<text text-anchor="middle" x="212" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">maximum_data_module</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_read_om&#45;&gt;module~maximum_data_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge5" class="edge">
+<title>proc~dr_read_om&#45;&gt;module~maximum_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M356.43,-104.96C342.08,-95.61 320.97,-82.94 301,-75 295.48,-72.81 289.68,-70.81 283.79,-68.98"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="284.41,-65.52 273.83,-66.09 282.46,-72.24 284.41,-65.52"/>
+</g>
+<!-- module~constituent_mass_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node7" class="node">
+<title>module~constituent_mass_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node7"><a xlink:href=".././module/constituent_mass_module.html" xlink:title="constituent_mass_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="287.5,-24 136.5,-24 136.5,0 287.5,0 287.5,-24"/>
+<text text-anchor="middle" x="212" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">constituent_mass_module</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_read_om&#45;&gt;module~constituent_mass_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge6" class="edge">
+<title>proc~dr_read_om&#45;&gt;module~constituent_mass_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M366.95,-104.87C355.55,-86.37 331.24,-51.32 301,-33 298.02,-31.2 294.9,-29.55 291.68,-28.04"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="292.97,-24.78 282.39,-24.15 290.26,-31.24 292.97,-24.78"/>
+</g>
+<!-- module~basin_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node8" class="node">
+<title>module~basin_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node8"><a xlink:href=".././module/basin_module.html" xlink:title="basin_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="87,-129 0,-129 0,-105 87,-105 87,-129"/>
+<text text-anchor="middle" x="43.5" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">basin_module</text>
+</a>
+</g>
+</g>
+<!-- module~hydrograph_module&#45;&gt;module~basin_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge7" class="edge">
+<title>module~hydrograph_module&#45;&gt;module~basin_module</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M151.83,-103.46C133.94,-105.72 114.42,-108.18 96.99,-110.38"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="96.49,-106.92 87,-111.64 97.36,-113.86 96.49,-106.92"/>
+</g>
+<!-- module~time_module -->
+<g id="proc~~dr_read_om~~UsesGraph_node9" class="node">
+<title>module~time_module</title>
+<g id="a_proc~~dr_read_om~~UsesGraph_node9"><a xlink:href=".././module/time_module.html" xlink:title="time_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="84.5,-87 2.5,-87 2.5,-63 84.5,-63 84.5,-87"/>
+<text text-anchor="middle" x="43.5" y="-72.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">time_module</text>
+</a>
+</g>
+</g>
+<!-- module~hydrograph_module&#45;&gt;module~time_module -->
+<g id="proc~~dr_read_om~~UsesGraph_edge8" class="edge">
+<title>module~hydrograph_module&#45;&gt;module~time_module</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M151.83,-88.54C133.15,-86.18 112.69,-83.6 94.7,-81.33"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="95.06,-77.85 84.7,-80.07 94.19,-84.79 95.06,-77.85"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a submodule to the (sub)module which it is
+    descended from. Dashed arrows point from a module or program unit to 
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </li>
+      </ul>
+    </div>
+
+
+    <p>change to dr_om</p>
+
+    <h3>Arguments</h3>
+    <em>None</em>
+    <br>
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Called by</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~dr_read_om~~CalledByGraph Pages: 1 -->
+<svg id="procdr_read_omCalledByGraph" width="398pt" height="52pt"
+ viewBox="0.00 0.00 398.00 52.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~dr_read_om~~CalledByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
+<title>proc~~dr_read_om~~CalledByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-48 394,-48 394,4 -4,4"/>
+<!-- proc~dr_read_om -->
+<g id="proc~~dr_read_om~~CalledByGraph_node1" class="node">
+<title>proc~dr_read_om</title>
+<polygon fill="none" stroke="black" points="390,-44 314,-44 314,-20 390,-20 390,-44"/>
+<text text-anchor="middle" x="352" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50">dr_read_om</text>
+</g>
+<!-- proc~dr_db_read -->
+<g id="proc~~dr_read_om~~CalledByGraph_node2" class="node">
+<title>proc~dr_db_read</title>
+<g id="a_proc~~dr_read_om~~CalledByGraph_node2"><a xlink:href=".././proc/dr_db_read.html" xlink:title="dr_db_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="278,-44 206,-44 206,-20 278,-20 278,-44"/>
+<text text-anchor="middle" x="242" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">dr_db_read</text>
+</a>
+</g>
+</g>
+<!-- proc~dr_db_read&#45;&gt;proc~dr_read_om -->
+<g id="proc~~dr_read_om~~CalledByGraph_edge1" class="edge">
+<title>proc~dr_db_read&#45;&gt;proc~dr_read_om</title>
+<path fill="none" stroke="#ff0000" d="M278.06,-32C286.3,-32 295.21,-32 303.87,-32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="303.88,-35.5 313.88,-32 303.88,-28.5 303.88,-35.5"/>
+</g>
+<!-- proc~hyd_connect -->
+<g id="proc~~dr_read_om~~CalledByGraph_node3" class="node">
+<title>proc~hyd_connect</title>
+<g id="a_proc~~dr_read_om~~CalledByGraph_node3"><a xlink:href=".././proc/hyd_connect.html" xlink:title="hyd_connect">
+<polygon fill="#d9534f" stroke="#d9534f" points="170,-24 90,-24 90,0 170,0 170,-24"/>
+<text text-anchor="middle" x="130" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hyd_connect</text>
+</a>
+</g>
+</g>
+<!-- proc~hyd_connect&#45;&gt;proc~dr_db_read -->
+<g id="proc~~dr_read_om~~CalledByGraph_edge2" class="edge">
+<title>proc~hyd_connect&#45;&gt;proc~dr_db_read</title>
+<path fill="none" stroke="#ff0000" d="M170.09,-19.11C178.35,-20.61 187.12,-22.2 195.59,-23.74"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="195.23,-27.24 205.7,-25.58 196.49,-20.35 195.23,-27.24"/>
+</g>
+<!-- program~main -->
+<g id="proc~~dr_read_om~~CalledByGraph_node4" class="node">
+<title>program~main</title>
+<g id="a_proc~~dr_read_om~~CalledByGraph_node4"><a xlink:href=".././program/main.html" xlink:title="main">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="54,-44 0,-44 0,-20 54,-20 54,-44"/>
+<text text-anchor="middle" x="27" y="-29.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">main</text>
+</a>
+</g>
+</g>
+<!-- program~main&#45;&gt;proc~dr_db_read -->
+<g id="proc~~dr_read_om~~CalledByGraph_edge3" class="edge">
+<title>program~main&#45;&gt;proc~dr_db_read</title>
+<path fill="none" stroke="#ff0000" d="M54.24,-32.52C65.28,-32.71 78.27,-32.91 90,-33 125.55,-33.29 134.45,-33.25 170,-33 178.33,-32.94 187.2,-32.84 195.75,-32.73"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="196.02,-36.23 205.97,-32.59 195.92,-29.23 196.02,-36.23"/>
+</g>
+<!-- program~main&#45;&gt;proc~hyd_connect -->
+<g id="proc~~dr_read_om~~CalledByGraph_edge4" class="edge">
+<title>program~main&#45;&gt;proc~hyd_connect</title>
+<path fill="none" stroke="#ff0000" d="M54.01,-26.85C61.91,-25.29 70.86,-23.51 79.76,-21.75"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="80.6,-25.15 89.73,-19.78 79.24,-18.29 80.6,-25.15"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="597pt" height="32pt"
+ viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
+<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
+<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
+<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<em>None</em>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    
+    
+
+    
+    
+
+
+    
+    
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>mallo_control &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>mallo_control
+      <small>Subroutine</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 0.1% of total for procedures.">51 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/mallo_control.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li><a href='../sourcefile/mallo_control.f90.html'>mallo_control.f90</a></li>
+     <li class="active">mallo_control</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<em>None</em>
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <h2>subroutine mallo_control(imallo)</h2>
+        <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      <li class="list-group-item">
+  <ul class="list-inline">
+    <li><a href='../module/basin_module.html'>basin_module</a></li>
+    <li><a href='../module/soil_module.html'>soil_module</a></li>
+    <li><a href='../module/plant_module.html'>plant_module</a></li>
+    <li><a href='../module/conditional_module.html'>conditional_module</a></li>
+    <li><a href='../module/manure_allocation_module.html'>manure_allocation_module</a></li>
+    <li><a href='../module/time_module.html'>time_module</a></li>
+    <li><a href='../module/organic_mineral_mass_module.html'>organic_mineral_mass_module</a></li>
+    <li><a href='../module/hru_module.html'>hru_module</a></li>
+  </ul>
+      </li>
+      <li class="list-group-item">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~mallo_control~~UsesGraph Pages: 1 -->
+<svg id="procmallo_controlUsesGraph" width="475pt" height="326pt"
+ viewBox="0.00 0.00 475.00 326.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~mallo_control~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 322)">
+<title>proc~~mallo_control~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-322 471,-322 471,4 -4,4"/>
+<!-- proc~mallo_control -->
+<g id="proc~~mallo_control~~UsesGraph_node1" class="node">
+<title>proc~mallo_control</title>
+<polygon fill="none" stroke="black" points="467,-171 382,-171 382,-147 467,-147 467,-171"/>
+<text text-anchor="middle" x="424.5" y="-156.6" font-family="Helvetica,sans-Serif" font-size="10.50">mallo_control</text>
+</g>
+<!-- module~manure_allocation_module -->
+<g id="proc~~mallo_control~~UsesGraph_node2" class="node">
+<title>module~manure_allocation_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node2"><a xlink:href=".././module/manure_allocation_module.html" xlink:title="manure_allocation_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="335.5,-318 178.5,-318 178.5,-294 335.5,-294 335.5,-318"/>
+<text text-anchor="middle" x="257" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">manure_allocation_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~manure_allocation_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge1" class="edge">
+<title>proc~mallo_control&#45;&gt;module~manure_allocation_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M419.58,-171.26C410.78,-196.71 386.98,-255.32 346,-285 343.89,-286.53 341.67,-287.95 339.39,-289.27"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="337.61,-286.25 330.24,-293.87 340.75,-292.5 337.61,-286.25"/>
+</g>
+<!-- module~time_module -->
+<g id="proc~~mallo_control~~UsesGraph_node3" class="node">
+<title>module~time_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node3"><a xlink:href=".././module/time_module.html" xlink:title="time_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="298,-276 216,-276 216,-252 298,-252 298,-276"/>
+<text text-anchor="middle" x="257" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">time_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~time_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge2" class="edge">
+<title>proc~mallo_control&#45;&gt;module~time_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M415.83,-171.12C403.47,-189.61 377.33,-224.65 346,-243 334.66,-249.64 321.34,-254.18 308.54,-257.29"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="307.46,-253.94 298.44,-259.49 308.95,-260.78 307.46,-253.94"/>
+</g>
+<!-- module~hru_module -->
+<g id="proc~~mallo_control~~UsesGraph_node4" class="node">
+<title>module~hru_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node4"><a xlink:href=".././module/hru_module.html" xlink:title="hru_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="295,-234 219,-234 219,-210 295,-210 295,-234"/>
+<text text-anchor="middle" x="257" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~hru_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge4" class="edge">
+<title>proc~mallo_control&#45;&gt;module~hru_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M404.43,-171.18C389.14,-180.48 366.87,-193.02 346,-201 333.02,-205.96 318.51,-210.01 305.07,-213.17"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="304.03,-209.81 295.04,-215.42 305.57,-216.64 304.03,-209.81"/>
+</g>
+<!-- module~organic_mineral_mass_module -->
+<g id="proc~~mallo_control~~UsesGraph_node5" class="node">
+<title>module~organic_mineral_mass_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node5"><a xlink:href=".././module/organic_mineral_mass_module.html" xlink:title="organic_mineral_mass_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="346,-192 168,-192 168,-168 346,-168 346,-192"/>
+<text text-anchor="middle" x="257" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">organic_mineral_mass_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~organic_mineral_mass_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge3" class="edge">
+<title>proc~mallo_control&#45;&gt;module~organic_mineral_mass_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M381.74,-164.3C373.81,-165.31 365.2,-166.4 356.35,-167.52"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="355.76,-164.07 346.28,-168.8 356.64,-171.01 355.76,-164.07"/>
+</g>
+<!-- module~basin_module -->
+<g id="proc~~mallo_control~~UsesGraph_node6" class="node">
+<title>module~basin_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node6"><a xlink:href=".././module/basin_module.html" xlink:title="basin_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="300.5,-150 213.5,-150 213.5,-126 300.5,-126 300.5,-150"/>
+<text text-anchor="middle" x="257" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">basin_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~basin_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge5" class="edge">
+<title>proc~mallo_control&#45;&gt;module~basin_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M381.74,-153.7C360.13,-150.96 333.54,-147.59 310.55,-144.67"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="310.97,-141.19 300.61,-143.41 310.09,-148.14 310.97,-141.19"/>
+</g>
+<!-- module~soil_module -->
+<g id="proc~~mallo_control~~UsesGraph_node7" class="node">
+<title>module~soil_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node7"><a xlink:href=".././module/soil_module.html" xlink:title="soil_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="295,-108 219,-108 219,-84 295,-84 295,-108"/>
+<text text-anchor="middle" x="257" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">soil_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~soil_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge6" class="edge">
+<title>proc~mallo_control&#45;&gt;module~soil_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M404.43,-146.82C389.14,-137.52 366.87,-124.98 346,-117 333.02,-112.04 318.51,-107.99 305.07,-104.83"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="305.57,-101.36 295.04,-102.58 304.03,-108.19 305.57,-101.36"/>
+</g>
+<!-- module~plant_module -->
+<g id="proc~~mallo_control~~UsesGraph_node8" class="node">
+<title>module~plant_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node8"><a xlink:href=".././module/plant_module.html" xlink:title="plant_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="299.5,-66 214.5,-66 214.5,-42 299.5,-42 299.5,-66"/>
+<text text-anchor="middle" x="257" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">plant_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~plant_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge7" class="edge">
+<title>proc~mallo_control&#45;&gt;module~plant_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M415.83,-146.88C403.47,-128.39 377.33,-93.35 346,-75 334.99,-68.55 322.1,-64.08 309.63,-60.98"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="310.29,-57.54 299.77,-58.77 308.77,-64.37 310.29,-57.54"/>
+</g>
+<!-- module~conditional_module -->
+<g id="proc~~mallo_control~~UsesGraph_node9" class="node">
+<title>module~conditional_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node9"><a xlink:href=".././module/conditional_module.html" xlink:title="conditional_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="316,-24 198,-24 198,0 316,0 316,-24"/>
+<text text-anchor="middle" x="257" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">conditional_module</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;module~conditional_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge8" class="edge">
+<title>proc~mallo_control&#45;&gt;module~conditional_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M419.58,-146.74C410.78,-121.29 386.98,-62.68 346,-33 339.97,-28.63 333.15,-25.16 326.04,-22.4"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="326.81,-18.97 316.22,-19.07 324.56,-25.6 326.81,-18.97"/>
+</g>
+<!-- module~fertilizer_data_module -->
+<g id="proc~~mallo_control~~UsesGraph_node10" class="node">
+<title>module~fertilizer_data_module</title>
+<g id="a_proc~~mallo_control~~UsesGraph_node10"><a xlink:href=".././module/fertilizer_data_module.html" xlink:title="fertilizer_data_module">
+<polygon fill="#337ab7" stroke="#337ab7" points="132,-318 0,-318 0,-294 132,-294 132,-318"/>
+<text text-anchor="middle" x="66" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">fertilizer_data_module</text>
+</a>
+</g>
+</g>
+<!-- module~manure_allocation_module&#45;&gt;module~fertilizer_data_module -->
+<g id="proc~~mallo_control~~UsesGraph_edge9" class="edge">
+<title>module~manure_allocation_module&#45;&gt;module~fertilizer_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M178.31,-306C166.42,-306 154.16,-306 142.32,-306"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="142.05,-302.5 132.05,-306 142.05,-309.5 142.05,-302.5"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a submodule to the (sub)module which it is
+    descended from. Dashed arrows point from a module or program unit to 
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </li>
+      </ul>
+    </div>
+
+
+    <p>add manure produced on the first day of the month
+loop through each demand object for manure demand
+ check decision table for manure application
+loop through each demand object again and subtract from source if available
+ subtract manure from source
+ set daily withdrawal and source</p>
+
+    <h3>Arguments</h3>
+      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-imallo~3"></span>integer,</td>
+<td>intent(in)</td>
+  <td></td>  <td></td><td>::</td>
+  <td><strong>imallo</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+    <br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Calls</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~mallo_control~~CallsGraph Pages: 1 -->
+<svg id="procmallo_controlCallsGraph" width="585pt" height="1062pt"
+ viewBox="0.00 0.00 585.00 1062.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~mallo_control~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 1058)">
+<title>proc~~mallo_control~~CallsGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1058 581,-1058 581,4 -4,4"/>
+<!-- proc~mallo_control -->
+<g id="proc~~mallo_control~~CallsGraph_node1" class="node">
+<title>proc~mallo_control</title>
+<polygon fill="none" stroke="black" points="85,-932 0,-932 0,-908 85,-908 85,-932"/>
+<text text-anchor="middle" x="42.5" y="-917.6" font-family="Helvetica,sans-Serif" font-size="10.50">mallo_control</text>
+</g>
+<!-- proc~conditions -->
+<g id="proc~~mallo_control~~CallsGraph_node2" class="node">
+<title>proc~conditions</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node2"><a xlink:href=".././proc/conditions.html" xlink:title="conditions">
+<polygon fill="#d9534f" stroke="#d9534f" points="188,-992 121,-992 121,-968 188,-968 188,-992"/>
+<text text-anchor="middle" x="154.5" y="-977.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">conditions</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;proc~conditions -->
+<g id="proc~~mallo_control~~CallsGraph_edge1" class="edge">
+<title>proc~mallo_control&#45;&gt;proc~conditions</title>
+<path fill="none" stroke="#ff0000" d="M65.76,-932.14C82.01,-941.01 104.26,-953.14 122.29,-962.97"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="120.82,-966.16 131.27,-967.88 124.17,-960.01 120.82,-966.16"/>
+</g>
+<!-- proc~pl_fert -->
+<g id="proc~~mallo_control~~CallsGraph_node3" class="node">
+<title>proc~pl_fert</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node3"><a xlink:href=".././proc/pl_fert.html" xlink:title="pl_fert">
+<polygon fill="#d9534f" stroke="#d9534f" points="311,-932 257,-932 257,-908 311,-908 311,-932"/>
+<text text-anchor="middle" x="284" y="-917.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_fert</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;proc~pl_fert -->
+<g id="proc~~mallo_control~~CallsGraph_edge2" class="edge">
+<title>proc~mallo_control&#45;&gt;proc~pl_fert</title>
+<path fill="none" stroke="#ff0000" d="M85.22,-920C130.9,-920 203.43,-920 246.8,-920"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="246.91,-923.5 256.91,-920 246.91,-916.5 246.91,-923.5"/>
+</g>
+<!-- proc~actions -->
+<g id="proc~~mallo_control~~CallsGraph_node4" class="node">
+<title>proc~actions</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node4"><a xlink:href=".././proc/actions.html" xlink:title="actions">
+<polygon fill="#d9534f" stroke="#d9534f" points="181.5,-516 127.5,-516 127.5,-492 181.5,-492 181.5,-516"/>
+<text text-anchor="middle" x="154.5" y="-501.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">actions</text>
+</a>
+</g>
+</g>
+<!-- proc~mallo_control&#45;&gt;proc~actions -->
+<g id="proc~~mallo_control~~CallsGraph_edge3" class="edge">
+<title>proc~mallo_control&#45;&gt;proc~actions</title>
+<path fill="none" stroke="#ff0000" d="M46.67,-908C61.92,-850.35 127.7,-601.58 147.71,-525.91"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="151.14,-526.61 150.31,-516.05 144.37,-524.82 151.14,-526.61"/>
+</g>
+<!-- proc~cond_real -->
+<g id="proc~~mallo_control~~CallsGraph_node5" class="node">
+<title>proc~cond_real</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node5"><a xlink:href=".././proc/cond_real.html" xlink:title="cond_real">
+<polygon fill="#d9534f" stroke="#d9534f" points="316,-1012 252,-1012 252,-988 316,-988 316,-1012"/>
+<text text-anchor="middle" x="284" y="-997.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cond_real</text>
+</a>
+</g>
+</g>
+<!-- proc~conditions&#45;&gt;proc~cond_real -->
+<g id="proc~~mallo_control~~CallsGraph_edge4" class="edge">
+<title>proc~conditions&#45;&gt;proc~cond_real</title>
+<path fill="none" stroke="#ff0000" d="M188,-985.1C204.41,-987.67 224.48,-990.82 241.94,-993.56"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="241.45,-997.03 251.87,-995.12 242.54,-990.11 241.45,-997.03"/>
+</g>
+<!-- proc~cond_integer -->
+<g id="proc~~mallo_control~~CallsGraph_node15" class="node">
+<title>proc~cond_integer</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node15"><a xlink:href=".././proc/cond_integer.html" xlink:title="cond_integer">
+<polygon fill="#d9534f" stroke="#d9534f" points="325,-1054 243,-1054 243,-1030 325,-1030 325,-1054"/>
+<text text-anchor="middle" x="284" y="-1039.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cond_integer</text>
+</a>
+</g>
+</g>
+<!-- proc~conditions&#45;&gt;proc~cond_integer -->
+<g id="proc~~mallo_control~~CallsGraph_edge6" class="edge">
+<title>proc~conditions&#45;&gt;proc~cond_integer</title>
+<path fill="none" stroke="#ff0000" d="M173.56,-992.16C187.07,-1000.91 206.2,-1012.61 224,-1021 227.87,-1022.83 231.95,-1024.59 236.08,-1026.26"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="235.13,-1029.65 245.72,-1029.99 237.66,-1023.12 235.13,-1029.65"/>
+</g>
+<!-- float -->
+<g id="proc~~mallo_control~~CallsGraph_node25" class="node">
+<title>float</title>
+<polygon fill="#777777" stroke="#777777" points="577,-410 523,-410 523,-386 577,-386 577,-410"/>
+<text text-anchor="middle" x="550" y="-395.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">float</text>
+</g>
+<!-- proc~conditions&#45;&gt;float -->
+<g id="proc~~mallo_control~~CallsGraph_edge5" class="edge">
+<title>proc~conditions&#45;&gt;float</title>
+<path fill="none" stroke="#ff0000" d="M188.08,-976.83C263.8,-968.73 448.22,-944.66 487,-899 549.51,-825.41 550.34,-507.35 549.36,-420.17"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="552.86,-420.03 549.23,-410.08 545.86,-420.12 552.86,-420.03"/>
+</g>
+<!-- proc~actions&#45;&gt;proc~pl_fert -->
+<g id="proc~~mallo_control~~CallsGraph_edge26" class="edge">
+<title>proc~actions&#45;&gt;proc~pl_fert</title>
+<path fill="none" stroke="#0000ff" d="M156,-516.13C158.67,-575.9 173.2,-838.73 224,-899 229.96,-906.07 238.46,-910.76 247.17,-913.87"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="246.38,-917.28 256.96,-916.75 248.35,-910.57 246.38,-917.28"/>
+</g>
+<!-- proc~mgt_newtillmix_wet -->
+<g id="proc~~mallo_control~~CallsGraph_node6" class="node">
+<title>proc~mgt_newtillmix_wet</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node6"><a xlink:href=".././proc/mgt_newtillmix_wet.html" xlink:title="mgt_newtillmix_wet">
+<polygon fill="#d9534f" stroke="#d9534f" points="342.5,-226 225.5,-226 225.5,-202 342.5,-202 342.5,-226"/>
+<text text-anchor="middle" x="284" y="-211.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_newtillmix_wet</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_newtillmix_wet -->
+<g id="proc~~mallo_control~~CallsGraph_edge7" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_newtillmix_wet</title>
+<path fill="none" stroke="#0000ff" d="M155.13,-491.82C154.56,-451.05 158.04,-317.55 224,-240 226.77,-236.74 230.04,-233.87 233.58,-231.35"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="235.52,-234.27 242.26,-226.09 231.89,-228.28 235.52,-234.27"/>
+</g>
+<!-- amax1 -->
+<g id="proc~~mallo_control~~CallsGraph_node7" class="node">
+<title>amax1</title>
+<polygon fill="#777777" stroke="#777777" points="311,-184 257,-184 257,-160 311,-160 311,-184"/>
+<text text-anchor="middle" x="284" y="-169.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">amax1</text>
+</g>
+<!-- proc~actions&#45;&gt;amax1 -->
+<g id="proc~~mallo_control~~CallsGraph_edge8" class="edge">
+<title>proc~actions&#45;&gt;amax1</title>
+<path fill="none" stroke="#0000ff" d="M156.62,-491.79C161.61,-440 183.31,-239.13 224,-193 230.06,-186.13 238.53,-181.5 247.16,-178.39"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="248.28,-181.71 256.85,-175.49 246.27,-175.01 248.28,-181.71"/>
+</g>
+<!-- proc~wet_initial -->
+<g id="proc~~mallo_control~~CallsGraph_node8" class="node">
+<title>proc~wet_initial</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node8"><a xlink:href=".././proc/wet_initial.html" xlink:title="wet_initial">
+<polygon fill="#d9534f" stroke="#d9534f" points="317,-24 251,-24 251,0 317,0 317,-24"/>
+<text text-anchor="middle" x="284" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">wet_initial</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~wet_initial -->
+<g id="proc~~mallo_control~~CallsGraph_edge9" class="edge">
+<title>proc~actions&#45;&gt;proc~wet_initial</title>
+<path fill="none" stroke="#0000ff" d="M155.62,-491.83C156.54,-425.32 164.02,-106.17 224,-33 228.49,-27.52 234.52,-23.47 241.01,-20.47"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="242.61,-23.61 250.73,-16.8 240.14,-17.06 242.61,-23.61"/>
+</g>
+<!-- proc~hru_lum_init -->
+<g id="proc~~mallo_control~~CallsGraph_node9" class="node">
+<title>proc~hru_lum_init</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node9"><a xlink:href=".././proc/hru_lum_init.html" xlink:title="hru_lum_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="323,-66 245,-66 245,-42 323,-42 323,-66"/>
+<text text-anchor="middle" x="284" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_lum_init</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~hru_lum_init -->
+<g id="proc~~mallo_control~~CallsGraph_edge10" class="edge">
+<title>proc~actions&#45;&gt;proc~hru_lum_init</title>
+<path fill="none" stroke="#0000ff" d="M155.93,-491.9C158.35,-429.79 172.13,-147.11 224,-80 227.25,-75.79 231.33,-72.25 235.82,-69.27"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="237.83,-72.15 244.84,-64.21 234.4,-66.05 237.83,-72.15"/>
+</g>
+<!-- proc~pl_burnop -->
+<g id="proc~~mallo_control~~CallsGraph_node10" class="node">
+<title>proc~pl_burnop</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node10"><a xlink:href=".././proc/pl_burnop.html" xlink:title="pl_burnop">
+<polygon fill="#d9534f" stroke="#d9534f" points="317,-516 251,-516 251,-492 317,-492 317,-516"/>
+<text text-anchor="middle" x="284" y="-501.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_burnop</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~pl_burnop -->
+<g id="proc~~mallo_control~~CallsGraph_edge11" class="edge">
+<title>proc~actions&#45;&gt;proc~pl_burnop</title>
+<path fill="none" stroke="#0000ff" d="M181.61,-504C198.53,-504 220.96,-504 240.43,-504"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="240.58,-507.5 250.58,-504 240.58,-500.5 240.58,-507.5"/>
+</g>
+<!-- proc~mgt_newtillmix -->
+<g id="proc~~mallo_control~~CallsGraph_node11" class="node">
+<title>proc~mgt_newtillmix</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node11"><a xlink:href=".././proc/mgt_newtillmix.html" xlink:title="mgt_newtillmix">
+<polygon fill="#d9534f" stroke="#d9534f" points="330.5,-890 237.5,-890 237.5,-866 330.5,-866 330.5,-890"/>
+<text text-anchor="middle" x="284" y="-875.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_newtillmix</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_newtillmix -->
+<g id="proc~~mallo_control~~CallsGraph_edge12" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_newtillmix</title>
+<path fill="none" stroke="#0000ff" d="M156.28,-516.31C160.08,-572.45 178.31,-803.87 224,-857 225.5,-858.74 227.15,-860.34 228.92,-861.8"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="227.07,-864.78 237.34,-867.41 230.96,-858.95 227.07,-864.78"/>
+</g>
+<!-- proc~mgt_harvresidue -->
+<g id="proc~~mallo_control~~CallsGraph_node12" class="node">
+<title>proc~mgt_harvresidue</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node12"><a xlink:href=".././proc/mgt_harvresidue.html" xlink:title="mgt_harvresidue">
+<polygon fill="#d9534f" stroke="#d9534f" points="335,-806 233,-806 233,-782 335,-782 335,-806"/>
+<text text-anchor="middle" x="284" y="-791.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_harvresidue</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_harvresidue -->
+<g id="proc~~mallo_control~~CallsGraph_edge13" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_harvresidue</title>
+<path fill="none" stroke="#0000ff" d="M154.86,-516.02C153.32,-557.45 153.88,-696.07 224,-773 224.91,-773.99 225.86,-774.94 226.86,-775.84"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="225.11,-778.89 235.26,-781.92 229.21,-773.22 225.11,-778.89"/>
+</g>
+<!-- proc~pest_apply -->
+<g id="proc~~mallo_control~~CallsGraph_node13" class="node">
+<title>proc~pest_apply</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node13"><a xlink:href=".././proc/pest_apply.html" xlink:title="pest_apply">
+<polygon fill="#d9534f" stroke="#d9534f" points="319,-764 249,-764 249,-740 319,-740 319,-764"/>
+<text text-anchor="middle" x="284" y="-749.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_apply</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~pest_apply -->
+<g id="proc~~mallo_control~~CallsGraph_edge14" class="edge">
+<title>proc~actions&#45;&gt;proc~pest_apply</title>
+<path fill="none" stroke="#0000ff" d="M155.54,-516.21C156.34,-553.6 163.82,-667.8 224,-731 228.38,-735.6 233.83,-739.19 239.64,-742"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="238.37,-745.26 248.95,-745.8 241.01,-738.78 238.37,-745.26"/>
+</g>
+<!-- proc~structure_set_parms -->
+<g id="proc~~mallo_control~~CallsGraph_node14" class="node">
+<title>proc~structure_set_parms</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node14"><a xlink:href=".././proc/structure_set_parms.html" xlink:title="structure_set_parms">
+<polygon fill="#d9534f" stroke="#d9534f" points="344,-848 224,-848 224,-824 344,-824 344,-848"/>
+<text text-anchor="middle" x="284" y="-833.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">structure_set_parms</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~structure_set_parms -->
+<g id="proc~~mallo_control~~CallsGraph_edge15" class="edge">
+<title>proc~actions&#45;&gt;proc~structure_set_parms</title>
+<path fill="none" stroke="#0000ff" d="M156.62,-516.21C161.61,-568 183.31,-768.87 224,-815 224.87,-815.99 225.79,-816.93 226.75,-817.82"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="224.75,-820.69 234.86,-823.86 228.93,-815.08 224.75,-820.69"/>
+</g>
+<!-- proc~mgt_harvbiomass -->
+<g id="proc~~mallo_control~~CallsGraph_node16" class="node">
+<title>proc~mgt_harvbiomass</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node16"><a xlink:href=".././proc/mgt_harvbiomass.html" xlink:title="mgt_harvbiomass">
+<polygon fill="#d9534f" stroke="#d9534f" points="337.5,-474 230.5,-474 230.5,-450 337.5,-450 337.5,-474"/>
+<text text-anchor="middle" x="284" y="-459.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_harvbiomass</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_harvbiomass -->
+<g id="proc~~mallo_control~~CallsGraph_edge16" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_harvbiomass</title>
+<path fill="none" stroke="#0000ff" d="M181.61,-495.4C197.42,-490.19 218.04,-483.4 236.55,-477.3"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="237.89,-480.54 246.29,-474.09 235.7,-473.9 237.89,-480.54"/>
+</g>
+<!-- proc~hru_fr_change -->
+<g id="proc~~mallo_control~~CallsGraph_node17" class="node">
+<title>proc~hru_fr_change</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node17"><a xlink:href=".././proc/hru_fr_change.html" xlink:title="hru_fr_change">
+<polygon fill="#d9534f" stroke="#d9534f" points="328.5,-600 239.5,-600 239.5,-576 328.5,-576 328.5,-600"/>
+<text text-anchor="middle" x="284" y="-585.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hru_fr_change</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~hru_fr_change -->
+<g id="proc~~mallo_control~~CallsGraph_edge17" class="edge">
+<title>proc~actions&#45;&gt;proc~hru_fr_change</title>
+<path fill="none" stroke="#0000ff" d="M165.98,-516.24C178.52,-530.23 200.76,-552.98 224,-567 226.84,-568.71 229.84,-570.32 232.92,-571.81"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="231.78,-575.13 242.34,-575.97 234.61,-568.73 231.78,-575.13"/>
+</g>
+<!-- proc~pl_fert_wet -->
+<g id="proc~~mallo_control~~CallsGraph_node18" class="node">
+<title>proc~pl_fert_wet</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node18"><a xlink:href=".././proc/pl_fert_wet.html" xlink:title="pl_fert_wet">
+<polygon fill="#d9534f" stroke="#d9534f" points="319,-558 249,-558 249,-534 319,-534 319,-558"/>
+<text text-anchor="middle" x="284" y="-543.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_fert_wet</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~pl_fert_wet -->
+<g id="proc~~mallo_control~~CallsGraph_edge18" class="edge">
+<title>proc~actions&#45;&gt;proc~pl_fert_wet</title>
+<path fill="none" stroke="#0000ff" d="M181.61,-512.6C198.11,-518.04 219.86,-525.2 238.98,-531.5"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="238.1,-534.89 248.69,-534.7 240.29,-528.25 238.1,-534.89"/>
+</g>
+<!-- proc~mgt_killop -->
+<g id="proc~~mallo_control~~CallsGraph_node19" class="node">
+<title>proc~mgt_killop</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node19"><a xlink:href=".././proc/mgt_killop.html" xlink:title="mgt_killop">
+<polygon fill="#d9534f" stroke="#d9534f" points="317.5,-432 250.5,-432 250.5,-408 317.5,-408 317.5,-432"/>
+<text text-anchor="middle" x="284" y="-417.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_killop</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_killop -->
+<g id="proc~~mallo_control~~CallsGraph_edge19" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_killop</title>
+<path fill="none" stroke="#0000ff" d="M165.98,-491.76C178.52,-477.77 200.76,-455.02 224,-441 229.19,-437.87 234.91,-435.11 240.7,-432.7"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="242.31,-435.83 250.4,-428.98 239.81,-429.29 242.31,-435.83"/>
+</g>
+<!-- proc~plant_init -->
+<g id="proc~~mallo_control~~CallsGraph_node20" class="node">
+<title>proc~plant_init</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node20"><a xlink:href=".././proc/plant_init.html" xlink:title="plant_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="314.5,-306 253.5,-306 253.5,-282 314.5,-282 314.5,-306"/>
+<text text-anchor="middle" x="284" y="-291.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">plant_init</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~plant_init -->
+<g id="proc~~mallo_control~~CallsGraph_edge20" class="edge">
+<title>proc~actions&#45;&gt;proc~plant_init</title>
+<path fill="none" stroke="#0000ff" d="M156.39,-491.96C159.47,-458.96 172.52,-366.18 224,-315 229.46,-309.57 236.41,-305.54 243.62,-302.55"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="245.21,-305.7 253.48,-299.08 242.88,-299.09 245.21,-305.7"/>
+</g>
+<!-- amin1 -->
+<g id="proc~~mallo_control~~CallsGraph_node21" class="node">
+<title>amin1</title>
+<polygon fill="#777777" stroke="#777777" points="577,-166 523,-166 523,-142 577,-142 577,-166"/>
+<text text-anchor="middle" x="550" y="-151.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">amin1</text>
+</g>
+<!-- proc~actions&#45;&gt;amin1 -->
+<g id="proc~~mallo_control~~CallsGraph_edge21" class="edge">
+<title>proc~actions&#45;&gt;amin1</title>
+<path fill="none" stroke="#0000ff" d="M156.14,-491.96C159.35,-435.99 175.53,-201.82 224,-151 305.51,-65.54 373.9,-78.99 487,-113 501.97,-117.5 516.65,-126.92 527.97,-135.6"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="525.93,-138.45 535.92,-142 530.32,-133 525.93,-138.45"/>
+</g>
+<!-- proc~mgt_transplant -->
+<g id="proc~~mallo_control~~CallsGraph_node22" class="node">
+<title>proc~mgt_transplant</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node22"><a xlink:href=".././proc/mgt_transplant.html" xlink:title="mgt_transplant">
+<polygon fill="#d9534f" stroke="#d9534f" points="330.5,-348 237.5,-348 237.5,-324 330.5,-324 330.5,-348"/>
+<text text-anchor="middle" x="284" y="-333.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_transplant</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_transplant -->
+<g id="proc~~mallo_control~~CallsGraph_edge22" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_transplant</title>
+<path fill="none" stroke="#0000ff" d="M157.83,-491.83C163.79,-463.99 182.14,-395.09 224,-357 225.48,-355.66 227.05,-354.4 228.69,-353.22"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="230.64,-356.12 237.39,-347.95 227.02,-350.13 230.64,-356.12"/>
+</g>
+<!-- proc~mgt_harvtuber -->
+<g id="proc~~mallo_control~~CallsGraph_node23" class="node">
+<title>proc~mgt_harvtuber</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node23"><a xlink:href=".././proc/mgt_harvtuber.html" xlink:title="mgt_harvtuber">
+<polygon fill="#d9534f" stroke="#d9534f" points="329.5,-390 238.5,-390 238.5,-366 329.5,-366 329.5,-390"/>
+<text text-anchor="middle" x="284" y="-375.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_harvtuber</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_harvtuber -->
+<g id="proc~~mallo_control~~CallsGraph_edge23" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_harvtuber</title>
+<path fill="none" stroke="#0000ff" d="M160.33,-491.76C169.52,-470.04 191.52,-424.59 224,-399 225.8,-397.58 227.71,-396.25 229.69,-395"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="231.65,-397.93 238.77,-390.09 228.31,-391.77 231.65,-397.93"/>
+</g>
+<!-- proc~pl_graze -->
+<g id="proc~~mallo_control~~CallsGraph_node24" class="node">
+<title>proc~pl_graze</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node24"><a xlink:href=".././proc/pl_graze.html" xlink:title="pl_graze">
+<polygon fill="#d9534f" stroke="#d9534f" points="462.5,-146 404.5,-146 404.5,-122 462.5,-122 462.5,-146"/>
+<text text-anchor="middle" x="433.5" y="-131.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_graze</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~pl_graze -->
+<g id="proc~~mallo_control~~CallsGraph_edge24" class="edge">
+<title>proc~actions&#45;&gt;proc~pl_graze</title>
+<path fill="none" stroke="#0000ff" d="M155.37,-491.75C155.64,-453.72 161.73,-336.43 224,-273 263.19,-233.08 302.55,-272.57 344,-235 374.1,-207.72 349.99,-178.37 380,-151 384.2,-147.17 389.28,-144.2 394.6,-141.9"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="396.06,-145.09 404.3,-138.44 393.71,-138.5 396.06,-145.09"/>
+</g>
+<!-- proc~cn2_init -->
+<g id="proc~~mallo_control~~CallsGraph_node26" class="node">
+<title>proc~cn2_init</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node26"><a xlink:href=".././proc/cn2_init.html" xlink:title="cn2_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="311,-722 257,-722 257,-698 311,-698 311,-722"/>
+<text text-anchor="middle" x="284" y="-707.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cn2_init</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~cn2_init -->
+<g id="proc~~mallo_control~~CallsGraph_edge25" class="edge">
+<title>proc~actions&#45;&gt;proc~cn2_init</title>
+<path fill="none" stroke="#0000ff" d="M156.89,-516.2C161.12,-547.94 176.56,-634.06 224,-684 230.39,-690.72 238.81,-695.82 247.3,-699.63"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="246.21,-702.96 256.79,-703.42 248.8,-696.46 246.21,-702.96"/>
+</g>
+<!-- proc~mgt_harvgrain -->
+<g id="proc~~mallo_control~~CallsGraph_node27" class="node">
+<title>proc~mgt_harvgrain</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node27"><a xlink:href=".././proc/mgt_harvgrain.html" xlink:title="mgt_harvgrain">
+<polygon fill="#d9534f" stroke="#d9534f" points="329.5,-642 238.5,-642 238.5,-618 329.5,-618 329.5,-642"/>
+<text text-anchor="middle" x="284" y="-627.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_harvgrain</text>
+</a>
+</g>
+</g>
+<!-- proc~actions&#45;&gt;proc~mgt_harvgrain -->
+<g id="proc~~mallo_control~~CallsGraph_edge27" class="edge">
+<title>proc~actions&#45;&gt;proc~mgt_harvgrain</title>
+<path fill="none" stroke="#0000ff" d="M160.33,-516.24C169.52,-537.96 191.52,-583.41 224,-609 225.8,-610.42 227.71,-611.75 229.69,-613"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="228.31,-616.23 238.77,-617.91 231.65,-610.07 228.31,-616.23"/>
+</g>
+<!-- curno -->
+<g id="proc~~mallo_control~~CallsGraph_node28" class="node">
+<title>curno</title>
+<polygon fill="#777777" stroke="#777777" points="460.5,-682 406.5,-682 406.5,-658 460.5,-658 460.5,-682"/>
+<text text-anchor="middle" x="433.5" y="-667.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">curno</text>
+</g>
+<!-- proc~actions&#45;&gt;curno -->
+<g id="proc~~mallo_control~~CallsGraph_edge28" class="edge">
+<title>proc~actions&#45;&gt;curno</title>
+<path fill="none" stroke="#0000ff" d="M157.08,-516.07C161.57,-544.95 177.24,-618.13 224,-651 275.06,-686.9 351.44,-683.19 396.2,-676.85"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="396.97,-680.27 406.32,-675.29 395.91,-673.35 396.97,-680.27"/>
+</g>
+<!-- proc~res_convert_mass -->
+<g id="proc~~mallo_control~~CallsGraph_node29" class="node">
+<title>proc~res_convert_mass</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node29"><a xlink:href=".././proc/res_convert_mass.html" xlink:title="res_convert_mass">
+<polygon fill="#d9534f" stroke="#d9534f" points="487,-24 380,-24 380,0 487,0 487,-24"/>
+<text text-anchor="middle" x="433.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">res_convert_mass</text>
+</a>
+</g>
+</g>
+<!-- proc~wet_initial&#45;&gt;proc~res_convert_mass -->
+<g id="proc~~mallo_control~~CallsGraph_edge29" class="edge">
+<title>proc~wet_initial&#45;&gt;proc~res_convert_mass</title>
+<path fill="none" stroke="#ffbf00" d="M317.01,-12C332.52,-12 351.71,-12 369.96,-12"/>
+<polygon fill="#ffbf00" stroke="#ffbf00" points="369.97,-15.5 379.97,-12 369.97,-8.5 369.97,-15.5"/>
+</g>
+<!-- proc~pl_burnop&#45;&gt;curno -->
+<g id="proc~~mallo_control~~CallsGraph_edge30" class="edge">
+<title>proc~pl_burnop&#45;&gt;curno</title>
+<path fill="none" stroke="#bfff00" d="M317.06,-511.05C326.43,-514.21 336.24,-518.69 344,-525 385.33,-558.59 412.39,-616.94 424.75,-648.41"/>
+<polygon fill="#bfff00" stroke="#bfff00" points="421.55,-649.86 428.37,-657.97 428.1,-647.38 421.55,-649.86"/>
+</g>
+<!-- hpc_d -->
+<g id="proc~~mallo_control~~CallsGraph_node31" class="node">
+<title>hpc_d</title>
+<polygon fill="#777777" stroke="#777777" points="460.5,-554 406.5,-554 406.5,-530 460.5,-530 460.5,-554"/>
+<text text-anchor="middle" x="433.5" y="-539.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hpc_d</text>
+</g>
+<!-- proc~pl_burnop&#45;&gt;hpc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge31" class="edge">
+<title>proc~pl_burnop&#45;&gt;hpc_d</title>
+<path fill="none" stroke="#bfff00" d="M317.01,-512.25C340.43,-518.28 372.24,-526.48 396.54,-532.74"/>
+<polygon fill="#bfff00" stroke="#bfff00" points="395.9,-536.18 406.45,-535.29 397.64,-529.41 395.9,-536.18"/>
+</g>
+<!-- hrc_d -->
+<g id="proc~~mallo_control~~CallsGraph_node32" class="node">
+<title>hrc_d</title>
+<polygon fill="#777777" stroke="#777777" points="460.5,-512 406.5,-512 406.5,-488 460.5,-488 460.5,-512"/>
+<text text-anchor="middle" x="433.5" y="-497.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">hrc_d</text>
+</g>
+<!-- proc~pl_burnop&#45;&gt;hrc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge32" class="edge">
+<title>proc~pl_burnop&#45;&gt;hrc_d</title>
+<path fill="none" stroke="#bfff00" d="M317.01,-503.13C340.33,-502.5 371.96,-501.64 396.22,-500.98"/>
+<polygon fill="#bfff00" stroke="#bfff00" points="396.55,-504.48 406.45,-500.71 396.36,-497.48 396.55,-504.48"/>
+</g>
+<!-- proc~mgt_tillfactor -->
+<g id="proc~~mallo_control~~CallsGraph_node30" class="node">
+<title>proc~mgt_tillfactor</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node30"><a xlink:href=".././proc/mgt_tillfactor.html" xlink:title="mgt_tillfactor">
+<polygon fill="#d9534f" stroke="#d9534f" points="475,-890 392,-890 392,-866 475,-866 475,-890"/>
+<text text-anchor="middle" x="433.5" y="-875.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mgt_tillfactor</text>
+</a>
+</g>
+</g>
+<!-- proc~mgt_newtillmix&#45;&gt;proc~mgt_tillfactor -->
+<g id="proc~~mallo_control~~CallsGraph_edge33" class="edge">
+<title>proc~mgt_newtillmix&#45;&gt;proc~mgt_tillfactor</title>
+<path fill="none" stroke="#7fff00" d="M330.86,-878C346.97,-878 365.16,-878 381.65,-878"/>
+<polygon fill="#7fff00" stroke="#7fff00" points="381.67,-881.5 391.67,-878 381.67,-874.5 381.67,-881.5"/>
+</g>
+<!-- proc~ttcoef_wway -->
+<g id="proc~~mallo_control~~CallsGraph_node36" class="node">
+<title>proc~ttcoef_wway</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node36"><a xlink:href=".././proc/ttcoef_wway.html" xlink:title="ttcoef_wway">
+<polygon fill="#d9534f" stroke="#d9534f" points="472.5,-848 394.5,-848 394.5,-824 472.5,-824 472.5,-848"/>
+<text text-anchor="middle" x="433.5" y="-833.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ttcoef_wway</text>
+</a>
+</g>
+</g>
+<!-- proc~structure_set_parms&#45;&gt;proc~ttcoef_wway -->
+<g id="proc~~mallo_control~~CallsGraph_edge34" class="edge">
+<title>proc~structure_set_parms&#45;&gt;proc~ttcoef_wway</title>
+<path fill="none" stroke="#00ff3f" d="M344.14,-836C357.29,-836 371.09,-836 383.76,-836"/>
+<polygon fill="#00ff3f" stroke="#00ff3f" points="384.11,-839.5 394.11,-836 384.11,-832.5 384.11,-839.5"/>
+</g>
+<!-- proc~mgt_harvbiomass&#45;&gt;hpc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge36" class="edge">
+<title>proc~mgt_harvbiomass&#45;&gt;hpc_d</title>
+<path fill="none" stroke="#00ffbf" d="M326.8,-474.08C332.8,-476.6 338.72,-479.56 344,-483 363.5,-495.69 360.75,-507.93 380,-521 385.1,-524.46 390.85,-527.49 396.64,-530.09"/>
+<polygon fill="#00ffbf" stroke="#00ffbf" points="395.71,-533.49 406.29,-534.05 398.37,-527.01 395.71,-533.49"/>
+</g>
+<!-- proc~mgt_harvbiomass&#45;&gt;hrc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge35" class="edge">
+<title>proc~mgt_harvbiomass&#45;&gt;hrc_d</title>
+<path fill="none" stroke="#00ffbf" d="M331.67,-474.02C352.66,-479.43 377.04,-485.71 396.57,-490.74"/>
+<polygon fill="#00ffbf" stroke="#00ffbf" points="395.74,-494.14 406.3,-493.25 397.49,-487.37 395.74,-494.14"/>
+</g>
+<!-- proc~mgt_killop&#45;&gt;hpc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge38" class="edge">
+<title>proc~mgt_killop&#45;&gt;hpc_d</title>
+<path fill="none" stroke="#007fff" d="M317.56,-426.46C326.96,-429.6 336.65,-434.22 344,-441 372.66,-467.43 351.85,-494.02 380,-521 384.79,-525.59 390.71,-529.22 396.83,-532.08"/>
+<polygon fill="#007fff" stroke="#007fff" points="395.9,-535.48 406.48,-535.96 398.51,-528.98 395.9,-535.48"/>
+</g>
+<!-- proc~mgt_killop&#45;&gt;hrc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge39" class="edge">
+<title>proc~mgt_killop&#45;&gt;hrc_d</title>
+<path fill="none" stroke="#007fff" d="M317.52,-428.52C326.5,-431.67 335.98,-435.78 344,-441 363.5,-453.69 360.75,-465.93 380,-479 385.1,-482.46 390.85,-485.49 396.64,-488.09"/>
+<polygon fill="#007fff" stroke="#007fff" points="395.71,-491.49 406.29,-492.05 398.37,-485.01 395.71,-491.49"/>
+</g>
+<!-- proc~pl_rootfr -->
+<g id="proc~~mallo_control~~CallsGraph_node37" class="node">
+<title>proc~pl_rootfr</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node37"><a xlink:href=".././proc/pl_rootfr.html" xlink:title="pl_rootfr">
+<polygon fill="#d9534f" stroke="#d9534f" points="462,-470 405,-470 405,-446 462,-446 462,-470"/>
+<text text-anchor="middle" x="433.5" y="-455.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_rootfr</text>
+</a>
+</g>
+</g>
+<!-- proc~mgt_killop&#45;&gt;proc~pl_rootfr -->
+<g id="proc~~mallo_control~~CallsGraph_edge37" class="edge">
+<title>proc~mgt_killop&#45;&gt;proc~pl_rootfr</title>
+<path fill="none" stroke="#007fff" d="M317.74,-428.43C340.61,-434.33 371.2,-442.21 395.05,-448.35"/>
+<polygon fill="#007fff" stroke="#007fff" points="394.25,-451.76 404.81,-450.87 396,-444.98 394.25,-451.76"/>
+</g>
+<!-- proc~plant_init&#45;&gt;amin1 -->
+<g id="proc~~mallo_control~~CallsGraph_edge45" class="edge">
+<title>proc~plant_init&#45;&gt;amin1</title>
+<path fill="none" stroke="#003fff" d="M314.76,-285.6C324.98,-281.57 335.88,-275.86 344,-268 370.57,-242.28 351.13,-216.11 380,-193 417.98,-162.6 475.33,-155.04 512.47,-153.59"/>
+<polygon fill="#003fff" stroke="#003fff" points="512.94,-157.08 522.84,-153.33 512.76,-150.09 512.94,-157.08"/>
+</g>
+<!-- proc~plant_init&#45;&gt;float -->
+<g id="proc~~mallo_control~~CallsGraph_edge44" class="edge">
+<title>proc~plant_init&#45;&gt;float</title>
+<path fill="none" stroke="#003fff" d="M310.53,-281.98C351.2,-264.75 431.72,-238.71 487,-273 523.33,-295.53 539.03,-346.39 545.28,-375.82"/>
+<polygon fill="#003fff" stroke="#003fff" points="541.91,-376.79 547.24,-385.95 548.78,-375.47 541.91,-376.79"/>
+</g>
+<!-- proc~xmon -->
+<g id="proc~~mallo_control~~CallsGraph_node33" class="node">
+<title>proc~xmon</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node33"><a xlink:href=".././proc/xmon.html" xlink:title="xmon">
+<polygon fill="#d9534f" stroke="#d9534f" points="460.5,-226 406.5,-226 406.5,-202 460.5,-202 460.5,-226"/>
+<text text-anchor="middle" x="433.5" y="-211.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xmon</text>
+</a>
+</g>
+</g>
+<!-- proc~plant_init&#45;&gt;proc~xmon -->
+<g id="proc~~mallo_control~~CallsGraph_edge40" class="edge">
+<title>proc~plant_init&#45;&gt;proc~xmon</title>
+<path fill="none" stroke="#003fff" d="M314.52,-282.68C324.17,-278.54 334.77,-273.51 344,-268 361.41,-257.61 362.83,-250.77 380,-240 385.43,-236.59 391.36,-233.29 397.23,-230.24"/>
+<polygon fill="#003fff" stroke="#003fff" points="398.93,-233.3 406.3,-225.69 395.8,-227.05 398.93,-233.3"/>
+</g>
+<!-- proc~pl_partition -->
+<g id="proc~~mallo_control~~CallsGraph_node34" class="node">
+<title>proc~pl_partition</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node34"><a xlink:href=".././proc/pl_partition.html" xlink:title="pl_partition">
+<polygon fill="#d9534f" stroke="#d9534f" points="470,-348 397,-348 397,-324 470,-324 470,-348"/>
+<text text-anchor="middle" x="433.5" y="-333.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_partition</text>
+</a>
+</g>
+</g>
+<!-- proc~plant_init&#45;&gt;proc~pl_partition -->
+<g id="proc~~mallo_control~~CallsGraph_edge41" class="edge">
+<title>proc~plant_init&#45;&gt;proc~pl_partition</title>
+<path fill="none" stroke="#003fff" d="M314.85,-302.5C335.62,-308.41 363.7,-316.41 387.21,-323.1"/>
+<polygon fill="#003fff" stroke="#003fff" points="386.4,-326.51 396.98,-325.88 388.32,-319.78 386.4,-326.51"/>
+</g>
+<!-- proc~pl_root_gro -->
+<g id="proc~~mallo_control~~CallsGraph_node35" class="node">
+<title>proc~pl_root_gro</title>
+<g id="a_proc~~mallo_control~~CallsGraph_node35"><a xlink:href=".././proc/pl_root_gro.html" xlink:title="pl_root_gro">
+<polygon fill="#d9534f" stroke="#d9534f" points="469,-390 398,-390 398,-366 469,-366 469,-390"/>
+<text text-anchor="middle" x="433.5" y="-375.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_root_gro</text>
+</a>
+</g>
+</g>
+<!-- proc~plant_init&#45;&gt;proc~pl_root_gro -->
+<g id="proc~~mallo_control~~CallsGraph_edge42" class="edge">
+<title>proc~plant_init&#45;&gt;proc~pl_root_gro</title>
+<path fill="none" stroke="#003fff" d="M314.65,-301.23C324.51,-304.47 335.22,-308.97 344,-315 364.26,-328.92 360.01,-342.69 380,-357 382.8,-359 385.82,-360.85 388.94,-362.55"/>
+<polygon fill="#003fff" stroke="#003fff" points="387.41,-365.7 397.93,-366.94 390.48,-359.41 387.41,-365.7"/>
+</g>
+<!-- pl_seed_gro -->
+<g id="proc~~mallo_control~~CallsGraph_node38" class="node">
+<title>pl_seed_gro</title>
+<polygon fill="#777777" stroke="#777777" points="471.5,-306 395.5,-306 395.5,-282 471.5,-282 471.5,-306"/>
+<text text-anchor="middle" x="433.5" y="-291.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pl_seed_gro</text>
+</g>
+<!-- proc~plant_init&#45;&gt;pl_seed_gro -->
+<g id="proc~~mallo_control~~CallsGraph_edge43" class="edge">
+<title>proc~plant_init&#45;&gt;pl_seed_gro</title>
+<path fill="none" stroke="#003fff" d="M314.85,-294C335,-294 362.02,-294 385.08,-294"/>
+<polygon fill="#003fff" stroke="#003fff" points="385.36,-297.5 395.36,-294 385.36,-290.5 385.36,-297.5"/>
+</g>
+<!-- proc~mgt_transplant&#45;&gt;float -->
+<g id="proc~~mallo_control~~CallsGraph_edge46" class="edge">
+<title>proc~mgt_transplant&#45;&gt;float</title>
+<path fill="none" stroke="#3f00ff" d="M327.58,-348.11C333.34,-350.61 338.98,-353.55 344,-357 364.26,-370.92 357.66,-388.73 380,-399 422.46,-418.53 477.5,-413.37 513.04,-406.68"/>
+<polygon fill="#3f00ff" stroke="#3f00ff" points="513.85,-410.09 522.96,-404.68 512.47,-403.23 513.85,-410.09"/>
+</g>
+<!-- proc~mgt_transplant&#45;&gt;proc~pl_partition -->
+<g id="proc~~mallo_control~~CallsGraph_edge48" class="edge">
+<title>proc~mgt_transplant&#45;&gt;proc~pl_partition</title>
+<path fill="none" stroke="#3f00ff" d="M330.86,-336C348.68,-336 369.04,-336 386.83,-336"/>
+<polygon fill="#3f00ff" stroke="#3f00ff" points="386.98,-339.5 396.98,-336 386.98,-332.5 386.98,-339.5"/>
+</g>
+<!-- proc~mgt_transplant&#45;&gt;proc~pl_root_gro -->
+<g id="proc~~mallo_control~~CallsGraph_edge49" class="edge">
+<title>proc~mgt_transplant&#45;&gt;proc~pl_root_gro</title>
+<path fill="none" stroke="#3f00ff" d="M327.27,-348.04C346.26,-353.44 368.68,-359.83 387.94,-365.31"/>
+<polygon fill="#3f00ff" stroke="#3f00ff" points="387.11,-368.71 397.69,-368.09 389.03,-361.98 387.11,-368.71"/>
+</g>
+<!-- proc~mgt_transplant&#45;&gt;pl_seed_gro -->
+<g id="proc~~mallo_control~~CallsGraph_edge47" class="edge">
+<title>proc~mgt_transplant&#45;&gt;pl_seed_gro</title>
+<path fill="none" stroke="#3f00ff" d="M327.27,-323.96C345.45,-318.79 366.78,-312.71 385.46,-307.39"/>
+<polygon fill="#3f00ff" stroke="#3f00ff" points="386.59,-310.71 395.25,-304.61 384.67,-303.98 386.59,-310.71"/>
+</g>
+<!-- proc~mgt_harvtuber&#45;&gt;proc~pl_rootfr -->
+<g id="proc~~mallo_control~~CallsGraph_edge50" class="edge">
+<title>proc~mgt_harvtuber&#45;&gt;proc~pl_rootfr</title>
+<path fill="none" stroke="#7f00ff" d="M325.66,-390.04C331.99,-392.6 338.32,-395.58 344,-399 362.59,-410.2 362.1,-419.73 380,-432 384.94,-435.39 390.4,-438.6 395.86,-441.52"/>
+<polygon fill="#7f00ff" stroke="#7f00ff" points="394.47,-444.75 404.97,-446.17 397.65,-438.51 394.47,-444.75"/>
+</g>
+<!-- proc~pl_graze&#45;&gt;amin1 -->
+<g id="proc~~mallo_control~~CallsGraph_edge51" class="edge">
+<title>proc~pl_graze&#45;&gt;amin1</title>
+<path fill="none" stroke="#bf00ff" d="M462.51,-138.89C477.61,-141.53 496.41,-144.81 512.63,-147.65"/>
+<polygon fill="#bf00ff" stroke="#bf00ff" points="512.4,-151.16 522.85,-149.43 513.6,-144.26 512.4,-151.16"/>
+</g>
+<!-- proc~cn2_init&#45;&gt;curno -->
+<g id="proc~~mallo_control~~CallsGraph_edge52" class="edge">
+<title>proc~cn2_init&#45;&gt;curno</title>
+<path fill="none" stroke="#ff00bf" d="M311.03,-702.94C334.79,-696.5 370.13,-686.91 396.58,-679.74"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="397.5,-683.12 406.23,-677.12 395.67,-676.36 397.5,-683.12"/>
+</g>
+<!-- proc~mgt_harvgrain&#45;&gt;hpc_d -->
+<g id="proc~~mallo_control~~CallsGraph_edge53" class="edge">
+<title>proc~mgt_harvgrain&#45;&gt;hpc_d</title>
+<path fill="none" stroke="#ff007f" d="M324.14,-617.98C330.92,-615.36 337.78,-612.36 344,-609 368.92,-595.55 394.39,-575.46 411.57,-560.79"/>
+<polygon fill="#ff007f" stroke="#ff007f" points="414.05,-563.28 419.3,-554.08 409.46,-557.99 414.05,-563.28"/>
+</g>
+<!-- proc~pl_root_gro&#45;&gt;amin1 -->
+<g id="proc~~mallo_control~~CallsGraph_edge55" class="edge">
+<title>proc~pl_root_gro&#45;&gt;amin1</title>
+<path fill="none" stroke="#0066ff" d="M469.19,-369.24C475.8,-366.25 482.15,-362.28 487,-357 534.74,-305.06 545.75,-217.28 548.27,-176.31"/>
+<polygon fill="#0066ff" stroke="#0066ff" points="551.77,-176.44 548.77,-166.28 544.77,-176.09 551.77,-176.44"/>
+</g>
+<!-- proc~pl_root_gro&#45;&gt;float -->
+<g id="proc~~mallo_control~~CallsGraph_edge54" class="edge">
+<title>proc~pl_root_gro&#45;&gt;float</title>
+<path fill="none" stroke="#0066ff" d="M469.16,-384.05C482.91,-386.46 498.72,-389.22 512.62,-391.65"/>
+<polygon fill="#0066ff" stroke="#0066ff" points="512.37,-395.15 522.82,-393.43 513.57,-388.26 512.37,-395.15"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="597pt" height="32pt"
+ viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
+<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
+<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
+<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Called by</h3>
+      </div>
+      <div class="panel-body">
+  <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: proc~~mallo_control~~CalledByGraph Pages: 1 -->
+<svg id="procmallo_controlCalledByGraph" width="641pt" height="394pt"
+ viewBox="0.00 0.00 641.00 394.23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="proc~~mallo_control~~CalledByGraph" class="graph" transform="scale(1.12 1.12) rotate(0) translate(4 435.75)">
+<title>proc~~mallo_control~~CalledByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-435.75 711,-435.75 711,4 -4,4"/>
+<!-- proc~mallo_control -->
+<g id="proc~~mallo_control~~CalledByGraph_node1" class="node">
+<title>proc~mallo_control</title>
+<polygon fill="none" stroke="black" points="707,-228 622,-228 622,-204 707,-204 707,-228"/>
+<text text-anchor="middle" x="664.5" y="-213.6" font-family="Helvetica,sans-Serif" font-size="10.50">mallo_control</text>
+</g>
+<!-- proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_node2" class="node">
+<title>proc~time_control</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node2"><a xlink:href=".././proc/time_control.html" xlink:title="time_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="586,-228 507,-228 507,-204 586,-204 586,-228"/>
+<text text-anchor="middle" x="546.5" y="-213.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">time_control</text>
+</a>
+</g>
+</g>
+<!-- proc~time_control&#45;&gt;proc~mallo_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge1" class="edge">
+<title>proc~time_control&#45;&gt;proc~mallo_control</title>
+<path fill="none" stroke="#ff0000" d="M586.13,-216C594.37,-216 603.2,-216 611.84,-216"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="611.85,-219.5 621.85,-216 611.85,-212.5 611.85,-219.5"/>
+</g>
+<!-- proc~calsoft_hyd -->
+<g id="proc~~mallo_control~~CalledByGraph_node3" class="node">
+<title>proc~calsoft_hyd</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node3"><a xlink:href=".././proc/calsoft_hyd.html" xlink:title="calsoft_hyd">
+<polygon fill="#d9534f" stroke="#d9534f" points="447,-344 374,-344 374,-320 447,-320 447,-344"/>
+<text text-anchor="middle" x="410.5" y="-329.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge2" class="edge">
+<title>proc~calsoft_hyd&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M446.68,-319.86C455.07,-316.11 463.71,-311.49 471,-306 496.73,-286.61 519.22,-256.63 532.57,-236.67"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="535.68,-238.31 538.21,-228.02 529.82,-234.49 535.68,-238.31"/>
+</g>
+<!-- proc~calsoft_plant -->
+<g id="proc~~mallo_control~~CalledByGraph_node4" class="node">
+<title>proc~calsoft_plant</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node4"><a xlink:href=".././proc/calsoft_plant.html" xlink:title="calsoft_plant">
+<polygon fill="#d9534f" stroke="#d9534f" points="307.5,-306 227.5,-306 227.5,-282 307.5,-282 307.5,-306"/>
+<text text-anchor="middle" x="267.5" y="-291.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_plant</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_plant&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge6" class="edge">
+<title>proc~calsoft_plant&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M307.51,-287.33C348.71,-279.77 415.29,-266.12 471,-248 484.44,-243.63 498.8,-237.76 511.29,-232.25"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="512.75,-235.43 520.43,-228.13 509.87,-229.05 512.75,-235.43"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_et -->
+<g id="proc~~mallo_control~~CalledByGraph_node5" class="node">
+<title>proc~calsoft_hyd_bfr_et</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node5"><a xlink:href=".././proc/calsoft_hyd_bfr_et.html" xlink:title="calsoft_hyd_bfr_et">
+<polygon fill="#d9534f" stroke="#d9534f" points="465,-150 356,-150 356,-126 465,-126 465,-150"/>
+<text text-anchor="middle" x="410.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_et</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_et&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge3" class="edge">
+<title>proc~calsoft_hyd_bfr_et&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M442.33,-150.1C451.72,-154.15 461.95,-158.93 471,-164 488.78,-173.96 507.58,-187.11 521.85,-197.69"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="520.01,-200.68 530.1,-203.9 524.22,-195.09 520.01,-200.68"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_perc -->
+<g id="proc~~mallo_control~~CalledByGraph_node6" class="node">
+<title>proc~calsoft_hyd_bfr_perc</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node6"><a xlink:href=".././proc/calsoft_hyd_bfr_perc.html" xlink:title="calsoft_hyd_bfr_perc">
+<polygon fill="#d9534f" stroke="#d9534f" points="471,-108 350,-108 350,-84 471,-84 471,-108"/>
+<text text-anchor="middle" x="410.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_perc</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_perc&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge5" class="edge">
+<title>proc~calsoft_hyd_bfr_perc&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M455.26,-108.06C460.82,-110.55 466.23,-113.5 471,-117 499.41,-137.82 521.96,-172.52 534.52,-194.82"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="531.57,-196.71 539.43,-203.82 537.71,-193.36 531.57,-196.71"/>
+</g>
+<!-- proc~caltsoft_hyd -->
+<g id="proc~~mallo_control~~CalledByGraph_node7" class="node">
+<title>proc~caltsoft_hyd</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node7"><a xlink:href=".././proc/caltsoft_hyd.html" xlink:title="caltsoft_hyd">
+<polygon fill="#d9534f" stroke="#d9534f" points="305.5,-264 229.5,-264 229.5,-240 305.5,-240 305.5,-264"/>
+<text text-anchor="middle" x="267.5" y="-249.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caltsoft_hyd</text>
+</a>
+</g>
+</g>
+<!-- proc~caltsoft_hyd&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge4" class="edge">
+<title>proc~caltsoft_hyd&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M305.86,-247.66C346.52,-242.87 413.43,-234.8 471,-227 479.38,-225.86 488.28,-224.6 496.91,-223.34"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="497.47,-226.8 506.86,-221.88 496.46,-219.87 497.47,-226.8"/>
+</g>
+<!-- proc~calhard_control -->
+<g id="proc~~mallo_control~~CalledByGraph_node8" class="node">
+<title>proc~calhard_control</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node8"><a xlink:href=".././proc/calhard_control.html" xlink:title="calhard_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="185,-382 90,-382 90,-358 185,-358 185,-382"/>
+<text text-anchor="middle" x="137.5" y="-367.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calhard_control</text>
+</a>
+</g>
+</g>
+<!-- proc~calhard_control&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge7" class="edge">
+<title>proc~calhard_control&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M185.17,-380.94C253.63,-394.24 382.71,-408.59 471,-353 512.19,-327.06 532.27,-269.98 540.58,-238.29"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="544.06,-238.78 543.04,-228.24 537.26,-237.12 544.06,-238.78"/>
+</g>
+<!-- program~main -->
+<g id="proc~~mallo_control~~CalledByGraph_node9" class="node">
+<title>program~main</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node9"><a xlink:href=".././program/main.html" xlink:title="main">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="54,-382 0,-382 0,-358 54,-358 54,-382"/>
+<text text-anchor="middle" x="27" y="-367.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">main</text>
+</a>
+</g>
+</g>
+<!-- program~main&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge8" class="edge">
+<title>program~main&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M54.01,-380.68C127.42,-408.97 339.43,-477.5 471,-385 520.21,-350.4 537.3,-275.76 542.92,-238.34"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="546.45,-238.39 544.32,-228.01 539.51,-237.45 546.45,-238.39"/>
+</g>
+<!-- program~main&#45;&gt;proc~calhard_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge18" class="edge">
+<title>program~main&#45;&gt;proc~calhard_control</title>
+<path fill="none" stroke="#00ffb9" d="M54.26,-370C62.01,-370 70.81,-370 79.69,-370"/>
+<polygon fill="#00ffb9" stroke="#00ffb9" points="79.71,-373.5 89.71,-370 79.71,-366.5 79.71,-373.5"/>
+</g>
+<!-- proc~calsoft_control -->
+<g id="proc~~mallo_control~~CalledByGraph_node14" class="node">
+<title>proc~calsoft_control</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node14"><a xlink:href=".././proc/calsoft_control.html" xlink:title="calsoft_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="182.5,-264 92.5,-264 92.5,-240 182.5,-240 182.5,-264"/>
+<text text-anchor="middle" x="137.5" y="-249.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_control</text>
+</a>
+</g>
+</g>
+<!-- program~main&#45;&gt;proc~calsoft_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge23" class="edge">
+<title>program~main&#45;&gt;proc~calsoft_control</title>
+<path fill="none" stroke="#ff0000" d="M39.2,-357.82C57.88,-337.5 95.57,-296.52 118.16,-271.95"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="121,-274.02 125.2,-264.29 115.85,-269.29 121,-274.02"/>
+</g>
+<!-- proc~calsoft_chsed -->
+<g id="proc~~mallo_control~~CalledByGraph_node10" class="node">
+<title>proc~calsoft_chsed</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node10"><a xlink:href=".././proc/calsoft_chsed.html" xlink:title="calsoft_chsed">
+<polygon fill="#d9534f" stroke="#d9534f" points="310,-222 225,-222 225,-198 310,-198 310,-222"/>
+<text text-anchor="middle" x="267.5" y="-207.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_chsed</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_chsed&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge9" class="edge">
+<title>proc~calsoft_chsed&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M310.27,-210.9C360.29,-211.99 443.92,-213.8 496.82,-214.95"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="496.9,-218.45 506.97,-215.17 497.05,-211.45 496.9,-218.45"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_surq -->
+<g id="proc~~mallo_control~~CalledByGraph_node11" class="node">
+<title>proc~calsoft_hyd_bfr_surq</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node11"><a xlink:href=".././proc/calsoft_hyd_bfr_surq.html" xlink:title="calsoft_hyd_bfr_surq">
+<polygon fill="#d9534f" stroke="#d9534f" points="471,-66 350,-66 350,-42 471,-42 471,-66"/>
+<text text-anchor="middle" x="410.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_surq</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_surq&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge10" class="edge">
+<title>proc~calsoft_hyd_bfr_surq&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M457.32,-66.11C462.25,-68.56 466.94,-71.49 471,-75 508.5,-107.36 529.97,-163.36 539.5,-194.14"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="536.2,-195.3 542.38,-203.9 542.91,-193.32 536.2,-195.3"/>
+</g>
+<!-- proc~calsoft_hyd_bfr_latq -->
+<g id="proc~~mallo_control~~CalledByGraph_node12" class="node">
+<title>proc~calsoft_hyd_bfr_latq</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node12"><a xlink:href=".././proc/calsoft_hyd_bfr_latq.html" xlink:title="calsoft_hyd_bfr_latq">
+<polygon fill="#d9534f" stroke="#d9534f" points="469.5,-24 351.5,-24 351.5,0 469.5,0 469.5,-24"/>
+<text text-anchor="middle" x="410.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr_latq</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_hyd_bfr_latq&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge11" class="edge">
+<title>proc~calsoft_hyd_bfr_latq&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M458.27,-24.03C462.91,-26.49 467.27,-29.45 471,-33 517.77,-77.6 536.05,-155.67 542.44,-193.79"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="539.01,-194.5 544,-203.84 545.93,-193.42 539.01,-194.5"/>
+</g>
+<!-- proc~calsoft_sed -->
+<g id="proc~~mallo_control~~CalledByGraph_node13" class="node">
+<title>proc~calsoft_sed</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node13"><a xlink:href=".././proc/calsoft_sed.html" xlink:title="calsoft_sed">
+<polygon fill="#d9534f" stroke="#d9534f" points="303.5,-180 231.5,-180 231.5,-156 303.5,-156 303.5,-180"/>
+<text text-anchor="middle" x="267.5" y="-165.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_sed</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_sed&#45;&gt;proc~time_control -->
+<g id="proc~~mallo_control~~CalledByGraph_edge12" class="edge">
+<title>proc~calsoft_sed&#45;&gt;proc~time_control</title>
+<path fill="none" stroke="#ff0000" d="M303.58,-174.08C352.51,-182.56 441.44,-197.97 496.78,-207.56"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="496.25,-211.02 506.7,-209.28 497.44,-204.12 496.25,-211.02"/>
+</g>
+<!-- proc~calsoft_control&#45;&gt;proc~calsoft_hyd -->
+<g id="proc~~mallo_control~~CalledByGraph_edge13" class="edge">
+<title>proc~calsoft_control&#45;&gt;proc~calsoft_hyd</title>
+<path fill="none" stroke="#ff0000" d="M149.73,-264.01C164.48,-278.9 191.94,-303.7 221,-315 267.24,-332.99 324.52,-335.67 363.72,-334.85"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="363.88,-338.34 373.78,-334.55 363.68,-331.35 363.88,-338.34"/>
+</g>
+<!-- proc~calsoft_control&#45;&gt;proc~calsoft_plant -->
+<g id="proc~~mallo_control~~CalledByGraph_edge14" class="edge">
+<title>proc~calsoft_control&#45;&gt;proc~calsoft_plant</title>
+<path fill="none" stroke="#ff8b00" d="M175.18,-264.04C189.24,-268.65 205.46,-273.97 220.3,-278.84"/>
+<polygon fill="#ff8b00" stroke="#ff8b00" points="219.22,-282.17 229.81,-281.96 221.4,-275.52 219.22,-282.17"/>
+</g>
+<!-- proc~calsoft_control&#45;&gt;proc~caltsoft_hyd -->
+<g id="proc~~mallo_control~~CalledByGraph_edge17" class="edge">
+<title>proc~calsoft_control&#45;&gt;proc~caltsoft_hyd</title>
+<path fill="none" stroke="#00ff2e" d="M182.55,-252C194.3,-252 207.04,-252 218.96,-252"/>
+<polygon fill="#00ff2e" stroke="#00ff2e" points="219.18,-255.5 229.18,-252 219.18,-248.5 219.18,-255.5"/>
+</g>
+<!-- proc~calsoft_control&#45;&gt;proc~calsoft_chsed -->
+<g id="proc~~mallo_control~~CalledByGraph_edge19" class="edge">
+<title>proc~calsoft_control&#45;&gt;proc~calsoft_chsed</title>
+<path fill="none" stroke="#002eff" d="M175.18,-239.96C189.24,-235.35 205.46,-230.03 220.3,-225.16"/>
+<polygon fill="#002eff" stroke="#002eff" points="221.4,-228.48 229.81,-222.04 219.22,-221.83 221.4,-228.48"/>
+</g>
+<!-- proc~calsoft_control&#45;&gt;proc~calsoft_sed -->
+<g id="proc~~mallo_control~~CalledByGraph_edge22" class="edge">
+<title>proc~calsoft_control&#45;&gt;proc~calsoft_sed</title>
+<path fill="none" stroke="#ff008b" d="M152.42,-239.84C168.29,-226.35 195.38,-204.44 221,-189 223.45,-187.53 226.01,-186.09 228.63,-184.69"/>
+<polygon fill="#ff008b" stroke="#ff008b" points="230.25,-187.8 237.61,-180.17 227.1,-181.54 230.25,-187.8"/>
+</g>
+<!-- proc~calsoft_hyd_bfr -->
+<g id="proc~~mallo_control~~CalledByGraph_node15" class="node">
+<title>proc~calsoft_hyd_bfr</title>
+<g id="a_proc~~mallo_control~~CalledByGraph_node15"><a xlink:href=".././proc/calsoft_hyd_bfr.html" xlink:title="calsoft_hyd_bfr">
+<polygon fill="#d9534f" stroke="#d9534f" points="314,-108 221,-108 221,-84 314,-84 314,-108"/>
+<text text-anchor="middle" x="267.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">calsoft_hyd_bfr</text>
+</a>
+</g>
+</g>
+<!-- proc~calsoft_control&#45;&gt;proc~calsoft_hyd_bfr -->
+<g id="proc~~mallo_control~~CalledByGraph_edge24" class="edge">
+<title>proc~calsoft_control&#45;&gt;proc~calsoft_hyd_bfr</title>
+<path fill="none" stroke="#00ffff" d="M147.66,-239.84C162.64,-220.07 193.46,-179.88 221,-147 229.72,-136.59 239.74,-125.29 248.15,-115.98"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="250.92,-118.14 255.06,-108.38 245.74,-113.43 250.92,-118.14"/>
+</g>
+<!-- proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_et -->
+<g id="proc~~mallo_control~~CalledByGraph_edge15" class="edge">
+<title>proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_et</title>
+<path fill="none" stroke="#e7ff00" d="M308.9,-108.04C324.54,-112.69 342.61,-118.07 359.08,-122.98"/>
+<polygon fill="#e7ff00" stroke="#e7ff00" points="358.51,-126.46 369.09,-125.96 360.5,-119.75 358.51,-126.46"/>
+</g>
+<!-- proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_perc -->
+<g id="proc~~mallo_control~~CalledByGraph_edge16" class="edge">
+<title>proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_perc</title>
+<path fill="none" stroke="#5cff00" d="M314.28,-96C322.43,-96 331.08,-96 339.72,-96"/>
+<polygon fill="#5cff00" stroke="#5cff00" points="339.83,-99.5 349.83,-96 339.83,-92.5 339.83,-99.5"/>
+</g>
+<!-- proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_surq -->
+<g id="proc~~mallo_control~~CalledByGraph_edge20" class="edge">
+<title>proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_surq</title>
+<path fill="none" stroke="#5c00ff" d="M308.9,-83.96C324.54,-79.31 342.61,-73.93 359.08,-69.02"/>
+<polygon fill="#5c00ff" stroke="#5c00ff" points="360.5,-72.25 369.09,-66.04 358.51,-65.54 360.5,-72.25"/>
+</g>
+<!-- proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_latq -->
+<g id="proc~~mallo_control~~CalledByGraph_edge21" class="edge">
+<title>proc~calsoft_hyd_bfr&#45;&gt;proc~calsoft_hyd_bfr_latq</title>
+<path fill="none" stroke="#e700ff" d="M281.42,-83.88C296.76,-70.01 323.61,-47.37 350,-33 353.27,-31.22 356.72,-29.54 360.25,-27.97"/>
+<polygon fill="#e700ff" stroke="#e700ff" points="361.79,-31.12 369.69,-24.06 359.11,-24.65 361.79,-31.12"/>
+</g>
+</g>
+</svg>
+</div><script>var panprocmallo_controlCalledByGraph = svgPanZoom('#procmallo_controlCalledByGraph', {zoomEnabled: true,controlIconsEnabled: true, fit: true, center: true,}); </script><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="597pt" height="32pt"
+ viewBox="0.00 0.00 596.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 592.5,-28 592.5,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="70,-24 0,-24 0,0 70,0 70,-24"/>
+<text text-anchor="middle" x="35" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="146,-24 88,-24 88,0 146,0 146,-24"/>
+<text text-anchor="middle" x="117" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="225.5,-24 164.5,-24 164.5,0 225.5,0 225.5,-24"/>
+<text text-anchor="middle" x="195" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node4" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="388.5,-24 243.5,-24 243.5,0 388.5,0 388.5,-24"/>
+<text text-anchor="middle" x="316" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="465,-24 407,-24 407,0 465,0 465,-24"/>
+<text text-anchor="middle" x="436" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="588.5,-24 483.5,-24 483.5,0 588.5,0 588.5,-24"/>
+<text text-anchor="middle" x="536" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a procedure to one which it calls. Dashed 
+    arrows point from an interface to procedures which implement that interface.
+    This could include the module procedures in a generic interface or the
+    implementation in a submodule of an interface in a parent module. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+      </div>
+    </div>
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<em>None</em>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    
+    
+
+    
+    
+
+
+    
+    
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>

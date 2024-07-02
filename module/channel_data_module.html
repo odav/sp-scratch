@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation for SWAT+">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>channel_data_module &ndash; SWAT+</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">SWAT+ <small>main</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="../lists/files.html">Source Files</a></li>
+            <li><a href="../lists/modules.html">Modules</a></li>
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+            <li><a href="../program/main.html">Program</a></li>
+       
+            </ul>
+        
+            </li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../program/main.html">Program</a></li>
+          </ul>
+        <form action="../search.html" class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+        </div>
+<!--
+        <button type="submit" class="btn btn-default">Submit</button>
+-->
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+  <div class="row">
+    <h1>channel_data_module 
+    <small>Module</small>
+    </h1>
+    <div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 1.3% of total for modules and submodules.">141 statements</a>
+     </li> 
+    <li><i class="fa fa-code"></i><a href="../src/channel_data_module.f90"> Source File</a></li>
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+     <li><a href='../sourcefile/channel_data_module.f90.html'>channel_data_module.f90</a></li>
+     <li class="active">channel_data_module</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    <div id="sidebar">
+  <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-rte_nut">rte_nut</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_dat_c">ch_dat_c</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_init~2">ch_init</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_init_cs~2">ch_init_cs</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_dat~2">ch_dat</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_hyd~2">ch_hyd</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_sed~2">ch_sed</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_nut~2">ch_nut</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_temp~2">ch_temp</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
+  <div id="types-0" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_data_module.html#type-routing_nut_data">routing_nut_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_data_char_input">channel_data_char_input</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_init_datafiles">channel_init_datafiles</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_init_datafiles_cs">channel_init_datafiles_cs</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_data">channel_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_hyd_data">channel_hyd_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_sed_data">channel_sed_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_nut_data">channel_nut_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_temperature_data">channel_temperature_data</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    
+<br>    
+        <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Used by</h3>
+      </div>
+      <ul class="list-group">
+  <li class="list-group-item">
+    <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~channel_data_module~~UsedByGraph Pages: 1 -->
+<svg id="modulechannel_data_moduleUsedByGraph" width="299pt" height="1124pt"
+ viewBox="0.00 0.00 299.00 1124.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~channel_data_module~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 1120)">
+<title>module~~channel_data_module~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1120 295,-1120 295,4 -4,4"/>
+<!-- module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_node1" class="node">
+<title>module~channel_data_module</title>
+<polygon fill="none" stroke="black" points="130,-570 0,-570 0,-546 130,-546 130,-570"/>
+<text text-anchor="middle" x="65" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50">channel_data_module</text>
+</g>
+<!-- proc~ch_rtday -->
+<g id="module~~channel_data_module~~UsedByGraph_node2" class="node">
+<title>proc~ch_rtday</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node2"><a xlink:href=".././proc/ch_rtday.html" xlink:title="ch_rtday">
+<polygon fill="#d9534f" stroke="#d9534f" points="257.5,-1116 199.5,-1116 199.5,-1092 257.5,-1092 257.5,-1116"/>
+<text text-anchor="middle" x="228.5" y="-1101.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtday</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtday&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge1" class="edge">
+<title>proc~ch_rtday&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M199.19,-1100.67C187.32,-1097.85 174.36,-1092.63 166,-1083 98.77,-1005.57 73.08,-670.43 67.32,-580.36"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="70.81,-579.95 66.69,-570.19 63.82,-580.38 70.81,-579.95"/>
+</g>
+<!-- proc~sd_channel_read -->
+<g id="module~~channel_data_module~~UsedByGraph_node3" class="node">
+<title>proc~sd_channel_read</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node3"><a xlink:href=".././proc/sd_channel_read.html" xlink:title="sd_channel_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="279.5,-1074 177.5,-1074 177.5,-1050 279.5,-1050 279.5,-1074"/>
+<text text-anchor="middle" x="228.5" y="-1059.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_read</text>
+</a>
+</g>
+</g>
+<!-- proc~sd_channel_read&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge2" class="edge">
+<title>proc~sd_channel_read&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M177.29,-1050.13C173.08,-1047.65 169.21,-1044.64 166,-1041 103.78,-970.48 74.72,-665.43 67.71,-580.2"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="71.19,-579.77 66.9,-570.09 64.21,-580.33 71.19,-579.77"/>
+</g>
+<!-- proc~sd_channel_control3 -->
+<g id="module~~channel_data_module~~UsedByGraph_node4" class="node">
+<title>proc~sd_channel_control3</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node4"><a xlink:href=".././proc/sd_channel_control3.html" xlink:title="sd_channel_control3">
+<polygon fill="#d9534f" stroke="#d9534f" points="289,-1032 168,-1032 168,-1008 289,-1008 289,-1032"/>
+<text text-anchor="middle" x="228.5" y="-1017.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_control3</text>
+</a>
+</g>
+</g>
+<!-- proc~sd_channel_control3&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge3" class="edge">
+<title>proc~sd_channel_control3&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M177.07,-1007.9C172.95,-1005.46 169.17,-1002.52 166,-999 108.85,-935.44 76.57,-660.93 68.2,-580.33"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="71.67,-579.88 67.18,-570.28 64.71,-580.59 71.67,-579.88"/>
+</g>
+<!-- proc~ch_read_init_cs -->
+<g id="module~~channel_data_module~~UsedByGraph_node5" class="node">
+<title>proc~ch_read_init_cs</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node5"><a xlink:href=".././proc/ch_read_init_cs.html" xlink:title="ch_read_init_cs">
+<polygon fill="#d9534f" stroke="#d9534f" points="275,-990 182,-990 182,-966 275,-966 275,-990"/>
+<text text-anchor="middle" x="228.5" y="-975.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read_init_cs</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read_init_cs&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge4" class="edge">
+<title>proc~ch_read_init_cs&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M181.99,-968.39C176.01,-965.53 170.43,-961.82 166,-957 113.92,-900.38 78.67,-656.48 68.81,-580.61"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="72.24,-579.78 67.5,-570.3 65.29,-580.67 72.24,-579.78"/>
+</g>
+<!-- proc~sd_channel_nutrients -->
+<g id="module~~channel_data_module~~UsedByGraph_node6" class="node">
+<title>proc~sd_channel_nutrients</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node6"><a xlink:href=".././proc/sd_channel_nutrients.html" xlink:title="sd_channel_nutrients">
+<polygon fill="#d9534f" stroke="#d9534f" points="291,-948 166,-948 166,-924 291,-924 291,-948"/>
+<text text-anchor="middle" x="228.5" y="-933.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_nutrients</text>
+</a>
+</g>
+</g>
+<!-- proc~sd_channel_nutrients&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge5" class="edge">
+<title>proc~sd_channel_nutrients&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M177.54,-923.9C173.28,-921.46 169.33,-918.53 166,-915 73.79,-817.48 65.45,-641.97 65.53,-580.22"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="69.03,-580.09 65.62,-570.06 62.03,-580.03 69.03,-580.09"/>
+</g>
+<!-- proc~ch_read_nut -->
+<g id="module~~channel_data_module~~UsedByGraph_node7" class="node">
+<title>proc~ch_read_nut</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node7"><a xlink:href=".././proc/ch_read_nut.html" xlink:title="ch_read_nut">
+<polygon fill="#d9534f" stroke="#d9534f" points="267,-906 190,-906 190,-882 267,-882 267,-906"/>
+<text text-anchor="middle" x="228.5" y="-891.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read_nut</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read_nut&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge6" class="edge">
+<title>proc~ch_read_nut&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M189.86,-887.25C181.11,-884.14 172.47,-879.61 166,-873 83.61,-788.8 69.05,-637.05 66.52,-580.25"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="70.01,-580.08 66.16,-570.21 63.02,-580.33 70.01,-580.08"/>
+</g>
+<!-- proc~ch_rtmusk -->
+<g id="module~~channel_data_module~~UsedByGraph_node8" class="node">
+<title>proc~ch_rtmusk</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node8"><a xlink:href=".././proc/ch_rtmusk.html" xlink:title="ch_rtmusk">
+<polygon fill="#d9534f" stroke="#d9534f" points="262,-864 195,-864 195,-840 262,-840 262,-864"/>
+<text text-anchor="middle" x="228.5" y="-849.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtmusk</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtmusk&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge7" class="edge">
+<title>proc~ch_rtmusk&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M194.85,-846.62C184.55,-843.52 173.82,-838.65 166,-831 93.22,-759.81 73.05,-631.33 67.77,-580.03"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="71.25,-579.66 66.83,-570.03 64.28,-580.32 71.25,-579.66"/>
+</g>
+<!-- proc~ch_initial -->
+<g id="module~~channel_data_module~~UsedByGraph_node9" class="node">
+<title>proc~ch_initial</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node9"><a xlink:href=".././proc/ch_initial.html" xlink:title="ch_initial">
+<polygon fill="#d9534f" stroke="#d9534f" points="258.5,-822 198.5,-822 198.5,-798 258.5,-798 258.5,-822"/>
+<text text-anchor="middle" x="228.5" y="-807.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_initial</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_initial&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge8" class="edge">
+<title>proc~ch_initial&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M198.26,-805.26C187.07,-802.2 174.87,-797.19 166,-789 102.83,-730.66 77.69,-625.52 69.44,-580"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="72.86,-579.28 67.73,-570.02 65.96,-580.46 72.86,-579.28"/>
+</g>
+<!-- proc~om_water_init -->
+<g id="module~~channel_data_module~~UsedByGraph_node10" class="node">
+<title>proc~om_water_init</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node10"><a xlink:href=".././proc/om_water_init.html" xlink:title="om_water_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="272,-780 185,-780 185,-756 272,-756 272,-780"/>
+<text text-anchor="middle" x="228.5" y="-765.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">om_water_init</text>
+</a>
+</g>
+</g>
+<!-- proc~om_water_init&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge9" class="edge">
+<title>proc~om_water_init&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M184.88,-758.19C178.08,-755.34 171.49,-751.69 166,-747 112.32,-701.18 83.22,-619.17 71.79,-580"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="75.1,-578.84 69.03,-570.15 68.36,-580.73 75.1,-578.84"/>
+</g>
+<!-- proc~ch_read_sed -->
+<g id="module~~channel_data_module~~UsedByGraph_node11" class="node">
+<title>proc~ch_read_sed</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node11"><a xlink:href=".././proc/ch_read_sed.html" xlink:title="ch_read_sed">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-738 189,-738 189,-714 268,-714 268,-738"/>
+<text text-anchor="middle" x="228.5" y="-723.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read_sed</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read_sed&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge10" class="edge">
+<title>proc~ch_read_sed&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M188.84,-717.04C180.8,-714.06 172.73,-710.13 166,-705 121.48,-671.06 89.85,-611.43 75.19,-579.54"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="78.3,-577.94 71.03,-570.23 71.91,-580.79 78.3,-577.94"/>
+</g>
+<!-- proc~ch_read_temp -->
+<g id="module~~channel_data_module~~UsedByGraph_node12" class="node">
+<title>proc~ch_read_temp</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node12"><a xlink:href=".././proc/ch_read_temp.html" xlink:title="ch_read_temp">
+<polygon fill="#d9534f" stroke="#d9534f" points="272.5,-696 184.5,-696 184.5,-672 272.5,-672 272.5,-696"/>
+<text text-anchor="middle" x="228.5" y="-681.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read_temp</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read_temp&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge11" class="edge">
+<title>proc~ch_read_temp&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M184.25,-672.21C177.9,-669.64 171.61,-666.59 166,-663 130.28,-640.13 98.26,-601.89 80.55,-578.41"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="83.24,-576.16 74.48,-570.2 77.61,-580.32 83.24,-576.16"/>
+</g>
+<!-- proc~ch_rtpest -->
+<g id="module~~channel_data_module~~UsedByGraph_node13" class="node">
+<title>proc~ch_rtpest</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node13"><a xlink:href=".././proc/ch_rtpest.html" xlink:title="ch_rtpest">
+<polygon fill="#d9534f" stroke="#d9534f" points="259,-654 198,-654 198,-630 259,-630 259,-654"/>
+<text text-anchor="middle" x="228.5" y="-639.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rtpest</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rtpest&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge12" class="edge">
+<title>proc~ch_rtpest&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M197.85,-633.42C187.56,-630.05 176.08,-625.81 166,-621 139.19,-608.19 110.71,-589.71 91.03,-576.08"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="92.84,-573.07 82.64,-570.19 88.82,-578.8 92.84,-573.07"/>
+</g>
+<!-- proc~channel_control -->
+<g id="module~~channel_data_module~~UsedByGraph_node14" class="node">
+<title>proc~channel_control</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node14"><a xlink:href=".././proc/channel_control.html" xlink:title="channel_control">
+<polygon fill="#d9534f" stroke="#d9534f" points="277,-612 180,-612 180,-588 277,-588 277,-612"/>
+<text text-anchor="middle" x="228.5" y="-597.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">channel_control</text>
+</a>
+</g>
+</g>
+<!-- proc~channel_control&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge13" class="edge">
+<title>proc~channel_control&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M181.22,-587.96C162.81,-583.18 141.45,-577.62 122.16,-572.6"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="122.85,-569.17 112.29,-570.04 121.08,-575.94 122.85,-569.17"/>
+</g>
+<!-- proc~rte_read_nut -->
+<g id="module~~channel_data_module~~UsedByGraph_node15" class="node">
+<title>proc~rte_read_nut</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node15"><a xlink:href=".././proc/rte_read_nut.html" xlink:title="rte_read_nut">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-570 189,-570 189,-546 268,-546 268,-570"/>
+<text text-anchor="middle" x="228.5" y="-555.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rte_read_nut</text>
+</a>
+</g>
+</g>
+<!-- proc~rte_read_nut&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge14" class="edge">
+<title>proc~rte_read_nut&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M188.82,-558C174.29,-558 157.24,-558 140.55,-558"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="140.22,-554.5 130.22,-558 140.22,-561.5 140.22,-554.5"/>
+</g>
+<!-- proc~sd_channel_control2 -->
+<g id="module~~channel_data_module~~UsedByGraph_node16" class="node">
+<title>proc~sd_channel_control2</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node16"><a xlink:href=".././proc/sd_channel_control2.html" xlink:title="sd_channel_control2">
+<polygon fill="#d9534f" stroke="#d9534f" points="289,-528 168,-528 168,-504 289,-504 289,-528"/>
+<text text-anchor="middle" x="228.5" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">sd_channel_control2</text>
+</a>
+</g>
+</g>
+<!-- proc~sd_channel_control2&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge15" class="edge">
+<title>proc~sd_channel_control2&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M181.22,-528.04C162.81,-532.82 141.45,-538.38 122.16,-543.4"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="121.08,-540.06 112.29,-545.96 122.85,-546.83 121.08,-540.06"/>
+</g>
+<!-- proc~salt_cha_read -->
+<g id="module~~channel_data_module~~UsedByGraph_node17" class="node">
+<title>proc~salt_cha_read</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node17"><a xlink:href=".././proc/salt_cha_read.html" xlink:title="salt_cha_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="271,-486 186,-486 186,-462 271,-462 271,-486"/>
+<text text-anchor="middle" x="228.5" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">salt_cha_read</text>
+</a>
+</g>
+</g>
+<!-- proc~salt_cha_read&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge16" class="edge">
+<title>proc~salt_cha_read&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M187.59,-486.11C180.28,-488.75 172.82,-491.74 166,-495 139.19,-507.81 110.71,-526.29 91.03,-539.92"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="88.82,-537.2 82.64,-545.81 92.84,-542.93 88.82,-537.2"/>
+</g>
+<!-- proc~ch_rthr -->
+<g id="module~~channel_data_module~~UsedByGraph_node18" class="node">
+<title>proc~ch_rthr</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node18"><a xlink:href=".././proc/ch_rthr.html" xlink:title="ch_rthr">
+<polygon fill="#d9534f" stroke="#d9534f" points="255.5,-444 201.5,-444 201.5,-420 255.5,-420 255.5,-444"/>
+<text text-anchor="middle" x="228.5" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_rthr</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_rthr&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge17" class="edge">
+<title>proc~ch_rthr&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M201.42,-437.9C189.98,-441.23 176.74,-446.13 166,-453 130.28,-475.87 98.26,-514.11 80.55,-537.59"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="77.61,-535.68 74.48,-545.8 83.24,-539.84 77.61,-535.68"/>
+</g>
+<!-- proc~cal_parm_select -->
+<g id="module~~channel_data_module~~UsedByGraph_node19" class="node">
+<title>proc~cal_parm_select</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node19"><a xlink:href=".././proc/cal_parm_select.html" xlink:title="cal_parm_select">
+<polygon fill="#d9534f" stroke="#d9534f" points="278,-402 179,-402 179,-378 278,-378 278,-402"/>
+<text text-anchor="middle" x="228.5" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cal_parm_select</text>
+</a>
+</g>
+</g>
+<!-- proc~cal_parm_select&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge18" class="edge">
+<title>proc~cal_parm_select&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M181.15,-402.12C175.77,-404.58 170.58,-407.51 166,-411 121.48,-444.94 89.85,-504.57 75.19,-536.46"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="71.91,-535.21 71.03,-545.77 78.3,-538.06 71.91,-535.21"/>
+</g>
+<!-- proc~ch_read -->
+<g id="module~~channel_data_module~~UsedByGraph_node20" class="node">
+<title>proc~ch_read</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node20"><a xlink:href=".././proc/ch_read.html" xlink:title="ch_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="256,-360 201,-360 201,-336 256,-336 256,-360"/>
+<text text-anchor="middle" x="228.5" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge19" class="edge">
+<title>proc~ch_read&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M200.75,-352.51C189.05,-355.57 175.78,-360.65 166,-369 112.32,-414.82 83.22,-496.83 71.79,-536"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="68.36,-535.27 69.03,-545.85 75.1,-537.16 68.36,-535.27"/>
+</g>
+<!-- proc~ch_temp1 -->
+<g id="module~~channel_data_module~~UsedByGraph_node21" class="node">
+<title>proc~ch_temp1</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node21"><a xlink:href=".././proc/ch_temp1.html" xlink:title="ch_temp1">
+<polygon fill="#d9534f" stroke="#d9534f" points="261,-318 196,-318 196,-294 261,-294 261,-318"/>
+<text text-anchor="middle" x="228.5" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_temp1</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_temp1&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge20" class="edge">
+<title>proc~ch_temp1&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M195.74,-311.46C185.26,-314.56 174.21,-319.42 166,-327 102.83,-385.34 77.69,-490.48 69.44,-536"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="65.96,-535.54 67.73,-545.98 72.86,-536.72 65.96,-535.54"/>
+</g>
+<!-- proc~path_cha_res_read -->
+<g id="module~~channel_data_module~~UsedByGraph_node22" class="node">
+<title>proc~path_cha_res_read</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node22"><a xlink:href=".././proc/path_cha_res_read.html" xlink:title="path_cha_res_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="284.5,-276 172.5,-276 172.5,-252 284.5,-252 284.5,-276"/>
+<text text-anchor="middle" x="228.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">path_cha_res_read</text>
+</a>
+</g>
+</g>
+<!-- proc~path_cha_res_read&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge21" class="edge">
+<title>proc~path_cha_res_read&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M178.43,-276.05C173.88,-278.5 169.63,-281.45 166,-285 93.22,-356.19 73.05,-484.67 67.77,-535.97"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="64.28,-535.68 66.83,-545.97 71.25,-536.34 64.28,-535.68"/>
+</g>
+<!-- proc~ch_read_init -->
+<g id="module~~channel_data_module~~UsedByGraph_node23" class="node">
+<title>proc~ch_read_init</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node23"><a xlink:href=".././proc/ch_read_init.html" xlink:title="ch_read_init">
+<polygon fill="#d9534f" stroke="#d9534f" points="266.5,-234 190.5,-234 190.5,-210 266.5,-210 266.5,-234"/>
+<text text-anchor="middle" x="228.5" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read_init</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read_init&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge22" class="edge">
+<title>proc~ch_read_init&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M190.5,-228.53C181.53,-231.64 172.63,-236.23 166,-243 83.61,-327.2 69.05,-478.95 66.52,-535.75"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="63.02,-535.67 66.16,-545.79 70.01,-535.92 63.02,-535.67"/>
+</g>
+<!-- proc~ch_ttcoef -->
+<g id="module~~channel_data_module~~UsedByGraph_node24" class="node">
+<title>proc~ch_ttcoef</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node24"><a xlink:href=".././proc/ch_ttcoef.html" xlink:title="ch_ttcoef">
+<polygon fill="#d9534f" stroke="#d9534f" points="259,-192 198,-192 198,-168 259,-168 259,-192"/>
+<text text-anchor="middle" x="228.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_ttcoef</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_ttcoef&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge23" class="edge">
+<title>proc~ch_ttcoef&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M198,-184.06C186.63,-187.03 174.37,-192.15 166,-201 73.79,-298.52 65.45,-474.03 65.53,-535.78"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="62.03,-535.97 65.62,-545.94 69.03,-535.91 62.03,-535.97"/>
+</g>
+<!-- proc~ch_watqual4 -->
+<g id="module~~channel_data_module~~UsedByGraph_node25" class="node">
+<title>proc~ch_watqual4</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node25"><a xlink:href=".././proc/ch_watqual4.html" xlink:title="ch_watqual4">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-150 189,-150 189,-126 268,-126 268,-150"/>
+<text text-anchor="middle" x="228.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_watqual4</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_watqual4&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge24" class="edge">
+<title>proc~ch_watqual4&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M188.93,-144.71C180.41,-147.82 172.11,-152.36 166,-159 113.92,-215.62 78.67,-459.52 68.81,-535.39"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="65.29,-535.33 67.5,-545.7 72.24,-536.22 65.29,-535.33"/>
+</g>
+<!-- proc~ch_read_hyd -->
+<g id="module~~channel_data_module~~UsedByGraph_node26" class="node">
+<title>proc~ch_read_hyd</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node26"><a xlink:href=".././proc/ch_read_hyd.html" xlink:title="ch_read_hyd">
+<polygon fill="#d9534f" stroke="#d9534f" points="268,-108 189,-108 189,-84 268,-84 268,-108"/>
+<text text-anchor="middle" x="228.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">ch_read_hyd</text>
+</a>
+</g>
+</g>
+<!-- proc~ch_read_hyd&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge25" class="edge">
+<title>proc~ch_read_hyd&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M188.82,-102.61C180.3,-105.72 172.04,-110.29 166,-117 108.85,-180.56 76.57,-455.07 68.2,-535.67"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="64.71,-535.41 67.18,-545.72 71.67,-536.12 64.71,-535.41"/>
+</g>
+<!-- proc~cs_cha_read -->
+<g id="module~~channel_data_module~~UsedByGraph_node27" class="node">
+<title>proc~cs_cha_read</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node27"><a xlink:href=".././proc/cs_cha_read.html" xlink:title="cs_cha_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="267.5,-66 189.5,-66 189.5,-42 267.5,-42 267.5,-66"/>
+<text text-anchor="middle" x="228.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cs_cha_read</text>
+</a>
+</g>
+</g>
+<!-- proc~cs_cha_read&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge26" class="edge">
+<title>proc~cs_cha_read&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M189.37,-60.3C180.63,-63.41 172.12,-68.06 166,-75 103.78,-145.52 74.72,-450.57 67.71,-535.8"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="64.21,-535.67 66.9,-545.91 71.19,-536.23 64.21,-535.67"/>
+</g>
+<!-- proc~pest_cha_res_read -->
+<g id="module~~channel_data_module~~UsedByGraph_node28" class="node">
+<title>proc~pest_cha_res_read</title>
+<g id="a_module~~channel_data_module~~UsedByGraph_node28"><a xlink:href=".././proc/pest_cha_res_read.html" xlink:title="pest_cha_res_read">
+<polygon fill="#d9534f" stroke="#d9534f" points="283.5,-24 173.5,-24 173.5,0 283.5,0 283.5,-24"/>
+<text text-anchor="middle" x="228.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pest_cha_res_read</text>
+</a>
+</g>
+</g>
+<!-- proc~pest_cha_res_read&#45;&gt;module~channel_data_module -->
+<g id="module~~channel_data_module~~UsedByGraph_edge27" class="edge">
+<title>proc~pest_cha_res_read&#45;&gt;module~channel_data_module</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M176.64,-24.17C172.67,-26.59 169.03,-29.51 166,-33 98.77,-110.43 73.08,-445.57 67.32,-535.64"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="63.82,-535.62 66.69,-545.81 70.81,-536.05 63.82,-535.62"/>
+</g>
+</g>
+</svg>
+</div><div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div><div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="-graph-help-label">Graph Key</h4></div><div class="modal-body">
+    <p>Nodes of different colours represent the following: </p>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+    
+    <p>Solid arrows point from a submodule to the (sub)module which it is
+    descended from. Dashed arrows point from a module or program unit to 
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
+    </p>
+    </div></div></div></div>
+  </li>
+      </ul>
+    </div>
+
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      <h3>Contents</h3>
+ 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-rte_nut">rte_nut</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_dat_c">ch_dat_c</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_init~2">ch_init</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_init_cs~2">ch_init_cs</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_dat~2">ch_dat</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_hyd~2">ch_hyd</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_sed~2">ch_sed</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_nut~2">ch_nut</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#variable-ch_temp~2">ch_temp</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
+  <div id="types-1" class="panel-collapse collapse">
+    <div class="list-group">
+      <a class="list-group-item" href="../module/channel_data_module.html#type-routing_nut_data">routing_nut_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_data_char_input">channel_data_char_input</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_init_datafiles">channel_init_datafiles</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_init_datafiles_cs">channel_init_datafiles_cs</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_data">channel_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_hyd_data">channel_hyd_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_sed_data">channel_sed_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_nut_data">channel_nut_data</a>
+      <a class="list-group-item" href="../module/channel_data_module.html#type-channel_temperature_data">channel_temperature_data</a>
+    </div>
+  </div>
+</div>
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+
+    <section>
+    <h2>Variables</h2>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-rte_nut"></span>type(<a href='../type/routing_nut_data.html'>routing_nut_data</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>rte_nut</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_dat_c"></span>type(<a href='../type/channel_data_char_input.html'>channel_data_char_input</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_dat_c</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_init~2"></span>type(<a href='../type/channel_init_datafiles.html'>channel_init_datafiles</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_init</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_init_cs~2"></span>type(<a href='../type/channel_init_datafiles_cs.html'>channel_init_datafiles_cs</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_init_cs</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_dat~2"></span>type(<a href='../type/channel_data.html'>channel_data</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_dat</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_hyd~2"></span>type(<a href='../type/channel_hyd_data.html'>channel_hyd_data</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_hyd</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_sed~2"></span>type(<a href='../type/channel_sed_data.html'>channel_sed_data</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_sed</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_nut~2"></span>type(<a href='../type/channel_nut_data.html'>channel_nut_data</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_nut</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ch_temp~2"></span>type(<a href='../type/channel_temperature_data.html'>channel_temperature_data</a>),</td>
+<td>public,</td>  <td>dimension(:), allocatable</td><td>::</td>
+  <td><strong>ch_temp</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+
+    
+    <section>
+     <h2>Derived Types</h2>
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-routing_nut_data"></span><h3>type, public :: <a href='../type/routing_nut_data.html'>routing_nut_data</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~159"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"Drainage_Ditch"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-len_inc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>len_inc</strong></td><td> =</td><td>250</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_slp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_slp</strong></td><td> =</td><td>0.86</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_int"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_int</strong></td><td> =</td><td>0.17</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_slp_ob"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_slp_ob</strong></td><td> =</td><td>0.48</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_int_ob"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_int_ob</strong></td><td> =</td><td>1.30</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_slp_ub"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_slp_ub</strong></td><td> =</td><td>1.50</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_int_ub"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_int_ub</strong></td><td> =</td><td>0.03</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-turb_slp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>turb_slp</strong></td><td> =</td><td>-.0002</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-turb_int"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>turb_int</strong></td><td> =</td><td>0.175</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tss_slp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tss_slp</strong></td><td> =</td><td>0.457</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tss_int"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tss_int</strong></td><td> =</td><td>0.534</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tp_slp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tp_slp</strong></td><td> =</td><td>0.375</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tp_int"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tp_int</strong></td><td> =</td><td>1.312</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srp_slp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srp_slp</strong></td><td> =</td><td>0.646</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srp_int"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srp_int</strong></td><td> =</td><td>0.207</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-turb_tss_slp"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>turb_tss_slp</strong></td><td> =</td><td>.35</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-no3_min_conc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>no3_min_conc</strong></td><td> =</td><td>.05</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tp_min_conc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tp_min_conc</strong></td><td> =</td><td>.06</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tss_min_conc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tss_min_conc</strong></td><td> =</td><td>5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-srp_min_conc"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>srp_min_conc</strong></td><td> =</td><td>.015</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_data_char_input"></span><h3>type, public :: <a href='../type/channel_data_char_input.html'>channel_data_char_input</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~160"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"default"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-init~7"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>init</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hyd~8"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>hyd</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed~26"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nut~5"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nut</strong></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_init_datafiles"></span><h3>type, public :: <a href='../type/channel_init_datafiles.html'>channel_init_datafiles</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~161"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"default"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-org_min~5"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>org_min</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-pest~22"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>pest</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-path~15"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>path</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hmet~13"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>hmet</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-salt~21"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>salt</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_init_datafiles_cs"></span><h3>type, public :: <a href='../type/channel_init_datafiles_cs.html'>channel_init_datafiles_cs</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~162"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"default"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-pest~23"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>pest</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-path~16"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>path</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hmet~14"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>hmet</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-salt~22"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>salt</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cs~13"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cs</strong></td><td> =</td><td>""</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_data"></span><h3>type, public :: <a href='../type/channel_data.html'>channel_data</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~163"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"default"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-init~8"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>init</strong></td><td> =</td><td>0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-hyd~9"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>hyd</strong></td><td> =</td><td>0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sed~27"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sed</strong></td><td> =</td><td>0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-nut~6"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>nut</strong></td><td> =</td><td>0</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_hyd_data"></span><h3>type, public :: <a href='../type/channel_hyd_data.html'>channel_hyd_data</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~164"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td> =</td><td>"default"</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-w"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>w</strong></td><td> =</td><td>2.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-d~3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>d</strong></td><td> =</td><td>.5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-s~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>s</strong></td><td> =</td><td>.01</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-l~4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>l</strong></td><td> =</td><td>0.1</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-n~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>n</strong></td><td> =</td><td>.05</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-k~9"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>k</strong></td><td> =</td><td>0.01</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-wdr"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>wdr</strong></td><td> =</td><td>6.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-alpha_bnk"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>alpha_bnk</strong></td><td> =</td><td>0.03</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-side"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>side</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_sed_data"></span><h3>type, public :: <a href='../type/channel_sed_data.html'>channel_sed_data</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~165"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-eqn"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>eqn</strong></td><td> =</td><td>0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cov1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cov1</strong></td><td> =</td><td>0.1</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-cov2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>cov2</strong></td><td> =</td><td>0.1</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_bd"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_bd</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_bd"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_bd</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_kd"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_kd</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_kd"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_kd</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bnk_d50"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bnk_d50</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bed_d50"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bed_d50</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tc_bnk"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tc_bnk</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tc_bed"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tc_bed</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-erod~3"></span>real,</td>
+<td>public,</td>  <td>dimension(12)</td><td>::</td>
+  <td><strong>erod</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_nut_data"></span><h3>type, public :: <a href='../type/channel_nut_data.html'>channel_nut_data</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~166"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-onco"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>onco</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-opco"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>opco</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs1</strong></td><td> =</td><td>1.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs2</strong></td><td> =</td><td>.05</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs3</strong></td><td> =</td><td>.5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs4</strong></td><td> =</td><td>.05</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs5"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs5</strong></td><td> =</td><td>.05</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs6</strong></td><td> =</td><td>2.5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rs7"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rs7</strong></td><td> =</td><td>2.5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rk1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rk1</strong></td><td> =</td><td>1.71</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rk2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rk2</strong></td><td> =</td><td>1.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rk3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rk3</strong></td><td> =</td><td>2.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rk4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rk4</strong></td><td> =</td><td>0.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rk5"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rk5</strong></td><td> =</td><td>1.71</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rk6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rk6</strong></td><td> =</td><td>1.71</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bc1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bc1</strong></td><td> =</td><td>.55</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bc2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bc2</strong></td><td> =</td><td>1.1</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bc3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bc3</strong></td><td> =</td><td>.21</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bc4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bc4</strong></td><td> =</td><td>.35</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lao"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lao</strong></td><td> =</td><td>2</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-igropt"></span>integer,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>igropt</strong></td><td> =</td><td>2</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai0"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai0</strong></td><td> =</td><td>50.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai1</strong></td><td> =</td><td>0.08</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai2</strong></td><td> =</td><td>0.015</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai3"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai3</strong></td><td> =</td><td>1.60</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai4"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai4</strong></td><td> =</td><td>2.0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai5"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai5</strong></td><td> =</td><td>3.5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-ai6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>ai6</strong></td><td> =</td><td>1.07</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-mumax"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>mumax</strong></td><td> =</td><td>2.0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-rhoq"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>rhoq</strong></td><td> =</td><td>2.5</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-tfact"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>tfact</strong></td><td> =</td><td>0.3</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-k_l"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>k_l</strong></td><td> =</td><td>0.75</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-k_n"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>k_n</strong></td><td> =</td><td>0.02</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-k_p"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>k_p</strong></td><td> =</td><td>0.025</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lambda0"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lambda0</strong></td><td> =</td><td>1.0</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lambda1"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lambda1</strong></td><td> =</td><td>0.03</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-lambda2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>lambda2</strong></td><td> =</td><td>0.054</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-p_n"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>p_n</strong></td><td> =</td><td>0.5</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-channel_temperature_data"></span><h3>type, public :: <a href='../type/channel_temperature_data.html'>channel_temperature_data</a>  </h3></div>
+  <div class="panel-body">
+     <h4>Components</h4>
+    <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th><th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" id="variable-name~167"></span>character(len=16),</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>name</strong></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sno_mlt~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sno_mlt</strong></td><td> =</td><td>1.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-gw~6"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>gw</strong></td><td> =</td><td>.97</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-sur_lat~2"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>sur_lat</strong></td><td> =</td><td>1.</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-bulk_co"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>bulk_co</strong></td><td> =</td><td>.0025</td><td></td>
+</tr>
+<tr>
+  <td><span class="anchor" id="variable-air_lag"></span>real,</td>
+<td>public</td>  <td></td><td>::</td>
+  <td><strong>air_lag</strong></td><td> =</td><td>6.</td><td></td>
+</tr>
+</tbody>
+</table>
+
+     
+  </div>
+</div>
+
+    </section>
+  <br>
+    
+
+    
+    </div>
+  </div>
+
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>SWAT+ was developed by <br>&copy; 2024 
+<br /><small>main</small></p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-07-02T18:36:07.273073           </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+  </body>
+</html>
