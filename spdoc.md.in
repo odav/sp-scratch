@@ -1,6 +1,6 @@
 ---
 project: SWAT+
-output_dir: @CMAKE_CURRENT_BINARY_DIR@/doc
+output_dir: @CMAKE_CURRENT_BINARY_DIR@/site
 version: @SWAT_VERSION@ 
 revision: @SWAT_VERSION@ 
 print_creation_date: true
