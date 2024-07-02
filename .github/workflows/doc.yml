@@ -1,5 +1,5 @@
 
-name: Build/Test SWAT+
+name: Document SWAT+ 
   
 on: [push, pull_request]
    
@@ -27,7 +27,7 @@ jobs:
       run: |
         RELEASE_VERSION=${GITHUB_REF#refs/*/}
 
-        cmake -b build -D TAG=${RELEASE_VERSION}
+        cmake -B build -D TAG=${RELEASE_VERSION}
         ford spdoc.md
 
     - name: Upload Documentation
