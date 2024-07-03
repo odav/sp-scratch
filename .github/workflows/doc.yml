@@ -39,7 +39,7 @@ jobs:
 
     - name: Build SWAT+ Documentation
       run: |
-        T=`git describe --abbrev=0`
+        T=`git describe --tags --abbrev=0`
         cmake -B build -D TAG=${T}
         ford ford.md
       shell: bash
