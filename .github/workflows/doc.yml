@@ -5,7 +5,8 @@ name: Document SWAT+
 on:
   push:
     tags:
-      - '*'
+      - '*.*'
+      - '*.*.*'
 
   workflow_dispatch:
    
