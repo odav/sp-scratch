@@ -1,10 +1,11 @@
-# O. David, CSU, LGPL 2.1
+# SWAT+ CI for GitHub, O. David, 2024, LGPL 2.1
 
 name: Document SWAT+ 
   
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
 
   workflow_dispatch:
    

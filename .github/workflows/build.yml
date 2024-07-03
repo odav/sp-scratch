@@ -1,11 +1,15 @@
-# SWAT+ CI for GH, O. David, 2024
+# SWAT+ CI for GitHub, O. David, 2024, LGPL 2.1
 
 name: Build/Release SWAT+
 
 on:
   push:
+    branches:
+      - main
     tags:
       - '*'
+
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,7 +17,6 @@ permissions:
   pull-requests: write
 
 jobs:
-
   build:
     runs-on: ${{ matrix.os }}
     if: endsWith(github.event.base_ref, 'main') == true
