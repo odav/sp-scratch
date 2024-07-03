@@ -110,10 +110,10 @@ if(EXISTS "${PROJECT_SOURCE_DIR}/src/main.f90.in")
     )
 endif()
 
-if(EXISTS "${PROJECT_SOURCE_DIR}/spdoc.md.in")
+if(EXISTS "${PROJECT_SOURCE_DIR}/ford.md.in")
     configure_file(
-        "${PROJECT_SOURCE_DIR}/spdoc.md.in"
-        "${PROJECT_SOURCE_DIR}/spdoc.md"
+        "${PROJECT_SOURCE_DIR}/ford.md.in"
+        "${PROJECT_SOURCE_DIR}/ford.md"
     )   
 endif()
 
@@ -159,6 +159,7 @@ message( "-- PROJECT_DIR        ${PROJECT_SOURCE_DIR}")
 message( "-- BINARY_DIR         ${PROJECT_BINARY_DIR}")
 message( "-- Install Prefix     ${CMAKE_INSTALL_PREFIX}")
 message( "-- Executable         ${SWATPLUS_EXE}, rev/tag: ${SWAT_VERSION}")
+message( "-- FORD project       ${PROJECT_SOURCE_DIR}/ford.md")
 message( "-- Test Data Dir      ${ref_dir}")
 message( "--  Abs Error         ${aerr}")
 message( "--  Rel Error         ${rerr}")
