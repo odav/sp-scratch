@@ -4,8 +4,6 @@ name: Build/Release SWAT+
 
 on:
   push:
-    branches:
-      - main
     tags:
       - '*'
 
@@ -20,6 +18,7 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     if: endsWith(github.event.base_ref, 'main') == true
+
     strategy:
       fail-fast: false
       matrix:
