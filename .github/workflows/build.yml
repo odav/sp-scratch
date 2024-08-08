@@ -23,17 +23,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        # os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [windows-latest]
         toolchain:
           - {compiler: intel, version: '2024.1'}
-          - {compiler: intel-classic, version: '2021.9'}
-        exclude:
-          - os: macos-latest
-            toolchain: {compiler: intel, version: '2024.1'}
-          - os: windows-latest
-            toolchain: {compiler: intel-classic, version: '2021.9'}
-          - os: ubuntu-latest
-            toolchain: {compiler: intel-classic, version: '2021.9'}
+          # - {compiler: intel-classic, version: '2021.9'}
+        # exclude:
+        #   - os: macos-latest
+        #     toolchain: {compiler: intel, version: '2024.1'}
+          # - os: windows-latest
+          #   toolchain: {compiler: intel-classic, version: '2021.9'}
+        #   - os: ubuntu-latest
+        #     toolchain: {compiler: intel-classic, version: '2021.9'}
 
     steps:
       - name: Checkout
@@ -80,7 +81,7 @@ jobs:
           fi
 
           # compile
-          cmake --build build
+          cmake --build build -D CMAKE_BUILD_TYPE=Release
 
           exe=`ls $e`
           echo $exe
@@ -106,20 +107,20 @@ jobs:
       - build
 
     steps:
-    - name: Download Linux
-      uses: actions/download-artifact@v2
-      with:
-        name: sp-Linux
+    # - name: Download Linux
+    #   uses: actions/download-artifact@v2
+    #   with:
+    #     name: sp-Linux
 
     - name: Download Windows
       uses: actions/download-artifact@v2
       with:
         name: sp-Windows
 
-    - name: Download macOS
-      uses: actions/download-artifact@v2
-      with:
-        name: sp-macOS
+    # - name: Download macOS
+    #   uses: actions/download-artifact@v2
+    #   with:
+    #     name: sp-macOS
 
     - name: Release
       uses: softprops/action-gh-release@v2
