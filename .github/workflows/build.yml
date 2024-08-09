@@ -100,15 +100,18 @@ jobs:
           ls -hl build/swatplus-*
           file build/swatplus-*
 
-          zip $exez $exe
+          if [ "$RUNNER_OS" != "Windows" ]; then
+            zip $exez $exe
+          fi
 
         shell: bash
 
-      # - name: zip
-      #   uses: vimtor/action-zip@v1.2
-      #   with:
-      #     files: ${{ steps.build_exe.outputs.exe }}
-      #     dest: ${{ steps.build_exe.outputs.exez }}
+      - name: zip
+          if: matrix.os == 'windows-latest'
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: ${{ steps.build_exe.outputs.exe }}
+          dest: ${{ steps.build_exe.outputs.exez }}
 
       - name: upload
         uses: actions/upload-artifact@v2
