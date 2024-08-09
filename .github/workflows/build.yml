@@ -107,7 +107,7 @@ jobs:
         shell: bash
 
       - name: zip
-          if: matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-latest'
         uses: vimtor/action-zip@v1.2
         with:
           files: ${{ steps.build_exe.outputs.exe }}
