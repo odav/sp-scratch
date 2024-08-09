@@ -103,7 +103,7 @@ jobs:
       - name: zip
         uses: vimtor/action-zip@v1.2
         with:
-          files: build/swatplus-*
+          files: ${{ steps.build_exe.outputs.exe }}
           dest: ${{ steps.build_exe.outputs.exez }}
 
       - name: upload
