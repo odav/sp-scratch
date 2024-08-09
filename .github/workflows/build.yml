@@ -87,7 +87,7 @@ jobs:
           cmake --build build
 
           exeb=`basename -s .exe build/swatplus-*`
-          exez=${exeb}.zip"
+          exez="${exeb}.zip"
           exe=`ls $e`
           echo $exe
           echo $os
