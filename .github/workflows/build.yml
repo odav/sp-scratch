@@ -101,7 +101,7 @@ jobs:
           file build/swatplus-*
 
           if [ "$RUNNER_OS" != "Windows" ]; then
-            zip $exez $exe
+            (cd build && zip ../$exez swatplus-*)
           fi
 
         shell: bash
