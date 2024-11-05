@@ -17,8 +17,8 @@ permissions:
 
 jobs:
   build-gcc:
-  runs-on: ${{ matrix.os }}
-    if: endsWith(github.event.base_ref, 'main') == true
+    runs-on: ${{ matrix.os }}
+    #if: endsWith(github.event.base_ref, 'main') == true
 
     strategy:
       fail-fast: false
