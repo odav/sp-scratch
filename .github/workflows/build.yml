@@ -51,7 +51,7 @@ jobs:
 
           if [ "$RUNNER_OS" == "Windows" ]; then
              e="build/swatplus-*.exe"
-             gen="-G 'MinGW Makefiles'"
+             gen='-G "MinGW Makefiles"'
           fi
 
 
