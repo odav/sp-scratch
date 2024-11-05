@@ -54,7 +54,8 @@ jobs:
               -D CMAKE_BUILD_TYPE=Release
             e="build/swatplus-*"
           elif [ "$RUNNER_OS" == "Windows" ]; then
-            cmake -B build -G "MinGW Makefiles" \
+            # cmake -B build -G "MinGW Makefiles" \
+            cmake -B build \
               -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
               -D TAG=$RELEASE_VERSION \
               -D CMAKE_BUILD_TYPE=Release
