@@ -54,35 +54,13 @@ jobs:
              gen="MinGW"
           fi
 
-
-          # if [ "$RUNNER_OS" == "Linux" ]; then
-          #   cmake -B build \
-          #     -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
-          #     -D TAG=$RELEASE_VERSION \
-          #     -D CMAKE_BUILD_TYPE=Release
-          # elif [ "$RUNNER_OS" == "Windows" ]; then
-          #   # cmake -B build -G "MinGW Makefiles" \
-          #   #   -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
-          #   #   -D TAG=$RELEASE_VERSION \
-          #   #   -D CMAKE_BUILD_TYPE=Release
-          #   e="build/swatplus-*.exe"
-          #   gen="-G 'MinGW Makefiles'"
-          # elif [ "$RUNNER_OS" == "macOS" ]; then
-          #   cmake -B build \
-          #     -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
-          #     -D TAG=$RELEASE_VERSION \
-          #     -D CMAKE_BUILD_TYPE=Release
-          # else
-          #   echo "$RUNNER_OS not supported."
-          #   exit 1
-          # fi
-
+          # generate
           cmake -B build -G "${gen} Makefiles" \
               -D CMAKE_Fortran_COMPILER=${{ env.FC }} \
               -D TAG=$RELEASE_VERSION \
               -D CMAKE_BUILD_TYPE=Release
 
-          # compile
+          # build
           cmake --build build --parallel 4
 
           exebase=`basename -s .exe build/swatplus-*`
@@ -105,6 +83,19 @@ jobs:
           fi
 
         shell: bash
+
+      - name: zip
+        if: matrix.os == 'windows-latest'
+        uses: vimtor/action-zip@v1.2
+        with:
+          files: ${{ steps.build_exe.outputs.exe }}
+          dest: ${{ steps.build_exe.outputs.exez }}
+
+      - name: upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: gcc-${{ steps.build_exe.outputs.os }}
+          path: ${{ steps.build_exe.outputs.exez }}
 
 
   # build:
@@ -211,36 +202,37 @@ jobs:
   #         path: ${{ steps.build_exe.outputs.exez }}
   #
   #
-  # release:
-  #   name: Release
-  #   runs-on: ubuntu-latest
-  #   needs:
-  #     - build
-  #
-  #   steps:
-  #   - name: Download Linux
-  #     uses: actions/download-artifact@v2
-  #     with:
-  #       name: sp-Linux
-  #
-  #   - name: Download Windows
-  #     uses: actions/download-artifact@v2
-  #     with:
-  #       name: sp-Windows
-  #
-  #   - name: Download macOS
-  #     uses: actions/download-artifact@v2
-  #     with:
-  #       name: sp-macOS
-  #
-  #   - name: Release
-  #     uses: softprops/action-gh-release@v2
-  #     with:
-  #       token: ${{ github.token }}
-  #       tag_name:  ${{ github.event.release.tag_name }}
-  #       prerelease: false
-  #       draft: false
-  #       name:  ${{ github.event.release.tag_name }}
-  #       files: swatplus-*
-  #
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs:
+      - build-gcc
+
+    steps:
+    - name: Download Linux
+      uses: actions/download-artifact@v2
+      with:
+        name: gcc-Linux
+
+    - name: Download Windows
+      uses: actions/download-artifact@v2
+      with:
+        name: gcc-Windows
+
+    - name: Download macOS
+      uses: actions/download-artifact@v2
+      with:
+        name: gcc-macOS
+
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        token: ${{ github.token }}
+        tag_name:  ${{ github.event.release.tag_name }}
+        prerelease: false
+        draft: false
+        name:  ${{ github.event.release.tag_name }}
+        files: swatplus-*
+
 
