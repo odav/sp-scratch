@@ -92,7 +92,7 @@ jobs:
           dest: ${{ steps.build_exe.outputs.exez }}
 
       - name: upload
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: gcc-${{ steps.build_exe.outputs.os }}
           path: ${{ steps.build_exe.outputs.exez }}
@@ -211,17 +211,17 @@ jobs:
 
     steps:
     - name: Download Linux
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: gcc-Linux
 
     - name: Download Windows
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: gcc-Windows
 
     - name: Download macOS
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: gcc-macOS
 
